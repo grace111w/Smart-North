@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, TextInput, } from 'react-native'
+import { View, Text, TextInput, SafeAreaView} from 'react-native'
 
 const LoginScreen = () => {
   return (
@@ -8,9 +8,10 @@ const LoginScreen = () => {
 </View>
 
 <View>
+  <SafeAreaView>
   <TextInput placeholder='Email'/>
-
-</View></>
+</View>
+</SafeAreaView>
   )
   }
 export default LoginScreen
