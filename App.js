@@ -7,7 +7,8 @@ const LoginScreen = () => {
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text>Login Screen</Text>
       </View>
-    </><View>
+
+    </><View style={{ flex: 1, justifyContent: 'center', alignContent: 'center'}}>
         <TextInput placeholder='Email' />
       </View></>
   )
