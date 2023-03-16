@@ -20,6 +20,7 @@ const LoginScreen = () => {
 const styles = StyleSheet.create({
   appPage: {
     flex: 1,
+    padding: 50, 
     backgroundColor: "#c3dbfa",
     alignItems: "stretch",
     justifyContent: "center",
