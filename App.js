@@ -20,7 +20,6 @@ const LoginScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin: 20 
     backgroundColor: "#c3dbfa",
     alignItems: "center",
     justifyContent: "center",
