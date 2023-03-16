@@ -4,20 +4,23 @@ import { StyleSheet, View, Text, TextInput, Button} from 'react-native'
 const LoginScreen = () => {
   return ( 
     <><>
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Login Screen!</Text>
+      <View>
+        <TextInput placeholder='Email'/>
+        <TextInput placeholder='Password'/>
         </View>
 
 </><View>
-        <TextInput style= {{margin: 20}} placeholder='Email' />
-        <Button title='sigh up'/>
+       <Button title= "Login"/>
+       <Button title= "Sigh Up"/>
       </View></>
   )
 };
 
+
 const styles = StyleSheet.create({
-  page: {
+  container: {
     flex: 1,
+    margin: 20 
     backgroundColor: "#c3dbfa",
     alignItems: "center",
     justifyContent: "center",
