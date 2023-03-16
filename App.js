@@ -10,7 +10,7 @@ const LoginScreen = () => {
 
 </><View>
         <TextInput placeholder='Email' />
-        <Button title='Login'/>
+        <Button title='sigh up'/>
       </View></>
   )
 };
