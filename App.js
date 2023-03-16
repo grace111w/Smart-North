@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
   appPage: {
     flex: 1,
     backgroundColor: "#c3dbfa",
-    alignItems: "center",
-    justifyContent: "flex-start",
+    alignItems: "stretch",
+    justifyContent: "center",
   },
 });
 export default LoginScreen
