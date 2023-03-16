@@ -16,7 +16,7 @@ const LoginScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  page: {
     flex: 1,
     backgroundColor: "#c3dbfa",
     alignItems: "center",
