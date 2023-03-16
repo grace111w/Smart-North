@@ -3,13 +3,13 @@ import { StyleSheet, View, Text, TextInput, Button} from 'react-native'
 
 const LoginScreen = () => {
   return ( 
-    <><>
+    <View style={styles.appPage}><>
       <View>
         <TextInput placeholder='Email'/>
         <TextInput placeholder='Password'/>
         </View>
 
-</><View>
+     </><View>
        <Button title= "Login"/>
        <Button title= "Sigh Up"/>
       </View></>
@@ -18,7 +18,7 @@ const LoginScreen = () => {
 
 
 const styles = StyleSheet.create({
-  container: {
+  appPage: {
     flex: 1,
     backgroundColor: "#c3dbfa",
     alignItems: "center",
