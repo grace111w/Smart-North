@@ -14,4 +14,13 @@ const LoginScreen = () => {
       </View></>
   )
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#c3dbfa",
+    alignItems: "baseline",
+    justifyContent: "center",
+  },
+});
 export default LoginScreen
