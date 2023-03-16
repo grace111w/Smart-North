@@ -19,8 +19,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#c3dbfa",
-    alignItems: "stretch",
-    justifyContent: "space-around",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
 export default LoginScreen
