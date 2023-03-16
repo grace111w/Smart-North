@@ -3,16 +3,13 @@ import { View, Text, TextInput, SafeAreaView} from 'react-native'
 
 const LoginScreen = () => {
   return ( 
-  
-  <><View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-  <Text>Login Screen</Text>
-</View>
-
-<View>
-  
-  <TextInput placeholder='Email'/>
-</View>
- 
-  );
+    <><>
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Text>Login Screen</Text>
+      </View>
+    </><View>
+        <TextInput placeholder='Email' />
+      </View></>
+  )
 };
 export default LoginScreen
