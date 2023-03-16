@@ -9,7 +9,7 @@ const LoginScreen = () => {
         </View>
 
 </><View>
-        <TextInput placeholder='Email' />
+        <TextInput style= {{margin: 200 }} placeholder='Email' />
         <Button title='sigh up'/>
       </View></>
   )
