@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#c3dbfa",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
   },
 });
 export default LoginScreen
