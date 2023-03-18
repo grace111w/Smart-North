@@ -10,7 +10,7 @@ const LoginScreen = () => {
         </View>
 
      </><View>
-       <Button title= "Login" style= {margin, 50,}/>
+       <Button title= "Login"/>
        <Button title= "Sigh Up"/>
       </View></View>
   )
