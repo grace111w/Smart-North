@@ -4,12 +4,12 @@ import { StyleSheet, View, Text, TextInput, Button} from 'react-native'
 const LoginScreen = () => {
   return ( 
     <View style={styles.appPage}><>
-      <View>
+      <View style={styles.appPage}>
         <TextInput placeholder='Email'/>
         <TextInput placeholder='Password'/>
         </View>
 
-     </><View>
+     </><View style={styles.appPage}>
        <Button title= "Login"/>
        <Button title= "Sigh Up"/>
       </View></View>
