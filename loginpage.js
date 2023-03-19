@@ -19,8 +19,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
-<Button
+const App = () => (
+  <Button
   onPress={onPressLearnMore}
   title="Learn More"
   color="#841584"
 />
+)
