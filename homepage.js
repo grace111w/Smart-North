@@ -41,6 +41,12 @@ const homepage = (props) => {
             title="Sign Up"
           />
         </View>
+        <View>
+          <Button
+            onPress={() => props.navigation.navigate("coursepage")}
+            title="Next Page"
+            />
+        </View>
       </View>
     </SafeAreaView>
   );
