@@ -1,6 +1,7 @@
 import React from "react";
 import {
   StyleSheet,
+  Styles,
   View,
   Text,
   TextInput,
@@ -13,7 +14,7 @@ import { NavigationContainer } from "@react-navigation/native";
 const homepage = (props) => {
   return (
     <SafeAreaView>
-      <View style={styles.appPage}>
+      <View style={style.appPage}>
         <>
           <View>
             <TextInput
@@ -51,9 +52,10 @@ textstuff: {
   borderWidth: 2,
 }
 });
-const styles = StyleSheet.create({
+
+const style = StyleSheet.create({
   appPage: {
-    padding: 500,
+    flex: 1,
     backgroundColor: "#c3dbfa",
     alignItems: "center",
     justifyContent: "flex-start",
