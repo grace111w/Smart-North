@@ -56,7 +56,7 @@ textstuff: {
 const style = StyleSheet.create({
   appPage: {
     backgroundColor: "#c3dbfa",
-    alignItems: "streach",
+    alignItems: "stretch",
     justifyContent: "flex-start",
   },
 
