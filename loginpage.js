@@ -19,13 +19,3 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
-const App = () => (
-  <SafeAreaView style={styles.container}>
-    <View>
-    <Button
-      title="Learn More"
-      onPress={onPressLearnMore}
-      color="#841584"
-    />
-    </View>
-    </SafeAreaView>)
