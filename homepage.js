@@ -13,9 +13,9 @@ import { NavigationContainer } from "@react-navigation/native";
 const homepage = (props) => {
   return (
     <SafeAreaView>
-      <View>
+      <View style={styles.appPage}>
         <>
-          <View style={styles.appPage}>
+          <View>
             <TextInput
               style={{
                 height: 40,
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     padding: 50,
     backgroundColor: "#c3dbfa",
     alignItems: "stretch",
-    justifyContent: "space-evenly",
+    justifyContent: "center",
   },
 });
 export default homepage;
