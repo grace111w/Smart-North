@@ -16,10 +16,34 @@ const Stack = createNativeStackNavigator();
 
 const MyStack = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="homepage" component={homepage} />
-      <Stack.Screen name="loginpage" component={loginpage} />
-    </Stack.Navigator>
+    <SafeAreaView>
+      <View>
+        <>
+          <View style={styles.appPage}>
+            <TextInput
+              style={{
+                height: 40,
+                borderColor: "gray",
+                borderWidth: 2,
+              }}
+              placeholder="Email"
+            />
+            <TextInput
+              style={{
+                height: 40,
+                borderColor: "gray",
+                borderWidth: 2,
+              }}
+              placeholder="Password"
+            />
+          </View>
+        </>
+        <View>
+          <Button title="Login" />
+          <Button title="Sign Up" />
+        </View>
+      </View>
+    </SafeAreaView>
   );
 };
 
@@ -30,3 +54,13 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+
+const App = () => {
+  return(
+    <NavigationContainer> 
+    </NavigationContainer>
+  );
+};
