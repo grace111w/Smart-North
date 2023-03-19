@@ -13,23 +13,15 @@ import { NavigationContainer } from "@react-navigation/native";
 const homepage = (props) => {
   return (
     <SafeAreaView>
-      <View>
+      <View style={styles.appPage}>
         <>
-          <View style={styles.appPage}>
+          <View>
             <TextInput
-              style={{
-                height: 40,
-                borderColor: "gray",
-                borderWidth: 2,
-              }}
+              style={styles.textstuff}
               placeholder="Email"
             />
             <TextInput
-              style={{
-                height: 40,
-                borderColor: "gray",
-                borderWidth: 2,
-              }}
+              style={styles.textstuff}
               placeholder="Password"
               secureTextEntry={true}
             />
@@ -38,21 +30,35 @@ const homepage = (props) => {
         <View>
           <Button title="Login" />
           <Button
-            onPress={() => props.navigation.navigate("Signuppage")}
+            onPress={() => props.navigation.navigate("signuppage")}
             title="Sign Up"
           />
+        </View>
+        <View>
+          <Button
+            onPress={() => props.navigation.navigate("coursepage")}
+            title="Next Page"
+            />
         </View>
       </View>
     </SafeAreaView>
   );
 };
 const styles = StyleSheet.create({
+textstuff: {
+  height: 40,
+  borderColor: "gray",
+  borderWidth: 2,
+}
+});
+const styles = StyleSheet.create({
   appPage: {
-    flex: 1,
-    padding: 50,
+    padding: 500,
     backgroundColor: "#c3dbfa",
-    alignItems: "stretch",
-    justifyContent: "center",
+    alignItems: "center",
+    justifyContent: "flex-start",
   },
+
+
 });
 export default homepage;
