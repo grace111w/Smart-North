@@ -1,6 +1,7 @@
 import React from "react";
 import {
   StyleSheet,
+  Styles,
   View,
   Text,
   TextInput,
