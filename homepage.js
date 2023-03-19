@@ -57,7 +57,7 @@ const style = StyleSheet.create({
   appPage: {
     backgroundColor: "#c3dbfa",
     alignItems: "stretch",
-    justifyContent: "flex-start",
+    justifyContent: "flex-end",
   },
 
 
