@@ -39,7 +39,6 @@ const LoginScreen = () => {
         <View>
             <Button
               title="Next Page"
-              onPress={onPressLearnMore}
               color="#841584"
             />
     </View>
