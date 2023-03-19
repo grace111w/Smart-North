@@ -54,7 +54,6 @@ textstuff: {
 
 const style = StyleSheet.create({
   appPage: {
-    padding: 500,
     backgroundColor: "#c3dbfa",
     alignItems: "center",
     justifyContent: "flex-start",
