@@ -54,6 +54,7 @@ textstuff: {
 
 const style = StyleSheet.create({
   appPage: {
+    flex: 1,
     backgroundColor: "#c3dbfa",
     alignItems: "center",
     justifyContent: "flex-start",
