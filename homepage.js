@@ -24,6 +24,7 @@ const homepage = (props) => {
             <TextInput
               style={styles.textstuff}
               placeholder="Password"
+              secureTextEntry={true}
             />
           </View>
         </>
