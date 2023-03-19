@@ -54,7 +54,7 @@ const homepage = (props) => {
 const styles = StyleSheet.create({
   appPage: {
     flex: 1,
-    padding: 50,
+    padding: 500,
     backgroundColor: "#c3dbfa",
     alignItems: "center",
     justifyContent: "flex-start",
