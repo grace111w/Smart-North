@@ -36,6 +36,13 @@ const LoginScreen = () => {
           <Button title="Login" />
           <Button title="Sign Up" />
         </View>
+        <View>
+            <Button
+              title="Next Page"
+              onPress={onPressLearnMore}
+              color="#841584"
+            />
+    </View>
       </View>
     </SafeAreaView>
   );
