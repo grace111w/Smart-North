@@ -17,20 +17,13 @@ const homepage = (props) => {
         <>
           <View>
             <TextInput
-              style={{
-                height: 40,
-                borderColor: "gray",
-                borderWidth: 2,
-              }}
+              style={styles.textstuff}
               placeholder="Email"
             />
             <TextInput
-              style={{
-                height: 40,
-                borderColor: "gray",
-                borderWidth: 2,
-              }}
+              style={styles.textstuff}
               placeholder="Password"
+              secureTextEntry={true}
             />
           </View>
         </>
@@ -52,8 +45,15 @@ const homepage = (props) => {
   );
 };
 const styles = StyleSheet.create({
+textstuff: {
+  height: 40,
+  borderColor: "gray",
+  borderWidth: 2,
+}
+});
+const styles = StyleSheet.create({
   appPage: {
-    flex: 1,
+    padding: 500,
     backgroundColor: "#c3dbfa",
     alignItems: "center",
     justifyContent: "flex-start",
