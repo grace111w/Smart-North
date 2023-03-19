@@ -57,6 +57,7 @@ const style = StyleSheet.create({
   appPage: {
     backgroundColor: "#c3dbfa",
     marginBottom: 5,
+    marginTop: 5, 
     alignItems: "stretch",
     justifyContent: "space-evenly",
   },
