@@ -1,6 +1,6 @@
 
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Button, Text, View } from "react-native";
+import { StyleSheet, Button, Text, View, SafeAreaView } from "react-native";
 
 export default function App() {
   return (
@@ -20,9 +20,12 @@ const styles = StyleSheet.create({
   },
 });
 const App = () => (
-  <Button
-  onPress={onPressLearnMore}
-  title="Learn More"
-  color="#841584"
-/>
-)
+  <SafeAreaView style={styles.container}>
+    <View>
+    <Button
+      title="Learn More"
+      onPress={onPressLearnMore}
+      color="#841584"
+    />
+    </View>
+    </SafeAreaView>)
