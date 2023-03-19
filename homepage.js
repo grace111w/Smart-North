@@ -17,10 +17,7 @@ const homepage = (props) => {
       <View style={style.appPage}>
         <>
           <View>
-            <TextInput
-              style={styles.textstuff}
-              placeholder="Email"
-            />
+            <TextInput style={styles.textstuff} placeholder="Email" />
             <TextInput
               style={styles.textstuff}
               placeholder="Password"
@@ -39,18 +36,18 @@ const homepage = (props) => {
           <Button
             onPress={() => props.navigation.navigate("coursepage")}
             title="Next Page"
-            />
+          />
         </View>
       </View>
     </SafeAreaView>
   );
 };
 const styles = StyleSheet.create({
-textstuff: {
-  height: 40,
-  borderColor: "gray",
-  borderWidth: 2,
-}
+  textstuff: {
+    height: 40,
+    borderColor: "gray",
+    borderWidth: 2,
+  },
 });
 
 const style = StyleSheet.create({
@@ -59,7 +56,5 @@ const style = StyleSheet.create({
     alignItems: "stretch",
     justifyContent: "flex-start",
   },
-
-
 });
 export default homepage;
