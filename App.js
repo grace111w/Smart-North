@@ -10,7 +10,8 @@ import {
 
 const LoginScreen = () => {
   return (
-    <SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView>
       <View>
         <>
           <View style={styles.appPage}>
@@ -44,6 +45,7 @@ const LoginScreen = () => {
     </View>
       </View>
     </SafeAreaView>
+    </NavigationContainer>
   );
 };
 const styles = StyleSheet.create({
@@ -56,3 +58,7 @@ const styles = StyleSheet.create({
   },
 });
 export default LoginScreen;
+
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+
