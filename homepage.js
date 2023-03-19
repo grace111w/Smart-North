@@ -31,6 +31,7 @@ const homepage = (props) => {
                 borderWidth: 2,
               }}
               placeholder="Password"
+              secureTextEntry={true}
             />
           </View>
         </>
