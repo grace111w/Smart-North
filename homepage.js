@@ -7,7 +7,7 @@ import {
   Button,
   SafeAreaView,
 } from "react-native";
-import loginpage from "./loginpage";
+import coursepage from "./coursepage";
 import { NavigationContainer } from "@react-navigation/native";
 
 const homepage = (props) => {
@@ -35,11 +35,11 @@ const homepage = (props) => {
           </View>
         </>
         <View>
+          <Button title="Login" />
           <Button
-            onPress={() => props.navigation.navigate("loginpage")}
-            title="Login"
+            onPress={() => props.navigation.navigate("Signuppage")}
+            title="Sign Up"
           />
-          <Button title="Sign Up" />
         </View>
       </View>
     </SafeAreaView>
