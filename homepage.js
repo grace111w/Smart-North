@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     padding: 50,
     backgroundColor: "#c3dbfa",
     alignItems: "stretch",
-    justifyContent: "space-around",
+    justifyContent: "space-evenly",
   },
 });
 export default homepage;
