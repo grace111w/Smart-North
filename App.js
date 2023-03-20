@@ -1,18 +1,10 @@
 import React from "react";
-import {
-  StyleSheet,
-  View,
-  Text,
-  TextInput,
-  Button,
-  SafeAreaView,
-} from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import homepage from "./homepage";
 import signuppage from "./signuppage";
 import coursepage from "./coursepage";
-import { auth } from "./FireBaseconfig";
+// import { auth } from "./FireBaseconfig";
 const Stack = createNativeStackNavigator();
 
 const MyStack = () => {
@@ -26,7 +18,6 @@ const MyStack = () => {
 };
 
 export default function App() {
-  AbortControlle;
   return (
     <NavigationContainer>
       <MyStack />
