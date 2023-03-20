@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import homepage from "./homepage";
 import signuppage from "./signuppage";
 import coursepage from "./coursepage";
-// import { auth } from "./FireBaseconfig";
+import { auth } from "./FireBaseconfig";
 const Stack = createNativeStackNavigator();
 
 const MyStack = () => {
