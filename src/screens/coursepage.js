@@ -21,5 +21,3 @@ const coursepage = (props) => {
     </SafeAreaView>
   );
 };
-}
-]
