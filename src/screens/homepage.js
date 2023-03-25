@@ -7,7 +7,7 @@ import {
   SafeAreaView,
 } from "react-native";
 
-const homepage = (props) => {
+const Homepage = (props) => {
   return (
     <SafeAreaView>
       <View style={style.appPage}>
@@ -55,4 +55,4 @@ const style = StyleSheet.create({
     justifyContent: "space-around",
   },
 });
-export default homepage;
+export default Homepage;

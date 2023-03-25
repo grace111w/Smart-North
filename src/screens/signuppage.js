@@ -12,7 +12,7 @@ import {
   TextInput,
 } from "react-native";
 
-const signuppage = () => {
+const Signuppage = () => {
   const [value, setValue] = React.useState({
     userName: "",
     email: "",
@@ -72,4 +72,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default signuppage;
+export default Signuppage;
