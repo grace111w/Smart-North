@@ -7,7 +7,7 @@ import {
   ScrollView,
   Button,
 } from "react-native";
-import Input from "../../.expo/src/screens/component/Input";
+import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 

@@ -1,21 +1,39 @@
-import React from "react";
-import { View, TextInput, StyleSheet } from "react-native";
+import { useLinkProps } from "@react-navigation/native";
+import React, { useEffect } from "react";
+import { Text, View, StyleSheet, TextInput } from "react-native";
+import Icon from "react-native-vector-icons/FontAwesome5";
 
-const Input = (props) => {
+const Input = ({ label, iconName, password, onfocus = () => {}, ...props }) => {
+  const [hidepasword, setHidepassword] = React.useState(password);
+  const [isFocused, setIsFocused] = React.useState(false);
+
   return (
-    <View style={styles.appPage}>
-      <View>
+    <View style={styles.container}>
+      <Text> {label}</Text>
+      <View
+        style={[
+          styles.input,
+          { borderColor: isFocused ? "darkblue" : "powderblue" },
+        ]}
+      >
+        <Icon name={iconName} style={styles.icon} />
         <TextInput
-          style={styles.textstuff}
-          placeholder="Email"
-          onChangeText={(text) => setValue({ ...value, email: text })}
+          onFocus={() => {
+            onfocus;
+            setIsFocused(true);
+          }}
+          onBlur={() => setIsFocused(false)}
+          style={styles.textInput}
+          secureTextEntry={hidepasword}
+          {...props}
         />
-        <TextInput
-          style={styles.textstuff}
-          placeholder="Password"
-          secureTextEntry={true}
-          onChangeText={(text) => setValue({ ...value, password: text })}
-        />
+        {password && (
+          <Icon
+            onPress={() => setHidepassword(!hidepasword)}
+            name={hidepasword ? "eye" : "eye-slash"}
+            style={styles.icon}
+          />
+        )}
       </View>
     </View>
   );
@@ -23,17 +41,30 @@ const Input = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#c3dbfa",
-    alignItems: "baseline",
-    justifyContent: "center",
+    marginBottom: 20,
+    backgroundColor: "white",
   },
-  appPage: {
-    backgroundColor: "#c3dbfa",
-    marginBottom: 5,
-    marginTop: 5,
-    alignItems: "stretch",
-    justifyContent: "space-around",
+  input: {
+    backgroundColor: "lightcyan",
+    height: 55,
+    flexDirection: "row",
+    paddingHorizontal: 15,
+    borderWidth: 1,
+    alignItems: "center",
+  },
+  icon: {
+    fontSize: 25,
+    color: "darkblue",
+    //marginTop
+  },
+  textInput: {
+    color: "darkblue",
+    flex: 1,
+    marginLeft: 10,
+  },
+  eyeIcon: {
+    fontSize: 15,
+    color: "darkblue",
   },
 });
 
