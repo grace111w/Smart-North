@@ -1,16 +1,11 @@
 import React from "react";
 import {
   StyleSheet,
-  Styles,
   View,
-  Text,
   TextInput,
   Button,
   SafeAreaView,
 } from "react-native";
-
-import coursepage from "./coursepage";
-import { NavigationContainer } from "@react-navigation/native";
 
 const homepage = (props) => {
   return (
