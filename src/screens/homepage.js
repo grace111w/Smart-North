@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
 
 const style = StyleSheet.create({
   appPage: {
+    flex: 1,
     backgroundColor: "#c3dbfa",
     marginBottom: 5,
     marginTop: 5,
