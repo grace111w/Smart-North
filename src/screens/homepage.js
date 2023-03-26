@@ -3,6 +3,7 @@ import {
   StyleSheet,
   View,
   TextInput,
+  style,
   Button,
   SafeAreaView,
 } from "react-native";
