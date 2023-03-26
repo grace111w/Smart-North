@@ -46,7 +46,7 @@ export default function Registration() {
           onChangeText={(text) => handleOnChange(text, "email")}
         />
         <Input
-          label="Full Name"
+          label="Preferred Name"
           iconName="user"
           placeholder="FirstName LastName"
           onChangeText={(text) => handleOnChange(text, "userName")}
@@ -55,7 +55,7 @@ export default function Registration() {
           label="Phone Number"
           iconName="mobile-alt"
           placeholder="Phone Number"
-          onChangeText={(text) => handleOnChange(text, "phone")}
+          onChangeText={() => handleOnChange(text, "phone")}
         />
         <Input
           label="Password"
