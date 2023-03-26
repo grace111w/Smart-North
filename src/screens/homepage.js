@@ -4,7 +4,6 @@ import {
   View,
   TextInput,
   style,
-  appPage,
   Button,
   SafeAreaView,
 } from "react-native";
@@ -12,7 +11,7 @@ import {
 const Homepage = (props) => {
   return (
     <SafeAreaView>
-      <View style={style.appPage}>
+      <View >
         <>
           <View>
             <TextInput style={styles.textstuff} placeholder="Email" />
@@ -46,12 +45,6 @@ const styles = StyleSheet.create({
     borderColor: "gray",
     borderWidth: 2,
   },
-  appPage: {
-    backgroundColor: "#c3dbfa",
-    marginBottom: 5,
-    marginTop: 5,
-    alignItems: "stretch",
-    justifyContent: "space-around",
-  },
+  
 });
 export default Homepage;
