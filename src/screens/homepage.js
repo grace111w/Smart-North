@@ -11,16 +11,14 @@ const Homepage = (props) => {
   return (
     <SafeAreaView>
       <View style={style.appPage}>
-        <>
-          <View>
-            <TextInput style={styles.textstuff} placeholder="Email" />
-            <TextInput
-              style={styles.textstuff}
-              placeholder="Password"
-              secureTextEntry={true}
-            />
-          </View>
-        </>
+        <View>
+          <TextInput style={styles.textstuff} placeholder="Email" />
+          <TextInput
+            style={styles.textstuff}
+            placeholder="Password"
+            secureTextEntry={true}
+          />
+        </View>
         <View>
           <Button title="Login" />
           <Button
