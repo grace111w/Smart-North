@@ -3,8 +3,6 @@ import {
   StyleSheet,
   View,
   TextInput,
-  NavigationContainer,
-  creatNativeStackNavigator,
   Button,
   SafeAreaView,
 } from "react-native";
