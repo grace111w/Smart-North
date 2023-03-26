@@ -4,6 +4,7 @@ import {
   View,
   TextInput,
   style,
+  appPage,
   Button,
   SafeAreaView,
 } from "react-native";
