@@ -44,9 +44,6 @@ const styles = StyleSheet.create({
     borderColor: "gray",
     borderWidth: 2,
   },
-});
-
-const style = StyleSheet.create({
   appPage: {
     backgroundColor: "#c3dbfa",
     marginBottom: 5,
