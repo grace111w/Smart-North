@@ -13,7 +13,6 @@ const MyStack = () => {
       <Stack.Screen name="Homepage" component={homepage} />
       <Stack.Screen name="Registration" component={Registration} />
       <Stack.Screen name="Login" component={Loginpage} />
-      {/* <Stack.Screen name="signuppage" component={Signuppage} /> */}
       <Stack.Screen name="coursepage" component={coursepage} />
     </Stack.Navigator>
   );
