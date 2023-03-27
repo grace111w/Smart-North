@@ -26,7 +26,7 @@ export default function Registration() {
         console.log("Account created");
         const user = userCredential.user;
         console.log(user);
-        props.navigation.navigate("homepage");
+        props.navigation.navigate("Login");
       })
       .catch((error) => {
         alert(error);
@@ -65,7 +65,11 @@ export default function Registration() {
           onChangeText={(text) => handleOnChange(text, "password")}
         />
         <View>
-          <Button onPress={handleSignUp} title="Sign Up" />
+          <Button
+            style={styles.button}
+            onPress={handleSignUp}
+            title="Sign Up"
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -85,5 +89,9 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
     color: "black",
+  },
+  button: {
+    borderWidth: 0.5,
+    borderRadius: 20,
   },
 });
