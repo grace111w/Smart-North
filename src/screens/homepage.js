@@ -11,9 +11,10 @@ import {
   Dropdown }
   from 'react-native-material-dropdown';
 
-const Homepage = (props) => {
+const homepage = (props) => {
   return (
     <SafeAreaView>
+<<<<<<< HEAD
       <View >
         <>
           <View>
@@ -25,8 +26,22 @@ const Homepage = (props) => {
             />
           </View>
         </>
+=======
+      <View style={style.appPage}>
+>>>>>>> 4c220a1aca7c58256e0a19a7d3df00bf48d7639d
         <View>
-          <Button title="Login" />
+          <TextInput style={styles.textstuff} placeholder="Email" />
+          <TextInput
+            style={styles.textstuff}
+            placeholder="Password"
+            secureTextEntry={true}
+          />
+        </View>
+        <View>
+          <Button
+            onPress={() => props.navigation.navigate("Login")}
+            title="Login"
+          />
           <Button
             onPress={() => props.navigation.navigate("Registration")}
             title="Sign Up"
@@ -50,4 +65,4 @@ const styles = StyleSheet.create({
   },
   
 });
-export default Homepage;
+export default homepage;

@@ -11,7 +11,7 @@ import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
-export default function Registration() {
+export default function Registration(props) {
   const [value, setValue] = React.useState({
     userName: "",
     email: "",
@@ -20,13 +20,14 @@ export default function Registration() {
     error: "",
   });
 
-  const handleSignUp = (props) => {
+  const handleSignUp = () => {
+    console.log(value);
     createUserWithEmailAndPassword(auth, value.email, value.password)
       .then((userCredential) => {
         console.log("Account created");
         const user = userCredential.user;
         console.log(user);
-        props.navigation.navigate("homepage");
+        props.navigation.navigate("Login");
       })
       .catch((error) => {
         alert(error);
@@ -65,7 +66,11 @@ export default function Registration() {
           onChangeText={(text) => handleOnChange(text, "password")}
         />
         <View>
-          <Button onPress={handleSignUp} title="Sign Up" />
+          <Button
+            style={styles.button}
+            onPress={handleSignUp}
+            title="Sign Up"
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -85,5 +90,9 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
     color: "black",
+  },
+  button: {
+    borderWidth: 0.5,
+    borderRadius: 20,
   },
 });
