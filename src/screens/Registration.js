@@ -6,12 +6,17 @@ import {
   SafeAreaView,
   ScrollView,
   Button,
+  data,
+  styles,
 } from "react-native";
+import {
+  Dropdown }
+  from 'react-native-material-dropdown';
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
-export default function Registration(props) {
+export default function Registration() {
   const [value, setValue] = React.useState({
     userName: "",
     email: "",
@@ -20,14 +25,13 @@ export default function Registration(props) {
     error: "",
   });
 
-  const handleSignUp = () => {
-    console.log(value);
+  const handleSignUp = (props) => {
     createUserWithEmailAndPassword(auth, value.email, value.password)
       .then((userCredential) => {
         console.log("Account created");
         const user = userCredential.user;
         console.log(user);
-        props.navigation.navigate("Login");
+        props.navigation.navigate("homepage");
       })
       .catch((error) => {
         alert(error);
@@ -52,12 +56,23 @@ export default function Registration(props) {
           placeholder="FirstName LastName"
           onChangeText={(text) => handleOnChange(text, "userName")}
         />
-        <Input
-          label="Phone Number"
-          iconName="mobile-alt"
-          placeholder="Phone Number"
-          onChangeText={() => handleOnChange(text, "phone")}
-        />
+       
+          
+             
+              {this.props.menuItem}
+              onChangeText={
+                (value) => {
+                  this.setValue({
+                    selectedValue: 'she/her',
+                    selectedValue: 'he/him',
+                    selectedValue: 'they/them',
+                    selectedValue: 'other',
+                  });
+                   }
+              } 
+    containerStyle={
+              styles.dropdownStyle}
+
         <Input
           label="Password"
           iconName="key"
@@ -66,11 +81,7 @@ export default function Registration(props) {
           onChangeText={(text) => handleOnChange(text, "password")}
         />
         <View>
-          <Button
-            style={styles.button}
-            onPress={handleSignUp}
-            title="Sign Up"
-          />
+          <Button onPress={handleSignUp} title="Sign Up" />
         </View>
       </ScrollView>
     </SafeAreaView>
