@@ -6,8 +6,6 @@ import {
   SafeAreaView,
   ScrollView,
   Button,
-  data,
-  styles,
 } from "react-native";
 import {
   Dropdown }
@@ -70,8 +68,7 @@ export default function Registration() {
                   });
                    }
               } 
-    containerStyle={
-              styles.dropdownStyle}
+    style={styles.dropdownStyle}
 
         <Input
           label="Password"
