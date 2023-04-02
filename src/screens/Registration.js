@@ -7,7 +7,7 @@ import {
   ScrollView,
   Button,
   data,
-  Styles,
+  style,
 } from "react-native";
 import {
   Dropdown }
