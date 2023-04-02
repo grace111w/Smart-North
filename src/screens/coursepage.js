@@ -34,8 +34,8 @@ export default function coursepage() {
               source={{uri: 'app_icon'}}
               style={{width: 40, height: 40}}
           />
-          <Text
-              style={textDecorationColor= '#FFFF', TextStyle= 
+          < Text
+              style={textDecorationColor= '#FFFF' }
            />
           </View>
       </SafeAreaView>

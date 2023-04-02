@@ -13,10 +13,8 @@ import {
 
 const homepage = (props) => {
   return (
-    <SafeAreaView>
-<<<<<<< HEAD
-      <View >
-        <>
+    < SafeAreaView>
+      <>
           <View>
             <TextInput style={styles.textstuff} placeholder="Email" />
             <TextInput
@@ -26,9 +24,7 @@ const homepage = (props) => {
             />
           </View>
         </>
-=======
-      <View style={style.appPage}>
->>>>>>> 4c220a1aca7c58256e0a19a7d3df00bf48d7639d
+      <View style={style.appPage}/>
         <View>
           <TextInput style={styles.textstuff} placeholder="Email" />
           <TextInput
@@ -53,8 +49,7 @@ const homepage = (props) => {
             title="Next Page"
           />
         </View>
-      </View>
-    </SafeAreaView>
+      </SafeAreaView>
   );
 };
 const styles = StyleSheet.create({
