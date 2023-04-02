@@ -41,9 +41,9 @@ export default function Registration() {
     setValue((prevState) => ({ ...prevState, [value]: text }));
   };
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollContainer}>
-        <Text style={styles.textFitle}> Registration Form</Text>
+    <SafeAreaView style={style.container}>
+      <ScrollView style={style.scrollContainer}>
+        <Text style={style.textFitle}> Registration Form</Text>
         <Input
           label="Email address"
           iconName="envelope-square"
@@ -70,7 +70,7 @@ export default function Registration() {
                   });
                    }
               } 
-    style={styles.dropdownStyle}
+    style={style.dropdownStyle}
 
         <Input
           label="Password"
@@ -87,7 +87,7 @@ export default function Registration() {
   );
 };
 
-const styles = StyleSheet.create ({
+const style = StyleSheet.create ({
   container: {
   backgroundColor: "white",
   flex: 1,
