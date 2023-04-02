@@ -89,11 +89,8 @@ export default function Registration() {
   );
 }
 
-const styler = StyleSheet.create({
-  container: {
-    backgroundColor: "white",
-    flex: 1,
-  },
+const styles = StyleSheet.create({
+  
   scrollContainer: {
     padding: 45,
     paddingHorizontal: 20,
