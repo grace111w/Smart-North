@@ -88,7 +88,7 @@ export default function Registration() {
   );
 }
 
-const Styles = StyleSheet.create({
+const Styles = StyleSheets.create({
   container: {
   backgroundColor: "white",
   flex: 1,
