@@ -7,7 +7,7 @@ import {
   ScrollView,
   Button,
   data,
-  style,
+  styles,
 } from "react-native";
 import {
   Dropdown }
@@ -88,7 +88,7 @@ export default function Registration() {
   );
 }
 
-const style = StyleSheets.create ({
+const styles = StyleSheet.create ({
   container: {
   backgroundColor: "white",
   flex: 1,
@@ -105,5 +105,5 @@ const style = StyleSheets.create ({
   button: {
     borderWidth: 0.5,
     borderRadius: 20,
-  },
+  }
 });
