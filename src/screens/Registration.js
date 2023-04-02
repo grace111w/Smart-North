@@ -8,7 +8,7 @@ import {
   Button,
   data,
   styles,
-  style,
+  styler,
 } from "react-native";
 import {
   Dropdown }
@@ -89,7 +89,7 @@ export default function Registration() {
   );
 }
 
-const style = StyleSheet.create({
+const styler = StyleSheet.create({
   container: {
     backgroundColor: "white",
     flex: 1,
