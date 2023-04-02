@@ -6,6 +6,7 @@ import {
   SafeAreaView,
   ScrollView,
   Button,
+  style,
 } from "react-native";
 import {
   Dropdown }
