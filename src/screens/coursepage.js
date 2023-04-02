@@ -18,7 +18,7 @@ export default function coursepage() {
           <View style={flexDirection= 'row'}></View>
           <Button
             onPress={() => props.navigation.navigate("coursepage")}
-            title="Minneapolis"
+            title="Minneapoliss"
             style={styles.blueButton}
           />
           <Button
