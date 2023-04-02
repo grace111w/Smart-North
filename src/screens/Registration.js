@@ -7,7 +7,7 @@ import {
   SafeAreaView,
   ScrollView,
   Button,
-  style,
+  styler,
 } from "react-native";
 import {
   Dropdown }
@@ -41,9 +41,9 @@ export default function Registration() {
     setValue((prevState) => ({ ...prevState, [value]: text }));
   };
   return (
-    <SafeAreaView style={style.container}>
-      <ScrollView style={style.scrollContainer}>
-        <Text style={style.textFitle}> Registration Form</Text>
+    <SafeAreaView style={styler.container}>
+      <ScrollView style={styler.scrollContainer}>
+        <Text style={styler.textFitle}> Registration Form</Text>
         <Input
           label="Email address"
           iconName="envelope-square"
@@ -70,7 +70,7 @@ export default function Registration() {
                   });
                    }
               } 
-    style={style.dropdownStyle}
+    style={styler.dropdownStyle}
 
         <Input
           label="Password"
@@ -87,7 +87,7 @@ export default function Registration() {
   );
 };
 
-const style = StyleSheet.create ({
+const styler = StyleSheet.create ({
   container: {
   backgroundColor: "white",
   flex: 1,
