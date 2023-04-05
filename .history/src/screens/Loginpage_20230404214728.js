@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, StyleSheet, Button, ScrollView } from "react-native";
+import { View, Text, SafeAreaView, StyleSheet, Button } from "react-native";
 import React from "react";
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
@@ -11,7 +11,7 @@ const Loginpage = (props) => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredentials) => {
         const user = userCredentials.user;
-        setUser(user);
+        //setUser(user);
         console.log(user);
       })
       .catch((error) => alert(error.message));
@@ -35,31 +35,29 @@ const Loginpage = (props) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollContainer}>
-        <Text style={styles.textFitle}> Login Form</Text>
-        <Input
-          label="Email address"
-          iconName="envelope-square"
-          placeholder="Email"
-          onChangeText={(text) => setEmail(text)}
+      <Text style={styles.textFitle}> Login Form</Text>
+      <Input
+        label="Email address"
+        iconName="envelope-square"
+        placeholder="Email"
+        onChangeText={(text) => setEmail(text)}
+      />
+      <Input
+        label="Password"
+        iconName="key"
+        placeholder="Password"
+        password
+        onChangeText={(text) => setPassword(text)}
+      />
+      <View>
+        <Button onPress={handleLogin} title="Login" />
+      </View>
+      <View>
+        <Button
+          onPress={() => props.navigation.navigate("Registration")}
+          title="Sign Up"
         />
-        <Input
-          label="Password"
-          iconName="key"
-          placeholder="Password"
-          password
-          onChangeText={(text) => setPassword(text)}
-        />
-        <View>
-          <Button style={styles.button} onPress={handleLogin} title="Login" />
-        </View>
-        <View>
-          <Button style={styles.button}
-            onPress={() => props.navigation.navigate("Registration")}
-            title="Sign Up"
-          />
-        </View>
-      </ScrollView>
+      </View>
     </SafeAreaView>
   );
 };
@@ -80,7 +78,7 @@ const styles = StyleSheet.create({
   },
   button: {
     borderWidth: 0.5,
-    borderRadius: 100,
+    borderRadius: 20,
   },
 });
 

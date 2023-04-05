@@ -11,9 +11,7 @@ import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { addDoc, collection } from "firebase/firestore";
-import {
-  db
-} from "../../FireBaseconfig";
+
 export default function Registration(props) {
   const [value, setValue] = React.useState({
     userName: "",

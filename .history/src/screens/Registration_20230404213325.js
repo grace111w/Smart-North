@@ -30,7 +30,7 @@ export default function Registration(props) {
         console.log("Account created");
         const user = userCredential.user;
         console.log(user);
-        saveUserProfile();
+        //saveUserProfile();
         props.navigation.navigate("Login");
       })
       .catch((error) => {

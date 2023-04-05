@@ -24,8 +24,6 @@ const homepage = (props) => {
             onPress={() => props.navigation.navigate("Login")}
             title="Login"
           />
-        </View>
-        <View>
           <Button
             onPress={() => props.navigation.navigate("Registration")}
             title="Sign Up"
