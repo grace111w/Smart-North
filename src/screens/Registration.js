@@ -6,14 +6,14 @@ import {
   SafeAreaView,
   ScrollView,
   Button,
+  Image
 } from "react-native";
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { addDoc, collection } from "firebase/firestore";
-import {
-  db
-} from "../../FireBaseconfig";
+import { db } from "../../FireBaseconfig";
+import smart from "../img/smart_north.png";
 export default function Registration(props) {
   const [value, setValue] = React.useState({
     userName: "",
@@ -57,6 +57,7 @@ export default function Registration(props) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollContainer}>
+        <Image source={smart}></Image>
         <Text style={styles.textFitle}> Registration Form</Text>
         <Input
           label="Email address"

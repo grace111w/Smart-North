@@ -1,8 +1,9 @@
-import { View, Text, SafeAreaView, StyleSheet, Button, ScrollView } from "react-native";
+import { View, Text, SafeAreaView, StyleSheet, Button, ScrollView, Image } from "react-native";
 import React from "react";
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+import smart from "../img/smart_north.png";
 const Loginpage = (props) => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -36,6 +37,7 @@ const Loginpage = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollContainer}>
+        <Image source={smart}></Image>
         <Text style={styles.textFitle}> Login Form</Text>
         <Input
           label="Email address"
