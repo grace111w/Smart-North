@@ -5,7 +5,7 @@ import {
   StyleSheet,
   SafeAreaView,
   ScrollView,
-  Button,
+  Pressable,
   Image
 } from "react-native";
 import Input from "../component/Input";
@@ -85,11 +85,9 @@ export default function Registration(props) {
           onChangeText={(text) => handleOnChange(text, "password")}
         />
         <View>
-          <Button
-            style={styles.button}
-            onPress={handleSignUp}
-            title="Sign Up"
-          />
+          <Pressable style={styles.button} onPress={handleSignUp} >
+            <Text style={styles.textButton}>Register</Text>
+          </Pressable>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -110,8 +108,22 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "black",
   },
+
   button: {
     borderWidth: 0.5,
-    borderRadius: 20,
+    borderRadius: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 100,
+    elevation: 3,
+    backgroundColor: '#2196F3'
+  },
+  textButton: {
+    textAlign: "center",
+    fontSize: 16,
+    color: "white",
+    fontWeight: "bold",
   },
 });

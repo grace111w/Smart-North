@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, StyleSheet, Button, ScrollView, Image } from "react-native";
+import { View, Text, SafeAreaView, StyleSheet, Pressable, ScrollView, Image } from "react-native";
 import React from "react";
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
@@ -53,13 +53,14 @@ const Loginpage = (props) => {
           onChangeText={(text) => setPassword(text)}
         />
         <View>
-          <Button style={styles.button} onPress={handleLogin} title="Login" />
+          <Pressable style={styles.button} onPress={handleLogin} >
+            <Text style={styles.textButton}>Login</Text>
+          </Pressable>
         </View>
         <View>
-          <Button style={styles.button}
+          <Text style={styles.text}
             onPress={() => props.navigation.navigate("Registration")}
-            title="Sign Up"
-          />
+          > Don't have an account? Register</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -83,7 +84,26 @@ const styles = StyleSheet.create({
   button: {
     borderWidth: 0.5,
     borderRadius: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 100,
+    elevation: 3,
+    backgroundColor: '#2196F3'
   },
+  textButton: {
+    textAlign: "center",
+    fontSize: 16,
+    color: "white",
+    fontWeight: "bold",
+  },
+  text: {
+    textAlign: "center",
+    fontSize: 16,
+    color: "black",
+    fontWeight: "bold",
+  }
 });
 
 export default Loginpage;
