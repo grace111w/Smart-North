@@ -2,20 +2,15 @@ import React from "react";
 import {
   View,
   Text,
-  styles,
   StyleSheet,
   SafeAreaView,
   ScrollView,
   Pressable,
-  Image
+  Image,
 } from "react-native";
-import {
-  Dropdown }
-  from 'react-native-material-dropdown';
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../FireBaseconfig";
 import smart from "../img/smart_north.png";
@@ -28,7 +23,8 @@ export default function Registration(props) {
     error: "",
   });
 
-  const handleSignUp = (props) => {
+  const handleSignUp = () => {
+    console.log(value);
     createUserWithEmailAndPassword(auth, value.email, value.password)
       .then((userCredential) => {
         console.log("Account created");
@@ -47,14 +43,14 @@ export default function Registration(props) {
         age: 17,
         school: "wayzata",
         grade: 10,
-        phone: 5072061790
+        phone: 5072061790,
       });
 
       console.log("Document written with ID: ", docRef.id);
     } catch (e) {
       console.error("Error adding document: ", e);
     }
-  }
+  };
   const handleOnChange = (text, value) => {
     setValue((prevState) => ({ ...prevState, [value]: text }));
   };
@@ -70,27 +66,17 @@ export default function Registration(props) {
           onChangeText={(text) => handleOnChange(text, "email")}
         />
         <Input
-          label="Preferred Name"
+          label="Full Name"
           iconName="user"
           placeholder="FirstName LastName"
           onChangeText={(text) => handleOnChange(text, "userName")}
         />
-       
-          
-             
-              {this.props.menuItem}
-              onChangeText={
-                (value) => {
-                  this.setValue({
-                    selectedValue: 'she/her',
-                    selectedValue: 'he/him',
-                    selectedValue: 'they/them',
-                    selectedValue: 'other',
-                  });
-                   }
-              } 
-    style={styler.dropdownStyle}
-
+        <Input
+          label="Phone Number"
+          iconName="mobile-alt"
+          placeholder="Phone Number"
+          onChangeText={(text) => handleOnChange(text, "phone")}
+        />
         <Input
           label="Password"
           iconName="key"
@@ -99,19 +85,19 @@ export default function Registration(props) {
           onChangeText={(text) => handleOnChange(text, "password")}
         />
         <View>
-          <Pressable style={styles.button} onPress={handleSignUp} >
+          <Pressable style={styles.button} onPress={handleSignUp}>
             <Text style={styles.textButton}>Register</Text>
           </Pressable>
         </View>
       </ScrollView>
     </SafeAreaView>
   );
-};
+}
 
-const styler = StyleSheet.create ({
+const styles = StyleSheet.create({
   container: {
-  backgroundColor: "white",
-  flex: 1,
+    backgroundColor: "white",
+    flex: 1,
   },
   scrollContainer: {
     padding: 45,
@@ -126,13 +112,13 @@ const styler = StyleSheet.create ({
   button: {
     borderWidth: 0.5,
     borderRadius: 100,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     paddingVertical: 12,
     paddingHorizontal: 32,
     borderRadius: 100,
     elevation: 3,
-    backgroundColor: '#2196F3'
+    backgroundColor: "#2196F3",
   },
   textButton: {
     textAlign: "center",
