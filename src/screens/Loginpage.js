@@ -38,7 +38,6 @@ const Loginpage = (props) => {
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollContainer}>
         <Image source={smart}></Image>
-        <Text style={styles.textFitle}> Login Form</Text>
         <Input
           label="Email address"
           iconName="envelope-square"
@@ -58,9 +57,9 @@ const Loginpage = (props) => {
           </Pressable>
         </View>
         <View>
-          <Text style={styles.text}
-            onPress={() => props.navigation.navigate("Registration")}
-          > Don't have an account? Register</Text>
+          <Pressable style={styles.button} onPress={() => props.navigation.navigate("Registration")} >
+            <Text style={styles.textButton}>Sign Up</Text>
+          </Pressable>
         </View>
       </ScrollView>
     </SafeAreaView>
