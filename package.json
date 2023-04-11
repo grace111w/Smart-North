@@ -16,6 +16,7 @@
     "firebase": "^9.18.0",
     "react": "18.2.0",
     "react-native": "0.71.4",
+    "react-native-material-dropdown": "^0.11.1",
     "react-native-screens": "^3.20.0",
     "react-native-vector-icons": "^9.2.0"
   },

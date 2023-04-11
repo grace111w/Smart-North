@@ -1,15 +1,24 @@
 import React from "react";
 import { SafeAreaView } from "react-native";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, View, Button, Text, TextStyle } from "react-native";
+
+// export default function App(){
+//   return (
+//     <View style={styles.container}>
+//       <Text>Courses</Text>
+//     </View>
+//   );
+// }
 
 export default function coursepage() {
   return (
     <View style={styles.container}>
       <SafeAreaView>
         <View>
+          <View style={flexDirection= 'row'}></View>
           <Button
             onPress={() => props.navigation.navigate("coursepage")}
-            title="Minneapolis"
+            title="Minneapoliss"
             style={styles.blueButton}
           />
           <Button
@@ -18,6 +27,17 @@ export default function coursepage() {
             style={styles.orangeButton}
           />
         </View>
+        <View>
+          <View style={borderWidth= '10'}></View>
+          <View style={flexDirection= 'row'}></View>
+          <Image
+              source={{uri: 'app_icon'}}
+              style={{width: 40, height: 40}}
+          />
+          < Text
+              style={textDecorationColor= '#FFFF' }
+           />
+          </View>
       </SafeAreaView>
     </View>
   );

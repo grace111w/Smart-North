@@ -2,15 +2,20 @@ import React from "react";
 import {
   View,
   Text,
+  styles,
   StyleSheet,
   SafeAreaView,
   ScrollView,
   Pressable,
   Image
 } from "react-native";
+import {
+  Dropdown }
+  from 'react-native-material-dropdown';
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../FireBaseconfig";
 import smart from "../img/smart_north.png";
@@ -23,8 +28,7 @@ export default function Registration(props) {
     error: "",
   });
 
-  const handleSignUp = () => {
-    console.log(value);
+  const handleSignUp = (props) => {
     createUserWithEmailAndPassword(auth, value.email, value.password)
       .then((userCredential) => {
         console.log("Account created");
@@ -66,17 +70,27 @@ export default function Registration(props) {
           onChangeText={(text) => handleOnChange(text, "email")}
         />
         <Input
-          label="Full Name"
+          label="Preferred Name"
           iconName="user"
           placeholder="FirstName LastName"
           onChangeText={(text) => handleOnChange(text, "userName")}
         />
-        <Input
-          label="Phone Number"
-          iconName="mobile-alt"
-          placeholder="Phone Number"
-          onChangeText={(text) => handleOnChange(text, "phone")}
-        />
+       
+          
+             
+              {this.props.menuItem}
+              onChangeText={
+                (value) => {
+                  this.setValue({
+                    selectedValue: 'she/her',
+                    selectedValue: 'he/him',
+                    selectedValue: 'they/them',
+                    selectedValue: 'other',
+                  });
+                   }
+              } 
+    style={styler.dropdownStyle}
+
         <Input
           label="Password"
           iconName="key"
@@ -92,12 +106,12 @@ export default function Registration(props) {
       </ScrollView>
     </SafeAreaView>
   );
-}
+};
 
-const styles = StyleSheet.create({
+const styler = StyleSheet.create ({
   container: {
-    backgroundColor: "white",
-    flex: 1,
+  backgroundColor: "white",
+  flex: 1,
   },
   scrollContainer: {
     padding: 45,

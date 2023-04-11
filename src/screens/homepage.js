@@ -3,14 +3,28 @@ import {
   StyleSheet,
   View,
   TextInput,
+  style,
   Button,
   SafeAreaView,
 } from "react-native";
+import {
+  Dropdown }
+  from 'react-native-material-dropdown';
 
 const homepage = (props) => {
   return (
-    <SafeAreaView>
-      <View style={style.appPage}>
+    < SafeAreaView>
+      <>
+          <View>
+            <TextInput style={styles.textstuff} placeholder="Email" />
+            <TextInput
+              style={styles.textstuff}
+              placeholder="Password"
+              secureTextEntry={true}
+            />
+          </View>
+        </>
+      <View style={style.appPage}/>
         <View>
           <TextInput style={styles.textstuff} placeholder="Email" />
           <TextInput
@@ -37,8 +51,7 @@ const homepage = (props) => {
             title="Next Page"
           />
         </View>
-      </View>
-    </SafeAreaView>
+      </SafeAreaView>
   );
 };
 const styles = StyleSheet.create({
@@ -47,15 +60,6 @@ const styles = StyleSheet.create({
     borderColor: "gray",
     borderWidth: 2,
   },
-});
-
-const style = StyleSheet.create({
-  appPage: {
-    backgroundColor: "#c3dbfa",
-    marginBottom: 5,
-    marginTop: 5,
-    alignItems: "stretch",
-    justifyContent: "space-around",
-  },
+  
 });
 export default homepage;
