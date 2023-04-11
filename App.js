@@ -12,10 +12,14 @@ const MyStack = () => {
     <Stack.Navigator>
       <Stack.Screen name="Login" component={Loginpage} />
       <Stack.Screen name="Registration" component={Registration} />
-      <Stack.Screen name="Homepage" component={homepage} />
-      <Stack.Screen name="coursepage" component={coursepage} options={{
-        headerLeft: () => <></>,
-      }} />
+      {/* <Stack.Screen name="Homepage" component={homepage} /> */}
+      <Stack.Screen
+        name="coursepage"
+        component={coursepage}
+        options={{
+          headerLeft: () => <></>,
+        }}
+      />
     </Stack.Navigator>
   );
 };
