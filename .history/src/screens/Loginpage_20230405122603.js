@@ -1,9 +1,8 @@
-import { View, Text, SafeAreaView, StyleSheet, Pressable, ScrollView, Image } from "react-native";
+import { View, Text, SafeAreaView, StyleSheet, Button } from "react-native";
 import React from "react";
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
-import smart from "../img/smart_north.png";
 const Loginpage = (props) => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -36,33 +35,29 @@ const Loginpage = (props) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollContainer}>
-        <Image source={smart}></Image>
-        <Text style={styles.textFitle}> Login Form</Text>
-        <Input
-          label="Email address"
-          iconName="envelope-square"
-          placeholder="Email"
-          onChangeText={(text) => setEmail(text)}
+      <Text style={styles.textFitle}> Login Form</Text>
+      <Input
+        label="Email address"
+        iconName="envelope-square"
+        placeholder="Email"
+        onChangeText={(text) => setEmail(text)}
+      />
+      <Input
+        label="Password"
+        iconName="key"
+        placeholder="Password"
+        password
+        onChangeText={(text) => setPassword(text)}
+      />
+      <View>
+        <Button style={styles.button} onPress={handleLogin} title="Login" />
+      </View>
+      <View>
+        <Button style={styles.button}
+          onPress={() => props.navigation.navigate("Registration")}
+          title="Sign Up"
         />
-        <Input
-          label="Password"
-          iconName="key"
-          placeholder="Password"
-          password
-          onChangeText={(text) => setPassword(text)}
-        />
-        <View>
-          <Pressable style={styles.button} onPress={handleLogin} >
-            <Text style={styles.textButton}>Login</Text>
-          </Pressable>
-        </View>
-        <View>
-          <Text style={styles.text}
-            onPress={() => props.navigation.navigate("Registration")}
-          > Don't have an account? Register</Text>
-        </View>
-      </ScrollView>
+      </View>
     </SafeAreaView>
   );
 };
@@ -83,27 +78,8 @@ const styles = StyleSheet.create({
   },
   button: {
     borderWidth: 0.5,
-    borderRadius: 100,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 32,
-    borderRadius: 100,
-    elevation: 3,
-    backgroundColor: '#2196F3'
+    borderRadius: 20,
   },
-  textButton: {
-    textAlign: "center",
-    fontSize: 16,
-    color: "white",
-    fontWeight: "bold",
-  },
-  text: {
-    textAlign: "center",
-    fontSize: 16,
-    color: "black",
-    fontWeight: "bold",
-  }
 });
 
 export default Loginpage;
