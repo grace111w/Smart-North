@@ -61,6 +61,11 @@ const Loginpage = (props) => {
             <Text style={styles.textButton}>Sign Up</Text>
           </Pressable>
         </View>
+        <View>
+          <Pressable style={styles.button} onPress={() => props.navigation.navigate("coursepage")} >
+            <Text style={styles.textButton}>coursepage</Text>
+          </Pressable>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -87,7 +92,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: 12,
     paddingHorizontal: 32,
-    padding: 15,
     borderRadius: 100,
     elevation: 3,
     backgroundColor: '#2196F3'
