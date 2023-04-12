@@ -9,7 +9,7 @@ import { StyleSheet, Text, View, Button } from "react-native";
     return unsubscribe;
   }, []); */
 
-export default function () {
+export default function (props) {
   return (
     <View style={styles.container}>
       <SafeAreaView>
