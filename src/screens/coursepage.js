@@ -2,10 +2,6 @@ import React from "react";
 import { SafeAreaView } from "react-native";
 import { StyleSheet, Text, View, Button } from "react-native";
 
-/*  React.useEffect(() => {
-    const unsubscribe =  props.navigation.navigate("coursepagedeerriver");
-    });
-  }, []); */
 
 export default function (props) {
   return (
