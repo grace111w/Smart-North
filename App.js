@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import homepage from "./src/screens/homepage";
 import coursepage from "./src/screens/coursepage";
+import coursepagedeerriver from "./src/screens/coursepagedeerriver";
 import Registration from "./src/screens/Registration";
 import Loginpage from "./src/screens/Loginpage";
 const Stack = createNativeStackNavigator();
