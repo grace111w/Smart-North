@@ -19,6 +19,9 @@ export default function (props) {
             style={styles.orangeButton}
           />
         </View>
+        <View>
+          style= {}
+        </View>
       </SafeAreaView>
     </View>
   );
@@ -50,7 +53,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: '85%',
     height: '15%',
-    borderRadius
   },
   coursestext: {
     fontSize: '30',
@@ -59,4 +61,7 @@ const styles = StyleSheet.create({
     height: '15%',
     width: '100%'
   },
+  course: {
+    
+  }
 });
