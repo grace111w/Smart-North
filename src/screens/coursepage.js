@@ -19,7 +19,6 @@ export default function (props) {
             style={styles.orangeButton}
           />
         </View>
-        <View>style= {}</View>
       </SafeAreaView>
     </View>
   );
@@ -53,7 +52,6 @@ const styles = StyleSheet.create({
     height: "15%",
   },
   coursestext: {
-    fontSize: "30",
     fontWeight: "bold",
     textDecorationColor: "#475467",
     height: "15%",
