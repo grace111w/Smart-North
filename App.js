@@ -20,6 +20,13 @@ const MyStack = () => {
           headerLeft: () => <></>,
         }}
       />
+      <Stack.Screen
+        name="coursepagedeerriver"
+        component={coursepagedeerriver}
+        options={{
+          headerLeft: () => <></>,
+        }}
+      />
     </Stack.Navigator>
   );
 };
