@@ -49,7 +49,8 @@ const styles = StyleSheet.create({
     textDecorationColor: "#FFFFFF",
     alignItems: 'center',
     width: '85%',
-    height: '15%'
+    height: '15%',
+    borderRadius
   },
   coursestext: {
     fontSize: '30',
