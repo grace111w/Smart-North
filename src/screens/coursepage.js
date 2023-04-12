@@ -12,6 +12,7 @@ export default function (props) {
     <View style={styles.container}>
       <SafeAreaView>
         <View>
+          <Text style= {coursestext}>Minneapolis Courses</Text> 
           <Button
             onPress={() => props.navigation.navigate("coursepagedeerriver")}
             title="Deer River"
@@ -38,6 +39,7 @@ const styles = StyleSheet.create({
     textDecorationColor: "#FFFFFF",
     flexDirection: "row",
     justifyContent: "space-between",
+    borderRadius: '10',
   },
   orangeButton: {
     margin: 10,
@@ -45,9 +47,15 @@ const styles = StyleSheet.create({
     tintColor: "#F38120",
     padding: 10,
     textDecorationColor: "#FFFFFF",
+    alignItems: 'center',
+    width: '85%',
+    height: '15%'
   },
-  coursebuttonrow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
+  coursestext: {
+    fontSize: '30',
+    fontWeight: 'bold',
+    textDecorationColor: "#475467",
+    height: '15%',
+    width: '100%'
   },
 });
