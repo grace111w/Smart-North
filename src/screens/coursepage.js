@@ -2,8 +2,14 @@ import React from "react";
 import { SafeAreaView } from "react-native";
 import { StyleSheet, Text, View, Button } from "react-native";
 
+  /*  React.useEffect(() => {
+    const unsubscribe = onAuthStateChanged((user) => {
+      if (user) props.navigation.navigate("coursepagedeerriver");
+    });
+    return unsubscribe;
+  }, []); */
 
-export default function (props) {
+export default function () {
   return (
     <View style={styles.container}>
       <SafeAreaView>
