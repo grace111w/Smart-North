@@ -8,11 +8,6 @@ export default function coursepage() {
       <SafeAreaView>
         <View>
           <Button
-            onPress={() => props.navigation.navigate("coursepage")}
-            title="Minneapolis"
-            style={styles.blueButton}
-          />
-          <Button
             onPress={() => props.navigation.navigate("coursepagedeerriver")}
             title="Deer River"
             style={styles.orangeButton}
