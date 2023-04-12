@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Button } from "react-native";
 
 const coursepage = (props);
 
-export default function coursepage() {
+export default function () {
   return (
     <View style={styles.container}>
       <SafeAreaView>
