@@ -73,7 +73,7 @@ const Loginpage = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "white",
+    backgroundColor: "c3dbfa",
     flex: 1,
   },
   scrollContainer: {
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   textFitle: {
     fontSize: 30,
     fontWeight: "bold",
-    color: "black",
+    color: "475467",
   },
   button: {
     borderWidth: 0.5,
