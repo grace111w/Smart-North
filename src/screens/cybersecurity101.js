@@ -1,3 +1,10 @@
+import { View, Text } from "react-native";
 import React from "react";
-import { SafeAreaView } from "react-native";
-import { StyleSheet, View, Button, Text } from "react-native";
+
+export default function cybersecurity101() {
+  return (
+    <View>
+      <Text>cybersecurity101</Text>
+    </View>
+  );
+}
