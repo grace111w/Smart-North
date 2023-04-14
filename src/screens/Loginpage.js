@@ -73,8 +73,10 @@ const Loginpage = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "c3dbfa",
     flex: 1,
+    backgroundColor: "#C3DBFA",
+    alignItems: "center",
+    justifyContent: "center",
   },
   scrollContainer: {
     padding: 45,
