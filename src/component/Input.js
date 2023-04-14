@@ -13,7 +13,7 @@ const Input = ({ label, iconName, password, onfocus = () => {}, ...props }) => {
       <View
         style={[
           styles.input,
-          { borderColor: isFocused ? "darkblue" : "powderblue" },
+          { borderColor: isFocused ? "475467" : "a4c8ff" },
         ]}
       >
         <Icon name={iconName} style={styles.icon} />
@@ -42,10 +42,10 @@ const Input = ({ label, iconName, password, onfocus = () => {}, ...props }) => {
 const styles = StyleSheet.create({
   container: {
     marginBottom: 20,
-    backgroundColor: "white",
+    backgroundColor: "c3dbfa",
   },
   input: {
-    backgroundColor: "lightcyan",
+    backgroundColor: "a4c8ff",
     height: 55,
     flexDirection: "row",
     paddingHorizontal: 15,
@@ -55,17 +55,17 @@ const styles = StyleSheet.create({
   },
   icon: {
     fontSize: 25,
-    color: "darkblue",
+    color: "475467",
     //marginTop
   },
   textInput: {
-    color: "darkblue",
+    color: "475467",
     flex: 1,
     marginLeft: 10,
   },
   eyeIcon: {
     fontSize: 15,
-    color: "darkblue",
+    color: "475467",
   },
 });
 
