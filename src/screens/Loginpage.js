@@ -101,20 +101,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
     borderRadius: 100,
     elevation: 3,
-    backgroundColor: '#2196F3'
+    backgroundColor: '#68a4ff'
   },
   textButton: {
     textAlign: "center",
     fontSize: 16,
-    fontFamily: "Barlow",
     color: "475467",
     fontWeight: "bold",
   },
   text: {
     textAlign: "center",
-    fontSize: 16,
-    fontFamily: "Barlow",
-    color: "black",
+    fontSize: 16, 
+    color: "475467",
     fontWeight: "bold",
   }
 });
