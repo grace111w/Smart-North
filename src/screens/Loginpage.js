@@ -119,8 +119,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Loginpage
- function App() 
-  const [loaded] = useFonts({
-    Montserrat: require('./assets/fonts/Barlow.ttf'),
-  });
+export default Loginpage;
