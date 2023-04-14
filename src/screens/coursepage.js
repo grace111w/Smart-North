@@ -68,6 +68,10 @@ const styles = StyleSheet.create({
     width: "100%",
     fontSize: 30,
   },
+  row: {
+    width: "50%",
+    flex: 1
+  },
   course: {
     borderColor: "#A4C8FF",
     borderWidth: "10",
@@ -76,7 +80,7 @@ const styles = StyleSheet.create({
   },
   row: {
     width: "50%",
-    flex: 1,
+    flex: 1
   },
   courselabel: {
     fontSize: 25,
