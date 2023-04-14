@@ -6,7 +6,7 @@ import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import smart from "../img/smart_north.png";
 import { useFonts } from 'expo-font';
 
-export default function App() {
+import function App() {}
   const [loaded] = useFonts({
     Montserrat: require('./assets/fonts/Barolw.ttf'),
   });
