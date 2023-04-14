@@ -1,6 +1,7 @@
 import React from "react";
 import { SafeAreaView } from "react-native";
 import { StyleSheet, Text, View, Button } from "react-native";
+import cyber from "../img/cybersecurity.png";
 
 export default function (props) {
   return (
@@ -16,13 +17,11 @@ export default function (props) {
         </View>
 
        <View style={styles.course}>
+        <View style={styles.row}>
+        <Image source={cyber}></Image>
+        </View>
          <View style={styles.row}>
           <Text style={styles.courselabel}>Cyber Security 101</Text>
-          <Text style={styles.coursetext}>
-            Cybersecurity is essential for protecting internet-connected systems
-            and sensitive information from unauthorized access, damage or attack
-            due to the increasing frequency of cyber attacks.
-          </Text>
           <Button
             onPress={() => props.navigation.navigate("cybersecurity101")}
             title="Learn More"
