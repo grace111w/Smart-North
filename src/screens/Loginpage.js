@@ -1,9 +1,17 @@
-import { View, Text, SafeAreaView, StyleSheet, Pressable, ScrollView, Image } from "react-native";
+import { View, Text, SafeAreaView, StyleSheet, Pressable, App, ScrollView, Image } from "react-native";
 import React from "react";
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import smart from "../img/smart_north.png";
+import { useFonts } from 'expo-font';
+
+export default function App() {
+  const [loaded] = useFonts({
+    Montserrat: require('./assets/fonts/Barolw.ttf'),
+  });
+
+
 const Loginpage = (props) => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -101,13 +109,13 @@ const styles = StyleSheet.create({
   textButton: {
     textAlign: "center",
     fontSize: 16,
-    fontStyle: "barlow",
     color: "475467",
     fontWeight: "bold",
   },
   text: {
     textAlign: "center",
     fontSize: 16,
+    fontFamily: "Barlow",
     color: "black",
     fontWeight: "bold",
   }
