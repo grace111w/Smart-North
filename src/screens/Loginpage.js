@@ -48,6 +48,7 @@ const Loginpage = (props) => {
           placeholder="Email"
           onChangeText={(text) => setEmail(text)}
         />
+        <View/>
         <Input
           label="Password"
           iconName="key"
