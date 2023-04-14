@@ -92,6 +92,7 @@ const styles = StyleSheet.create({
   },
   textFitle: {
     fontSize: 30,
+    fontFamily: "Barlow",
     fontWeight: "bold",
     color: "475467",
   },
@@ -109,6 +110,7 @@ const styles = StyleSheet.create({
   textButton: {
     textAlign: "center",
     fontSize: 16,
+    fontFamily: "Barlow",
     color: "475467",
     fontWeight: "bold",
   },
