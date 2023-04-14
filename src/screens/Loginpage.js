@@ -101,7 +101,8 @@ const styles = StyleSheet.create({
   textButton: {
     textAlign: "center",
     fontSize: 16,
-    color: "white",
+    fontStyle: "barlow",
+    color: "475467",
     fontWeight: "bold",
   },
   text: {
