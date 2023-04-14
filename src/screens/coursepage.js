@@ -15,6 +15,24 @@ export default function (props) {
             style={styles.orangeButton}
           />
         </View>
+        <View>
+          style={styles.course}
+          flexDirection: 'row'
+          flex: 1
+          <View>
+            style={styles.row}
+          </View>
+          <View>
+            style={styles.row}
+            <Text style={styles.courselabel}>Cyber Security 101</Text>
+            <Text style={styles.coursetext}>Cybersecurity is essential for protecting internet-connected systems and sensitive information from unauthorized access, damage or attack due to the increasing frequency of cyber attacks.</Text>
+            <Button
+              onPress={() => props.navigation.navigate("cybersecurity101")}
+              title="Learn More"
+              style={styles.learnmore}
+              />
+          </View>
+        </View>
       </SafeAreaView>
     </View>
   );
@@ -52,6 +70,32 @@ const styles = StyleSheet.create({
     textDecorationColor: "#475467",
     height: "15%",
     width: "100%",
+    fontSize: 30
   },
-  course: {},
+  course: {
+    borderColor: "#A4C8FF",
+    borderWidth: "10",
+    borderRadius: "10",
+    backgroundColor: "#A4C8FF"
+  },
+  row: {
+    width: "50%",
+    flex: 1
+  },
+  courselabel: {
+    fontSize: 25,
+    textDecorationColor: '#475467'
+  },
+  coursetext: {
+    fontSize: 15,
+    textDecorationColor: '#68A4FF'
+  },
+  learnmore: {
+    margin: 10,
+    borderWidth: 2,
+    tintColor: "#475467",
+    padding: 10,
+    textDecorationColor: "#A4C8FF",
+    alignItems: "center",
+  }
 });
