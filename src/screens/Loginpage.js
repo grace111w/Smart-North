@@ -99,9 +99,7 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 32,
-    padding: 45,
+    padding: 450,
     borderRadius: 100,
     elevation: 3,
     backgroundColor: '#68a4ff'
