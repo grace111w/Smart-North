@@ -15,7 +15,8 @@ export default function (props) {
           />
         </View>
 
-        <View style={styles.row}>
+       <View style={styles.course}>
+         <View style={styles.row}>
           <Text style={styles.courselabel}>Cyber Security 101</Text>
           <Text style={styles.coursetext}>
             Cybersecurity is essential for protecting internet-connected systems
@@ -27,6 +28,7 @@ export default function (props) {
             title="Learn More"
             style={styles.learnmore}
           />
+        </View>
         </View>
       </SafeAreaView>
     </View>
