@@ -6,10 +6,6 @@ import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import smart from "../img/smart_north.png";
 import { useFonts } from 'expo-font';
 
-import function App() {}
-  const [loaded] = useFonts({
-    Montserrat: require('./assets/fonts/Barolw.ttf'),
-  });
 
 
 const Loginpage = (props) => {
@@ -123,4 +119,8 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Loginpage;
+export default Loginpage
+ function App() 
+  const [loaded] = useFonts({
+    Montserrat: require('./assets/fonts/Barlow.ttf'),
+  });
