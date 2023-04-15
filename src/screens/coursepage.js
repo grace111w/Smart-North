@@ -6,7 +6,7 @@ import cyber from "../img/cybersecurity.png";
 export default function (props) {
   return (
     <View styles= {styles.container}>
-      <SafeAreaView>
+      <SafeAreaView style={styles.row}>
         <Text style={styles.coursestext}>Minneapolis Courses</Text>
         <View >
         <Pressable style={styles.orangeButton}
@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
   },
   coursestext: {
     fontWeight: "bold",
-    alignItems: "center",
     fontSize: 30,
   },
   row: {
