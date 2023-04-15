@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C3DBFA",
-    alignItems: "center",
-    justifyContent: "center"
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   blueButton: {
     margin: 10,
