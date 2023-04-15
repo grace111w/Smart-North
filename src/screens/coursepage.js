@@ -8,7 +8,7 @@ export default function (props) {
     <View style={styles.container}>
       <SafeAreaView>
         <Text style={styles.coursestext}>Minneapolis Courses</Text>
-        <View>
+        <View style={styles.space}>
         <Pressable style={styles.orangeButton}
          onPress={() => props.navigation.navigate("coursepagedeerriver")} >
           <Text style={styles.whitetext}>Deer River</Text>
@@ -16,7 +16,7 @@ export default function (props) {
         </View>
 
        <View style={styles.course}>
-        <View style={styles.row}>
+        <View style={styles.space}>
         <Image source={cyber}></Image>
         </View>
 
@@ -63,6 +63,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5A449'
   },
+  space: {
+    padding: 50,
+  },
   coursestext: {
     fontWeight: "bold",
     flex: 1,
@@ -71,6 +74,7 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   row: {
+    width: 50,
     flex: 1
   },
   course: {
