@@ -69,7 +69,6 @@ const styles = StyleSheet.create({
     flex: 1,
     textDecorationColor: "#475467",
     fontSize: 30,
-    justifyContent: "center"
   },
   row: {
     width: 50,
