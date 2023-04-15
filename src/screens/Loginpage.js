@@ -57,7 +57,7 @@ const Loginpage = (props) => {
           password
           onChangeText={(text) => setPassword(text)}
         />
-        <View >
+        <View style={styles.scrollContainer}>
           <Pressable style={styles.button} onPress={handleLogin} >
             <Text style={styles.textButton}>Login</Text>
           </Pressable>
