@@ -57,6 +57,7 @@ export default function Registration(props) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollContainer}>
+        <View>
         <Image source={smart}></Image>
         <Text style={styles.textFitle}> Registration Form</Text>
         <Input
@@ -117,6 +118,7 @@ export default function Registration(props) {
           <Pressable style={styles.button} onPress={handleSignUp}>
             <Text style={styles.textButton}>Register</Text>
           </Pressable>
+        </View>
         </View>
       </ScrollView>
     </SafeAreaView>
