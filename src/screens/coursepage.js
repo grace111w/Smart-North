@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
   },
   coursestext: {
     fontWeight: "bold",
+    flex: 1,
     textDecorationColor: "#475467",
     height: "15%",
     width: "100%",

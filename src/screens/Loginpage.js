@@ -42,14 +42,14 @@ const Loginpage = (props) => {
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollContainer}>
         <Image source={smart}></Image>
-        <View/>
+        <View />
         <Input
           label="Email address"
           iconName="envelope-square"
           placeholder="Email"
           onChangeText={(text) => setEmail(text)}
         />
-        <View/>
+        <View />
         <Input
           label="Password"
           iconName="key"
@@ -57,12 +57,12 @@ const Loginpage = (props) => {
           password
           onChangeText={(text) => setPassword(text)}
         />
-        <View>
+        <View style={styles.scrollContainer}>
           <Pressable style={styles.button} onPress={handleLogin} >
             <Text style={styles.textButton}>Login</Text>
           </Pressable>
         </View>
-        <View>
+        <View style={styles.scrollContainer}>
           <Pressable style={styles.button} onPress={() => props.navigation.navigate("Registration")} >
             <Text style={styles.textButton}>Sign Up</Text>
           </Pressable>
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   scrollContainer: {
-    padding: 45,
+    padding: 20,
     paddingHorizontal: 20,
   },
   textFitle: {
@@ -98,11 +98,10 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderRadius: 100,
     alignItems: 'center',
+    paddingVertical: 22,
+    paddingHorizontal: 5, 
     justifyContent: 'center',
-    paddingVertical: 15,
-    paddingHorizontal: 2,
     borderRadius: 100,
-    elevation: 3,
     backgroundColor: '#68a4ff'
   },
   textButton: {
@@ -113,7 +112,7 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: "center",
-    fontSize: 16, 
+    fontSize: 16,
     color: "475467",
     fontWeight: "bold",
   }
