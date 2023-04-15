@@ -80,7 +80,7 @@ const Loginpage = (props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#C3DBFA",
+    backgroundColor: '#C3DBFA',
     alignItems: "center",
     justifyContent: "center",
   },
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontFamily: "Barlow",
     fontWeight: "bold",
-    color: "475467",
+    color: '#475467',
   },
   button: {
     borderWidth: 0.5,
@@ -107,13 +107,13 @@ const styles = StyleSheet.create({
   textButton: {
     textAlign: "center",
     fontSize: 16,
-    color: "475467",
+    color: '#475467',
     fontWeight: "bold",
   },
   text: {
     textAlign: "center",
     fontSize: 16,
-    color: "475467",
+    color: '#475467',
     fontWeight: "bold",
   }
 });

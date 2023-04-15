@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
   textFitle: {
     fontSize: 45,
     fontWeight: "bold",
-    color: "#475467",
+    color: '#475467',
   },
 
   button: {
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
     borderRadius: 100,
     elevation: 3,
-    backgroundColor: "#f38120",
+    backgroundColor: '#f38120',
   },
   textButton: {
     textAlign: "center",
