@@ -116,12 +116,7 @@ export default function Registration(props) {
           <Pressable style={styles.button} onPress={handleSignUp}>
             <Text style={styles.textButton}>Register</Text>
           </Pressable>
-          <Input
-          label="Primary Tech Hub"
-          iconName=""
-          placeholder="Minneapolis/Deer River"
-          onChangeText={(text) => handleOnChange(text, "phone")}
-        />
+          <View/>
       </ScrollView>
     </SafeAreaView>
   );
