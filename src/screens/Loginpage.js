@@ -62,7 +62,7 @@ const Loginpage = (props) => {
             <Text style={styles.textButton}>Login</Text>
           </Pressable>
         </View>
-        <View>
+        <View style={styles.scrollContainer}>
           <Pressable style={styles.button} onPress={() => props.navigation.navigate("Registration")} >
             <Text style={styles.textButton}>Sign Up</Text>
           </Pressable>
