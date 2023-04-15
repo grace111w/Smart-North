@@ -5,7 +5,7 @@ import cyber from "../img/cybersecurity.png";
 
 export default function (props) {
   return (
-    <View >
+    <View styles= {styles.container}>
       <SafeAreaView>
         <Text >Minneapolis Courses</Text>
         <View >
