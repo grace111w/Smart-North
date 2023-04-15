@@ -60,16 +60,21 @@ export default function Registration(props) {
         <Image source={smart}></Image>
         <Text style={styles.textFitle}> Registration Form</Text>
         <Input
-          label="Email address"
-          iconName="envelope-square"
-          placeholder="Email"
-          onChangeText={(text) => handleOnChange(text, "email")}
-        />
-        <Input
           label="Full Name"
           iconName="user"
           placeholder="FirstName LastName"
           onChangeText={(text) => handleOnChange(text, "userName")}
+        />
+         <Input
+          label="Pronouns"
+          placeholder="Pronouns"
+          onChangeText={(text) => handleOnChange(text, "Pronouns")}
+        />
+        <Input
+          label="Email address"
+          iconName="envelope-square"
+          placeholder="Email"
+          onChangeText={(text) => handleOnChange(text, "email")}
         />
         <Input
           label="Phone Number"
