@@ -5,27 +5,27 @@ import cyber from "../img/cybersecurity.png";
 
 export default function (props) {
   return (
-    <View styles= {styles.container}>
+    <View>
       <SafeAreaView>
-            <Text style={styles.coursestext}>Minneapolis Courses</Text>
+            <Text >Minneapolis Courses</Text>
         <View>
-       <Pressable style={styles.orangeButton}
+       <Pressable 
          onPress={() => props.navigation.navigate("coursepagedeerriver")} >
-          <Text style={styles.whitetext}>Deer River</Text>
+          <Text >Deer River</Text>
         </Pressable>
         </View>
 
-       <View style={styles.course}>
-        <View style={styles.space}>
-        <Image source={cyber}></Image>
+       <View>
+        <View >
+        <Image ></Image>
         </View>
 
-         <View style={styles.row}>
-          <Text style={styles.courselabel}>Cyber Security 101</Text>
+         <View>
+          <Text >Cyber Security 101</Text>
           <Button
             onPress={() => props.navigation.navigate("cybersecurity101")}
             title="Learn More"
-            style={styles.learnmore}
+           
           />
         </View>
         </View>
