@@ -57,8 +57,8 @@ const Loginpage = (props) => {
           password
           onChangeText={(text) => setPassword(text)}
         />
-        <View>
-          <Pressable style={styles.button} onPress={handleLogin} >
+        <View style={styles.button}>
+          <Pressable  onPress={handleLogin} >
             <Text style={styles.textButton}>Login</Text>
           </Pressable>
         </View>
