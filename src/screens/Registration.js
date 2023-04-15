@@ -96,9 +96,21 @@ export default function Registration(props) {
           onChangeText={(text) => handleOnChange(text, "birthday")}
         />
          <Input
-          label="Grade"
-          iconName="mobile-alt"
-          placeholder="Phone Number"
+          label="Grade Level"
+          iconName=""
+          placeholder="Grade Level"
+          onChangeText={(text) => handleOnChange(text, "grade")}
+        />
+         <Input
+          label="School"
+          iconName=""
+          placeholder="School"
+          onChangeText={(text) => handleOnChange(text, "school")}
+        />
+         <Input
+          label="Primary Tech Hub"
+          iconName=""
+          placeholder="Minneapolis/Deer River"
           onChangeText={(text) => handleOnChange(text, "phone")}
         />
         <View>
