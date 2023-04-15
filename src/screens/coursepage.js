@@ -7,8 +7,10 @@ export default function (props) {
   return (
     <View styles= {styles.container}>
       <SafeAreaView>
-          <Text style={styles.coursestext}>Minneapolis Courses</Text>
-        <View >
+          <View>
+            <Text style={styles.coursestext}>Minneapolis Courses</Text>
+          </View>
+          <View>
         <Pressable style={styles.orangeButton}
          onPress={() => props.navigation.navigate("coursepagedeerriver")} >
           <Text style={styles.whitetext}>Deer River</Text>
