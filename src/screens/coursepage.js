@@ -5,10 +5,10 @@ import cyber from "../img/cybersecurity.png";
 
 export default function (props) {
   return (
-    <View style={styles.container}>
+    <View >
       <SafeAreaView>
-        <Text style={styles.coursestext}>Minneapolis Courses</Text>
-        <View style={styles.space}>
+        <Text >Minneapolis Courses</Text>
+        <View >
         <Pressable style={styles.orangeButton}
          onPress={() => props.navigation.navigate("coursepagedeerriver")} >
           <Text style={styles.whitetext}>Deer River</Text>
