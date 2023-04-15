@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
   orangeButton: {
     borderWidth: 2,
     textDecorationColor: "#FFFFFF",
-    flexDirection: "row",
     justifyContent: "center",
     borderRadius: "50",
     alignItems: 'center',
