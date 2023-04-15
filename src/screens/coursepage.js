@@ -115,6 +115,6 @@ const styles = StyleSheet.create({
   },
   whitetext: {
     fontSize: 25,
-    textDecorationColor: "#FFFFFF",
+    color: "white",
   }
 });
