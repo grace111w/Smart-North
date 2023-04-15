@@ -85,7 +85,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   scrollContainer: {
-    padding: 45,
+    padding: 20,
+    paddingHorizontal: 20,
   },
   textFitle: {
     fontSize: 30,
