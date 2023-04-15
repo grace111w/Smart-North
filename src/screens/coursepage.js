@@ -7,7 +7,7 @@ export default function (props) {
   return (
     <View style={styles.container}>
       <SafeAreaView>
-            <Text >Minneapolis Courses</Text>
+            <Text style={styles.coursestext}>Minneapolis Courses</Text>
         <View>
        <Pressable 
          onPress={() => props.navigation.navigate("coursepagedeerriver")} >
