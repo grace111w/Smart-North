@@ -6,10 +6,8 @@ import cyber from "../img/cybersecurity.png";
 export default function (props) {
   return (
     <View styles= {styles.container}>
-      <SafeAreaView style= {styles.space}>
-          <View>
+      <SafeAreaView>
             <Text style={styles.coursestext}>Minneapolis Courses</Text>
-          </View>
         <View>
        <Pressable style={styles.orangeButton}
          onPress={() => props.navigation.navigate("coursepagedeerriver")} >
@@ -40,8 +38,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C3DBFA",
-    alignItems: 'center',
-    justifyContent: 'center'
   },
   blueButton: {
     margin: 10,
