@@ -9,10 +9,10 @@ export default function (props) {
       <SafeAreaView>
         <Text style={styles.coursestext}>Minneapolis Courses</Text>
         <View>
-          <Button  style={styles.orangeButton}
-            onPress={() => props.navigation.navigate("coursepagedeerriver")}
-            title="Deer River"
-          />
+        <Pressable style={styles.orangeButton}
+         onPress={() => props.navigation.navigate("coursepagedeerriver")} >
+          <Text style={styles.whitetext}>Deer River</Text>
+        </Pressable>
         </View>
 
        <View style={styles.course}>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     textDecorationColor: "#FFFFFF",
     flexDirection: "row",
     justifyContent: "space-between",
-    borderRadius: 50,
+    borderRadius: "50",
     alignItems: 'center',
     paddingVertical: 15,
     paddingHorizontal: 2,
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     textDecorationColor: "#FFFFFF",
     flexDirection: "row",
     justifyContent: "space-between",
-    borderRadius: 50,
+    borderRadius: "50",
     alignItems: 'center',
     paddingVertical: 15,
     paddingHorizontal: 2,
@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
     flex: 1,
     textDecorationColor: "#475467",
     fontSize: 30,
+    justifyContent: "center"
   },
   row: {
     width: "50%",
@@ -84,6 +85,10 @@ const styles = StyleSheet.create({
     borderWidth: "10",
     borderRadius: "10",
     backgroundColor: "#A4C8FF",
+    flex: 1
+  },
+  row: {
+    width: "50%",
     flex: 1
   },
   courselabel: {
@@ -108,4 +113,8 @@ const styles = StyleSheet.create({
     elevation: 3,
     backgroundColor: '#475467'
   },
+  whitetext: {
+    fontSize: 25,
+    textDecorationColor: "#FFFFFF",
+  }
 });
