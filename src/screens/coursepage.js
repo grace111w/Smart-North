@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   },
   coursestext: {
     fontWeight: "bold",
-    flex: 1,
+    justifyContent: "center",
     fontSize: 30,
   },
   row: {
