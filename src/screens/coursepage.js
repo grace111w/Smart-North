@@ -74,8 +74,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     flex: 1,
     textDecorationColor: "#475467",
-    height: "15%",
-    width: "100%",
     fontSize: 30,
   },
   row: {
@@ -104,9 +102,15 @@ const styles = StyleSheet.create({
   learnmore: {
     margin: 10,
     borderWidth: 2,
-    tintColor: "#475467",
     padding: 10,
-    textDecorationColor: "#A4C8FF",
-    alignItems: "center",
+    textDecorationColor: "#FFFFFF",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    borderRadius: "50",
+    alignItems: 'center',
+    paddingVertical: 15,
+    paddingHorizontal: 2,
+    elevation: 3,
+    backgroundColor: '#475467'
   },
 });
