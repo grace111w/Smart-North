@@ -57,18 +57,18 @@ const Loginpage = (props) => {
           password
           onChangeText={(text) => setPassword(text)}
         />
-        <View style={styles.button}>
-          <Pressable  onPress={handleLogin} >
+        <View >
+          <Pressable style={styles.button} onPress={handleLogin} >
             <Text style={styles.textButton}>Login</Text>
           </Pressable>
         </View>
         <View>
-          <Pressable  onPress={() => props.navigation.navigate("Registration")} >
+          <Pressable style={styles.button} onPress={() => props.navigation.navigate("Registration")} >
             <Text style={styles.textButton}>Sign Up</Text>
           </Pressable>
         </View>
         <View>
-          <Pressable onPress={() => props.navigation.navigate("coursepage")} >
+          <Pressable style={styles.button} onPress={() => props.navigation.navigate("coursepage")} >
             <Text style={styles.textButton}>coursepage</Text>
           </Pressable>
         </View>
@@ -98,7 +98,8 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderRadius: 100,
     alignItems: 'center',
-    padding: 45,
+    paddingVertical: 22,
+    paddingHorizontal: 5, 
     justifyContent: 'center',
     borderRadius: 100,
     backgroundColor: '#68a4ff'
