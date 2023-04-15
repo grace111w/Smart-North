@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#C3DBFA",
     alignItems: "center",
-    justifyContent: "center",
   },
   blueButton: {
     margin: 10,
