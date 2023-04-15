@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     textDecorationColor: "#FFFFFF",
     flexDirection: "row",
     justifyContent: "space-between",
-    borderRadius: "50",
+    borderRadius: 50,
     alignItems: 'center',
     paddingVertical: 15,
     paddingHorizontal: 2,
@@ -87,10 +87,6 @@ const styles = StyleSheet.create({
     borderWidth: "10",
     borderRadius: "10",
     backgroundColor: "#A4C8FF",
-    flex: 1
-  },
-  row: {
-    width: "50%",
     flex: 1
   },
   courselabel: {
