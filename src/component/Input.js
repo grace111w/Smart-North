@@ -42,10 +42,10 @@ const Input = ({ label, iconName, password, onfocus = () => {}, ...props }) => {
 const styles = StyleSheet.create({
   container: {
     marginBottom: 20,
-    backgroundColor: "c3dbfa",
+    backgroundColor: '#c3dbfa',
   },
   input: {
-    backgroundColor: "a4c8ff",
+    backgroundColor: '#a4c8ff',
     height: 55,
     flexDirection: "row",
     paddingHorizontal: 15,
@@ -55,17 +55,17 @@ const styles = StyleSheet.create({
   },
   icon: {
     fontSize: 25,
-    color: "475467",
+    color: '#475467',
     //marginTop
   },
   textInput: {
-    color: "475467",
+    color: '#475467',
     flex: 1,
     marginLeft: 10,
   },
   eyeIcon: {
     fontSize: 15,
-    color: "475467",
+    color: '#475467',
   },
 });
 
