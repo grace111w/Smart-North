@@ -9,9 +9,6 @@ import {
   Image,
 } from "react-native";
 import Input from "../component/Input";
-import {
-  Dropdown }
-  from 'react-native-material-dropdown'
 import { auth } from "../../FireBaseconfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { addDoc, collection } from "firebase/firestore";
@@ -71,7 +68,7 @@ export default function Registration(props) {
          <Input
           label="Pronouns"
           placeholder="Pronouns"
-          Dropdown={(text) => handleOnChange(text, "Pronouns")}
+          onChangeText={(text) => handleOnChange(text, "Pronouns")}
         />
         <Input
           label="Email address"
