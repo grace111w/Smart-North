@@ -1,6 +1,6 @@
 import React from "react";
 import { SafeAreaView } from "react-native";
-import { StyleSheet, Text, Image, View, Button } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 import cyber from "../img/cybersecurity.png";
 
 export default function (props) {
@@ -20,6 +20,7 @@ export default function (props) {
         <View style={styles.row}>
         <Image source={cyber}></Image>
         </View>
+
          <View style={styles.row}>
           <Text style={styles.courselabel}>Cyber Security 101</Text>
           <Button
@@ -78,6 +79,7 @@ const styles = StyleSheet.create({
     borderWidth: "10",
     borderRadius: "10",
     backgroundColor: "#A4C8FF",
+    flex: 1
   },
   row: {
     width: "50%",
