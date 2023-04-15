@@ -86,7 +86,6 @@ const styles = StyleSheet.create({
   },
   scrollContainer: {
     padding: 45,
-    paddingHorizontal: 20,
   },
   textFitle: {
     fontSize: 30,
