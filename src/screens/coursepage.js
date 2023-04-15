@@ -56,17 +56,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#475467'
   },
   orangeButton: {
-    margin: 10,
     borderWidth: 2,
-    padding: 10,
     textDecorationColor: "#FFFFFF",
     flexDirection: "row",
     justifyContent: "center",
     borderRadius: "50",
     alignItems: 'center',
-    paddingVertical: 15,
-    paddingHorizontal: 2,
-    elevation: 3,
     backgroundColor: '#F5A449'
   },
   coursestext: {
