@@ -38,6 +38,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C3DBFA",
+    alignItems: "center",
+    justifyContent: "center"
   },
   blueButton: {
     margin: 10,
@@ -68,7 +70,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 30,
     justifyContent: 'center',
-    flexDirection: 'row',
     flex: 1
   },
   row: {
