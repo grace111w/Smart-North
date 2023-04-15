@@ -77,17 +77,17 @@ export default function Registration(props) {
           onChangeText={(text) => handleOnChange(text, "email")}
         />
         <Input
-          label="Phone Number"
-          iconName="mobile-alt"
-          placeholder="Phone Number"
-          onChangeText={(text) => handleOnChange(text, "phone")}
-        />
-        <Input
           label="Password"
           iconName="key"
           password
           placeholder="password"
           onChangeText={(text) => handleOnChange(text, "password")}
+        />
+        <Input
+          label="Phone Number"
+          iconName="mobile-alt"
+          placeholder="Phone Number"
+          onChangeText={(text) => handleOnChange(text, "phone")}
         />
         <View>
           <Pressable style={styles.button} onPress={handleSignUp}>
