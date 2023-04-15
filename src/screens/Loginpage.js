@@ -42,14 +42,14 @@ const Loginpage = (props) => {
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollContainer}>
         <Image source={smart}></Image>
-        <View/>
+        <View />
         <Input
           label="Email address"
           iconName="envelope-square"
           placeholder="Email"
           onChangeText={(text) => setEmail(text)}
         />
-        <View/>
+        <View />
         <Input
           label="Password"
           iconName="key"
@@ -99,10 +99,9 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 15,
+    paddingVertical: 22,
     paddingHorizontal: 2,
     borderRadius: 100,
-    elevation: 3,
     backgroundColor: '#68a4ff'
   },
   textButton: {
@@ -113,7 +112,7 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: "center",
-    fontSize: 16, 
+    fontSize: 16,
     color: "475467",
     fontWeight: "bold",
   }
