@@ -114,11 +114,9 @@ export default function Registration(props) {
           placeholder="Minneapolis/Deer River"
           onChangeText={(text) => handleOnChange(text, "phone")}
         />
-        <View>
           <Pressable style={styles.button} onPress={handleSignUp}>
             <Text style={styles.textButton}>Register</Text>
           </Pressable>
-        </View>
         </View>
       </ScrollView>
     </SafeAreaView>
