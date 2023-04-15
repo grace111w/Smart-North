@@ -1,13 +1,13 @@
 import React from "react";
+import { SafeAreaView } from "react-native";
 import { StyleSheet, Pressable, Text, Image, View, Button } from "react-native";
 import cyber from "../img/cybersecurity.png";
 
 export default function (props) {
   return (
     <View styles= {styles.container}>
-        <View>
+      <SafeAreaView>
           <Text style={styles.coursestext}>Minneapolis Courses</Text>
-          </View>
         <View >
         <Pressable style={styles.orangeButton}
          onPress={() => props.navigation.navigate("coursepagedeerriver")} >
@@ -29,6 +29,7 @@ export default function (props) {
           />
         </View>
         </View>
+        </SafeAreaView>
     </View>
   );
 }
