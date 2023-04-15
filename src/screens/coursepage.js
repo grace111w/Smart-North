@@ -7,7 +7,7 @@ export default function (props) {
   return (
     <View styles= {styles.container}>
       <SafeAreaView>
-        <Text >Minneapolis Courses</Text>
+        <Text style={style.coursestext}>Minneapolis Courses</Text>
         <View >
         <Pressable style={styles.orangeButton}
          onPress={() => props.navigation.navigate("coursepagedeerriver")} >
@@ -67,7 +67,6 @@ const styles = StyleSheet.create({
   coursestext: {
     fontWeight: "bold",
     flex: 1,
-    textDecorationColor: "#475467",
     fontSize: 30,
   },
   row: {
