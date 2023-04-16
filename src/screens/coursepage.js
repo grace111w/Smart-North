@@ -101,13 +101,14 @@ const styles = StyleSheet.create({
   },
   coursetext: {
     fontSize: 15,
-    Color: "#68A4FF",
+    fountweight: "bold",
+    Color: "#475467",
   },
   learnmore: {
     borderWidth: 2,
     flex: 1,
     justifyContent: "center",
-    height: 25,
+    height: 35,
     width: 100,
     marginLeft: 150,
     borderRadius: "50",
