@@ -41,10 +41,7 @@ const Loginpage = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollContainer}>
-        <Image source={smart}>
-          flex: 1,
-          width: 20,
-          height: 20,
+        <Image style={styles.pic} source={smart}>
         </Image>
         <View />
         <Input
@@ -87,6 +84,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#C3DBFA',
     alignItems: "center",
     justifyContent: "center",
+  },
+  pic: {
+   flex: 1,
+   Width: 40,
+   Height: 40, 
   },
   scrollContainer: {
     padding: 20,
