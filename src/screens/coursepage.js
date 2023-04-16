@@ -22,7 +22,7 @@ export default function (props) {
 
          <View>
           <Text style={styles.coursetext}>Cyber Security 101</Text>
-          <Button
+          <Button style={styles.learnmore}
             onPress={() => props.navigation.navigate("cybersecurity101")}
             title="Learn More"
           
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     margin: 10,
     borderWidth: 2,
     padding: 10,
-    textDecorationColor: "#FFFFFF",
+    Color: "#FFFFFF",
     flexDirection: "row",
     justifyContent: "space-between",
     borderRadius: "50",
