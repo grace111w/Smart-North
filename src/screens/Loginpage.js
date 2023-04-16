@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
    flex: 1,
    width: 375,
    Height: null, 
-   resizeMode: 'contain',
+   
   },
   scrollContainer: {
     padding: 20,
