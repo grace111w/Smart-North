@@ -16,7 +16,7 @@ export default function (props) {
         </View>
 
        <View style={styles.course}>
-        <View >
+        <View style={styles.space}>
         <Image ></Image>
         </View>
 
