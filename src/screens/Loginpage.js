@@ -41,7 +41,11 @@ const Loginpage = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollContainer}>
-        <Image source={smart}></Image>
+        <Image source={smart}>
+          flex: 1,
+          width: 20,
+          height: 20,
+        </Image>
         <View />
         <Input
           label="Email address"
