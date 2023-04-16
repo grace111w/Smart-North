@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C3DBFA",
-    alignItems: 'center',
+  
     
   },  
   pic: {
