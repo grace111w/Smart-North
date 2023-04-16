@@ -16,7 +16,7 @@ export default function (props) {
         </View>
 
        <View style={styles.course}>
-        <View style={styles.space}>
+        <View>
         <Image source={cyber}></Image>
         </View>
 
@@ -40,12 +40,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#C3DBFA",
     alignItems: 'center',
     justifyContent: 'center'
-  },
-  pic:{
-    width: 20,
-    length: 20,
-    hight: 20,
-  },
+  },  
   blueButton: {
     margin: 10,
     borderWidth: 2,
