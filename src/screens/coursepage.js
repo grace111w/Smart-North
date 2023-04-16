@@ -95,7 +95,8 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: '#475467',
     justifyContent: 'center',
-    flex: 1
+    flex: 1,
+    marginBottom: 20
   },
   row: {
     width: 50,
