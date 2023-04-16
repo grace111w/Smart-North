@@ -11,7 +11,7 @@ export default function (props) {
         <View style={styles.space}>
        <Pressable style={styles.orangeButton}
          onPress={() => props.navigation.navigate("coursepagedeerriver")} >
-          <Text >Deer River</Text>
+          <Text style={styles.whitetext}>Deer River</Text>
         </Pressable>
         </View>
 
