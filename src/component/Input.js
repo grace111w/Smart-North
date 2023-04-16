@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     fontSize: 25,
-    color: '#475467',
+    color: '#c3dbfa',
     //marginTop
   },
   textInput: {

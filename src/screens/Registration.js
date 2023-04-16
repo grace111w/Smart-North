@@ -90,7 +90,7 @@ export default function Registration(props) {
         />
          <Input
           label="Date of Birth"
-          iconName="calender"
+          iconName=""
           placeholder="01/01/23"
           onChangeText={(text) => handleOnChange(text, "birthday")}
         />
