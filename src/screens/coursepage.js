@@ -103,6 +103,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fountweight: "bold",
     Color: "#475467",
+    marginBottom: 20,
   },
   learnmore: {
     borderWidth: 2,
