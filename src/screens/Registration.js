@@ -123,6 +123,7 @@ export default function Registration(props) {
           </Pressable>
           <View>
           <Text>  </Text>
+          <Text>  </Text>
           </View>
           <View/>
       </ScrollView>
