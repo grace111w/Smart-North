@@ -86,7 +86,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   pic: {
-   flex: 1,
    width: 375,
    Height: null, 
    resizeMode: 'contain',
