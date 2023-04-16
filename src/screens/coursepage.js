@@ -57,7 +57,6 @@ const styles = StyleSheet.create({
   },
   orangeButton: {
     borderWidth: 2,
-    textDecorationColor: "#FFFFFF",
     justifyContent: "center",
     borderRadius: "50",
     alignItems: 'center',
@@ -97,17 +96,11 @@ const styles = StyleSheet.create({
     Color: "#68A4FF",
   },
   learnmore: {
-    margin: 10,
     borderWidth: 2,
-    padding: 10,
-    Color: "#FFFFFF",
     flexDirection: "row",
     justifyContent: "space-between",
     borderRadius: "50",
     alignItems: 'center',
-    paddingVertical: 15,
-    paddingHorizontal: 2,
-    elevation: 3,
     backgroundColor: '#475467'
   },
   whitetext: {
