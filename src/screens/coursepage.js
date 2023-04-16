@@ -24,7 +24,7 @@ export default function (props) {
           <Text style={styles.coursetext}>Foundations of Metaverse Building</Text>
           <Pressable  style={styles.learnmore}
             onPress={() => props.navigation.navigate("cybersecurity101")}>
-            <Text style={styles.whitetext}>Learn More </Text>
+            <Text style={styles.whitetext2}>Learn More </Text>
            
             </Pressable>
         </View>
@@ -114,6 +114,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#68a4ff',
     alignItems: 'center',
    
+  },
+  whitetext2: {
+    fontSize: 15,
+    color: "white",
   },
   whitetext: {
     fontSize: 25,
