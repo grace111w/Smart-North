@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
   pic:{
     width: 20,
     length: 20,
+    hight: 20,
   },
   blueButton: {
     margin: 10,
