@@ -15,7 +15,7 @@ export default function (props) {
         </Pressable>
         </View>
 
-       <View>
+       <View style={styles.course}>
         <View >
         <Image ></Image>
         </View>
