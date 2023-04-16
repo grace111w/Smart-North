@@ -86,10 +86,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   pic: {
-   alignContent: "space-between",
+   flex: 1,
    width: 375,
    Height: null, 
-   resizeMode: 'contain',
+   resizeMode: 'center',
   },
   scrollContainer: {
     padding: 20,
