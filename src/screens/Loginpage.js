@@ -39,8 +39,8 @@ const Loginpage = (props) => {
   }, []);
 
   return (
-    <SafeAreaView >
-      <ScrollView style={styles.scrollContainer}>
+    <SafeAreaView style={styles.container}>
+      <ScrollView >
         <Image style={styles.pic} source={smart}>
         </Image>
         <View />
