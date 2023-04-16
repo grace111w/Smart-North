@@ -96,8 +96,6 @@ const styles = StyleSheet.create({
     color: '#475467',
     justifyContent: 'center',
     flex: 1,
-    marginTop: 10,
-    marginBottom: 10
   },
   row: {
     width: 50,
@@ -108,7 +106,9 @@ const styles = StyleSheet.create({
     borderWidth: "10",
     borderRadius: "10",
     backgroundColor: "#A4C8FF",
-    flex: 1
+    flex: 1,
+    marginTop: 10,
+    marginBottom: 10
   },
   row: {
     width: "50%",
