@@ -7,7 +7,9 @@ export default function (props) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
+        <View style={styles.con}>
             <Text style={styles.coursestext}>Cyber Security 101</Text>
+            </View>
             <View>
         <Image style={styles.pic} source={cyber}></Image>
         </View>
@@ -66,6 +68,8 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 10,
     marginBottom: 10,
+  },
+  con: {
     alignItems: 'center',
     justifyContent: 'center'
   },
