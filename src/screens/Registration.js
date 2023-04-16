@@ -121,7 +121,7 @@ export default function Registration(props) {
             <Text style={styles.textButton}>Register </Text>
           </Pressable>
           <View>
-          
+          <Text>   </Text>
           </View>
           <View/>
       </ScrollView>

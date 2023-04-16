@@ -1,7 +1,7 @@
 import React from "react";
 import { SafeAreaView, ScrollView } from "react-native";
 import { StyleSheet, Pressable, Text, Image, View, Button } from "react-native";
-import cyber from "../img/cybersecurity neewwwww.png";
+import cyber from "../img/metaverse.png";
 
 export default function (props) {
   return (
@@ -21,7 +21,7 @@ export default function (props) {
         </View>
 
          <View>
-          <Text style={styles.coursetext}>Cyber Security 101</Text>
+          <Text style={styles.coursetext}>Foundations of Metaverse Building</Text>
           <Button style={styles.learnmore}
             onPress={() => props.navigation.navigate("cybersecurity101")}
             title="Learn More"
