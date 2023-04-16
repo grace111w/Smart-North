@@ -1,7 +1,7 @@
 import React from "react";
 import { SafeAreaView, ScrollView } from "react-native";
 import { StyleSheet, Pressable, Text, Image, View, Button } from "react-native";
-import cyber from "../img/metaverse.png";
+import cyber from "../img/metaverse.jpg";
 
 export default function (props) {
   return (
