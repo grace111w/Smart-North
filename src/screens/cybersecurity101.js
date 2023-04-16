@@ -8,7 +8,7 @@ export default function (props) {
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <View style={styles.con}>
-            <Text style={styles.coursestext}>Cyber Security 101</Text>
+            <Text style={styles.coursestext}>Foundations of Metaverse Building</Text>
             </View>
             <View>
         <Image style={styles.pic} source={cyber}></Image>
