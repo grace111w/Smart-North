@@ -5,7 +5,7 @@ import cyber from "../img/metaverse-1024x614.jpg";
 
 export default function (props) {
   return (
-    <SafeAreaView >
+    <SafeAreaView style={styles.container}>
       <ScrollView>
             <Text style={styles.coursestext}>Cyber Security 101</Text>
             <View>
