@@ -29,6 +29,21 @@ export default function (props) {
             </Pressable>
         </View>
         </View>
+
+        <View style={styles.course}>
+        <View>
+        <Image style={styles.pic} source={cyber}></Image>
+        </View>
+
+         <View>
+          <Text style={styles.coursetext}>Foundations of Metaverse Building</Text>
+          <Pressable  style={styles.learnmore}
+            onPress={() => props.navigation.navigate("cybersecurity101")}>
+            <Text style={styles.whitetext2}>Learn More </Text>
+           
+            </Pressable>
+        </View>
+        </View>
         </ScrollView>
     </SafeAreaView>
   );
