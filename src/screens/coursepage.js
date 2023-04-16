@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     borderRadius: "50",
     alignItems: 'center',
-    marginLeft: 150,
+    paddingLeft: 150,
     backgroundColor: '#475467'
   },
   whitetext: {
