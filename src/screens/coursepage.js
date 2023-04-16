@@ -66,6 +66,8 @@ const styles = StyleSheet.create({
   orangeButton: {
     borderWidth: 2,
     justifyContent: "center",
+    marginTop: -50,
+    marginBottom: -50,
     borderRadius: "50",
     alignItems: 'center',
     backgroundColor: '#F5A449'
