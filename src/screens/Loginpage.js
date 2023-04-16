@@ -89,8 +89,8 @@ const styles = StyleSheet.create({
    width: 375,
    Height: null, 
    resizeMode: 'contain',
-   marginTop: -400,
-   marginBottom: -400,
+   marginTop: -450,
+   marginBottom: -450,
   },
   scrollContainer: {
     padding: 20,
