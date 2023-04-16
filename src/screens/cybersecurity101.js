@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#C3DBFA",
     alignItems: 'center',
-    justifyContent: 'center'
+    
   },  
   pic: {
     flex: 1,
@@ -31,8 +31,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     marginLeft: 20,
     marginTop: -200,
-    alignItems: 'baseline'
-   
+  
    },
   blueButton: {
     margin: 10,
