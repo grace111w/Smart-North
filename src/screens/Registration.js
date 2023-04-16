@@ -124,6 +124,7 @@ export default function Registration(props) {
           <View>
           <Text>  </Text>
           <Text>  </Text>
+          <Text>  </Text>
           </View>
           <View/>
       </ScrollView>
