@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
   },  
   pic: {
     flex: 1,
-    width: 100,
-    Height: null, 
+    width: 250,
+    Height: 100, 
    
    },
   blueButton: {
