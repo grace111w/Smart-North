@@ -105,11 +105,11 @@ const styles = StyleSheet.create({
   },
   learnmore: {
     borderWidth: 2,
-    flexDirection: "row",
     justifyContent: "space-between",
     borderRadius: "50",
-    paddingLeft: 150,
-    backgroundColor: '#475467'
+    backgroundColor: '#475467',
+    alignItems: 'center',
+   
   },
   whitetext: {
     fontSize: 25,
