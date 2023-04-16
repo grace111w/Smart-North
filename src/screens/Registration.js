@@ -121,7 +121,9 @@ export default function Registration(props) {
           <Pressable style={styles.button} onPress={handleSignUp}>
             <Text style={styles.textButton}>Register</Text>
           </Pressable>
+          <View>
           <Text>  </Text>
+          </View>
           <View/>
       </ScrollView>
     </SafeAreaView>
