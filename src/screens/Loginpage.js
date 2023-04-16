@@ -87,8 +87,8 @@ const styles = StyleSheet.create({
   },
   pic: {
    flex: 1,
-   width: null,
-   Height: null, 
+   width: 40,
+   Height: 20, 
    resizeMode: 'contain',
   },
   scrollContainer: {
