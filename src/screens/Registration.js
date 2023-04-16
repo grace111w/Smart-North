@@ -118,7 +118,7 @@ export default function Registration(props) {
           onChangeText={(text) => handleOnChange(text, "other")}
         />
           <Pressable style={styles.button} onPress={() => props.navigation.navigate("coursepage")} >
-            <Text> style={styles.textButton}Register </Text>
+            <Text style={styles.textButton}>Register </Text>
           </Pressable>
           <View>
           

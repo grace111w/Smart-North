@@ -21,7 +21,7 @@ export default function (props) {
         </View>
 
          <View>
-          <Text style={styles.coursetext}>Cyber Security 101</Text>/++
+          <Text style={styles.coursetext}>Cyber Security 101</Text>/
           <Button
             onPress={() => props.navigation.navigate("cybersecurity101")}
             title="Learn More"
