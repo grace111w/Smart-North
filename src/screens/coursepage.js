@@ -22,10 +22,10 @@ export default function (props) {
 
          <View>
           <Text style={styles.coursetext}>Foundations of Metaverse Building</Text>
-          <Button
+          <Pressable  style={styles.learnmore}
             onPress={() => props.navigation.navigate("cybersecurity101")}
             title="Learn More"
-            style={styles.learnmore}
+           
           />
         </View>
         </View>
