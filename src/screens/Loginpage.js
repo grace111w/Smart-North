@@ -86,6 +86,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   pic: {
+   alignContent: "space-between",
    width: 375,
    Height: null, 
    resizeMode: 'contain',
