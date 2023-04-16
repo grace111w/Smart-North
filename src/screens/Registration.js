@@ -57,8 +57,7 @@ export default function Registration(props) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollContainer}>
-        <Image source={smart}></Image>
-        <Text style={styles.textFitle}> Registration Form</Text>
+        <Text style={styles.textFitle}> Sign Up</Text>
         <Input
           label="Full Name"
           iconName="user"
@@ -96,16 +95,33 @@ export default function Registration(props) {
           onChangeText={(text) => handleOnChange(text, "birthday")}
         />
          <Input
-          label="Grade"
-          iconName="mobile-alt"
-          placeholder="Phone Number"
-          onChangeText={(text) => handleOnChange(text, "phone")}
+          label="Grade Level"
+          iconName=""
+          placeholder="Grade Level"
+          onChangeText={(text) => handleOnChange(text, "grade")}
         />
-        <View>
+         <Input
+          label="School"
+          iconName=""
+          placeholder="School"
+          onChangeText={(text) => handleOnChange(text, "school")}
+        />
+         <Input
+          label="Primary Tech Hub"
+          iconName=""
+          placeholder="Minneapolis / Deer River"
+          onChangeText={(text) => handleOnChange(text, "hub")}
+          />
+          <Input
+          label="Anything Else you would like us to know??"
+          iconName=""
+          placeholder="Type Here"
+          onChangeText={(text) => handleOnChange(text, "other")}
+        />
           <Pressable style={styles.button} onPress={handleSignUp}>
             <Text style={styles.textButton}>Register</Text>
           </Pressable>
-        </View>
+          <View/>
       </ScrollView>
     </SafeAreaView>
   );
@@ -113,7 +129,7 @@ export default function Registration(props) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "white",
+    backgroundColor: '#c3dbfa',
     flex: 1,
   },
   scrollContainer: {
@@ -121,9 +137,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   textFitle: {
-    fontSize: 30,
+    fontSize: 45,
     fontWeight: "bold",
-    color: "black",
+    color: '#475467',
   },
 
   button: {
@@ -135,7 +151,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
     borderRadius: 100,
     elevation: 3,
-    backgroundColor: "#2196F3",
+    backgroundColor: '#f38120',
   },
   textButton: {
     textAlign: "center",
