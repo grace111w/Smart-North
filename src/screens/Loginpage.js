@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, StyleSheet, Pressable, App, ScrollView, Image } from "react-native";
+import { View, Text, SafeAreaView, StyleSheet, Pressable, ScrollView, Image } from "react-native";
 import React from "react";
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";

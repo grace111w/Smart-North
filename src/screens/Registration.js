@@ -78,7 +78,6 @@ export default function Registration(props) {
         <Input
           label="Password"
           iconName="key"
-          password
           placeholder="password"
           onChangeText={(text) => handleOnChange(text, "password")}
         />
@@ -118,13 +117,11 @@ export default function Registration(props) {
           placeholder="Type Here"
           onChangeText={(text) => handleOnChange(text, "other")}
         />
-          <Pressable style={styles.button} onPress={handleSignUp}>
-            <Text style={styles.textButton}>Register</Text>
+          <Pressable style={styles.button} onPress={() => props.navigation.navigate("coursepage")} >
+            <Text> style={styles.textButton}Register </Text>
           </Pressable>
           <View>
-          <Text>  </Text>
-          <Text>  </Text>
-          <Text>  </Text>
+          
           </View>
           <View/>
       </ScrollView>
