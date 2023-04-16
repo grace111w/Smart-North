@@ -5,9 +5,9 @@ import cyber from "../img/cybersecurity neewwwww.png";
 
 export default function (props) {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView >
       <ScrollView>
-            <Text style={styles.coursestext}>Cyber Security 101</Text>
+            <Text>Cyber Security 101</Text>
             <Image></Image>
         </ScrollView>
     </SafeAreaView>

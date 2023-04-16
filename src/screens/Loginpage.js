@@ -3,7 +3,7 @@ import React from "react";
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
-import smart from "../img/smart_north.png";
+import smart from "../img/IMG_1272.jpg";
 import { useFonts } from 'expo-font';
 
 
