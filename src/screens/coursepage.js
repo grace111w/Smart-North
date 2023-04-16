@@ -30,7 +30,7 @@ export default function (props) {
         </View>
         </View>
         </SafeAreaView>
-    </View>
+    </ScrollView>
   );
 }
 
