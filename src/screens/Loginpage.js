@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   },
   pic: {
    flex: 1,
-   length: null,
+   width: null,
    Height: null, 
    resizeMode: 'contain',
   },
