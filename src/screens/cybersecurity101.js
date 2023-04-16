@@ -28,7 +28,9 @@ const styles = StyleSheet.create({
     flex: 1,
     width: 250,
     Height: 100, 
-    resizeMode: 'contain'
+    resizeMode: 'contain',
+    marginLeft: 20,
+    marginTop: -200,
    
    },
   blueButton: {
