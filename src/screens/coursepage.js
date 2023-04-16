@@ -1,7 +1,7 @@
 import React from "react";
 import { SafeAreaView } from "react-native";
 import { StyleSheet, Pressable, Text, Image, View, Button } from "react-native";
-import cyber from "../img/cybersecurity.png";
+import cyber from "../img/cybersecurityneewwwww.png";
 
 export default function (props) {
   return (
