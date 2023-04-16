@@ -5,8 +5,8 @@ import cyber from "../img/cybersecurity neewwwww.png";
 
 export default function (props) {
   return (
-    <ScrollView style={styles.container}>
-      <SafeAreaView>
+    <SafeAreaView style={styles.container}>
+      <ScrollView>
             <Text style={styles.coursestext}>Minneapolis Courses</Text>
         <View style={styles.space}>
        <Pressable style={styles.orangeButton}
@@ -29,8 +29,8 @@ export default function (props) {
           />
         </View>
         </View>
-        </SafeAreaView>
-    </ScrollView>
+        </ScrollView>
+    </SafeAreaView>
   );
 }
 
