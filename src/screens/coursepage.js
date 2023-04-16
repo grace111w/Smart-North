@@ -69,6 +69,7 @@ const styles = StyleSheet.create({
   coursestext: {
     fontWeight: "bold",
     fontSize: 30,
+    color: '#475467',
     justifyContent: 'center',
     flex: 1
   },
@@ -89,11 +90,11 @@ const styles = StyleSheet.create({
   },
   courselabel: {
     fontSize: 25,
-    textDecorationColor: "#475467",
+    Color: "#475467",
   },
   coursetext: {
     fontSize: 15,
-    textDecorationColor: "#68A4FF",
+    Color: "#68A4FF",
   },
   learnmore: {
     margin: 10,
