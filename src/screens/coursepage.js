@@ -23,10 +23,10 @@ export default function (props) {
          <View>
           <Text style={styles.coursetext}>Foundations of Metaverse Building</Text>
           <Pressable  style={styles.learnmore}
-            onPress={() => props.navigation.navigate("cybersecurity101")}
-            title="Learn More"
+            onPress={() => props.navigation.navigate("cybersecurity101")}>
+            <Text style={styles.whitetext}>Learn More </Text>
            
-          />
+            </Pressable>
         </View>
         </View>
         </ScrollView>
