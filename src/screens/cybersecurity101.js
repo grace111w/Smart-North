@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: 250,
     Height: 100, 
-    resizeMode: 'stretch'
+    resizeMode: 'contain'
    
    },
   blueButton: {
