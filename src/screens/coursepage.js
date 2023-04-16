@@ -96,6 +96,8 @@ const styles = StyleSheet.create({
     color: '#475467',
     justifyContent: 'center',
     flex: 1,
+    marginTop: 10,
+    marginBottom: 10
   },
   row: {
     width: 50,
