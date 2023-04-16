@@ -56,7 +56,7 @@ export default function Registration(props) {
   };
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollContainer}>
+      <ScrollView >
         <Text style={styles.textFitle}> Sign Up</Text>
         <Input
           label="Full Name"
