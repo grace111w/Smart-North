@@ -9,7 +9,7 @@ export default function (props) {
       <ScrollView>
             <Text style={styles.coursestext}>Cyber Security 101</Text>
             <View>
-        <Image  source={cyber}></Image>
+        <Image style={styles.pic} source={cyber}></Image>
         </View>
         </ScrollView>
     </SafeAreaView>
@@ -28,9 +28,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: 100,
     Height: null, 
-    resizeMode: '',
-    marginTop: -400,
-   marginBottom: -500,
+   
    },
   blueButton: {
     margin: 10,
