@@ -105,7 +105,10 @@ const styles = StyleSheet.create({
   },
   learnmore: {
     borderWidth: 2,
+    flex: 1,
     justifyContent: "center",
+    height: 5,
+    
     borderRadius: "50",
     backgroundColor: '#475467',
     alignItems: 'center',
