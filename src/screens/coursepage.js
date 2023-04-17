@@ -41,10 +41,24 @@ export default function (props) {
           <Pressable  style={styles.learnmore}
             onPress={() => props.navigation.navigate("cybersecurity101")}>
             <Text style={styles.whitetext2}>Learn More </Text>
+            </Pressable>
+          </View>
+
+            <View style={styles.course}>
+        <View>
+        <Image style={styles.pic} source={cybers}></Image>
+        </View>
+
+         <View>
+          <Text style={styles.coursetext}>Cybersecurity 101</Text>
+          <Pressable  style={styles.learnmore}
+            onPress={() => props.navigation.navigate("cybersecurity101")}>
+            <Text style={styles.whitetext2}>Learn More </Text>
            
             </Pressable>
         </View>
-        </View>
+       </View>
+       </View>
         </ScrollView>
     </SafeAreaView>
   );
