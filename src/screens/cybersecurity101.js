@@ -36,7 +36,7 @@ export default function (props) {
         <View style={styles.con}>
           <Text style={styles.subheading}>Information</Text>
         </View>
-        <View style={leftscreen}>
+        <View style={styles.leftscreen}>
           <Text style={styles.bluetext}> - 6 weeks</Text>
           <Text style={styles.bluetext}> - 2 hours</Text>
           <Text style={styles.bluetext}> - Ages 14+</Text>
