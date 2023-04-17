@@ -4,6 +4,7 @@ import { StyleSheet, Pressable, Text, Image, View, Button } from "react-native";
 import cyber from "../img/metaverse-1024x614.jpg";
 import cybers from "../img/cybersecurity.png";
 import cyberss from "../img/OIP.jpg";
+import cyberss from "../img/OIP (1).jpg";
 
 export default function (props) {
   return (
@@ -53,6 +54,21 @@ export default function (props) {
 
          <View>
           <Text style={styles.coursetext}>VR/AR Into to the Metaverse / World Making</Text>
+          <Pressable  style={styles.learnmore}
+            onPress={() => props.navigation.navigate("cybersecurity101")}>
+            <Text style={styles.whitetext2}>Learn More </Text>
+           
+            </Pressable>
+        </View>
+       </View>
+
+       <View style={styles.course}>
+        <View>
+        <Image style={styles.pic} source={cybersss}></Image>
+        </View>
+
+         <View>
+          <Text style={styles.coursetext}>Introduction to Sports Tech</Text>
           <Pressable  style={styles.learnmore}
             onPress={() => props.navigation.navigate("cybersecurity101")}>
             <Text style={styles.whitetext2}>Learn More </Text>
