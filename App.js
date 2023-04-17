@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import homepage from "./src/screens/homepage";
 import coursepage from "./src/screens/coursepage";
 import coursepagedeerriver from "./src/screens/coursepagedeerriver";
-import signupcyber from "./src/screens/signupcyber";
+import cybersign from "./src/screens/cybersign";
 import cybersecurity101 from "./src/screens/cybersecurity101";
 import Registration from "./src/screens/Registration";
 import Loginpage from "./src/screens/Loginpage";
@@ -38,8 +38,8 @@ const MyStack = () => {
         }}
       />
       <Stack.Screen
-        name="signupcyber"
-        component={signupcyber}
+        name="cybersign"
+        component={cybersign}
         options={{
           headerLeft: () => <></>,
         }}
