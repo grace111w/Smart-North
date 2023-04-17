@@ -84,7 +84,7 @@ export default function (props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#C3DBFA",
+    backgroundColor: "#f5a449",
     alignItems: 'center',
     justifyContent: 'center'
   },  
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     marginTop: -40,
     marginBottom: -50,
     alignItems: 'center',
-    backgroundColor: '#F5A449'
+    backgroundColor: '#68a4ff'
   },
   space: {
     padding: 50,
@@ -136,10 +136,10 @@ const styles = StyleSheet.create({
     flex: 1
   },
   course: {
-    borderColor: "#A4C8FF",
+    borderColor: '#f38120',
     borderWidth: "10",
     borderRadius: "10",
-    backgroundColor: "#A4C8FF",
+    backgroundColor: '#f38120',
     flex: 1,
     marginTop: 10,
     marginBottom: 10
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     marginLeft: 150,
     marginBottom: 10,
     borderRadius: "50",
-    backgroundColor: '#68a4ff',
+    backgroundColor: '#f38120',
     alignItems: 'center',
    
   },
