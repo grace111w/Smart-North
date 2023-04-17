@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     marginHorizontal: 30,
     marginTop: -200,
-    marginBottom: -50,
+    marginBottom: -100,
    },
   blueButton: {
     margin: 10,
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     color: '#475467',
     justifyContent: 'center',
     flex: 1,
-    marginTop: -100,
+    marginTop: 10,
     marginBottom: 10,
   },
   con: {
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fountweight: "bold",
     Color: "#475467",
-    marginBottom: 20,
+    marginVertical: 10,
   },
   learnmore: {
     borderWidth: 2,
@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
   bluetext: {
     fontSize: 15,
     color: '#68A4FF',
-    marginTop: -150,
+    marginVertical: 10,
   },
   bluetextbold: {
     fontSize: 15,
