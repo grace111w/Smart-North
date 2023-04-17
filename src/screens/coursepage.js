@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
   pic: {
     flex: 1,
     width: 100,
-    Height: null, 
+    height: null, 
     resizeMode: 'contain',
     marginTop: -390,
    marginBottom: -500,
