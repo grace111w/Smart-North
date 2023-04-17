@@ -78,7 +78,7 @@ export default function Registration(props) {
         <Input
           label="Password"
           iconName="key"
-          placeholder="password"
+          placeholder="Password"
           onChangeText={(text) => handleOnChange(text, "password")}
         />
         <Input
