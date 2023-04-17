@@ -24,7 +24,7 @@ export default function (props) {
            <Text style={styles.bluetextbold}>*15 spots available, 5 waitlist spots*</Text>
            <Text style={styles.subheading}>Information</Text>
         </View>
-        <
+        
         </ScrollView>
     </SafeAreaView>
   );
