@@ -90,6 +90,15 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
   },
+  subheading1: {
+    fontWeight: "bold",
+    fontSize: 20,
+    color: '#475467',
+    justifyContent: 'center',
+    flex: 1,
+    marginTop: -100,
+    marginBottom: 10,
+  },
   con: {
     alignItems: 'center',
     justifyContent: 'center'
