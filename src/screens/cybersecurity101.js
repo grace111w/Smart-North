@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     Height: 100, 
     resizeMode: 'contain',
     marginHorizontal: 30,
-    marginTop: -200,
     marginBottom: 10,
    },
   blueButton: {
