@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
   coursetext: {
     fontSize: 15,
     fountweight: "bold",
-    Color: "#475467",
+    Color: '#475467',
     marginBottom: 20,
   },
   learnmore: {
