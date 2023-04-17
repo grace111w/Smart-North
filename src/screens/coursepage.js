@@ -158,7 +158,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   learnmore: {
-    borderWidth: 2,
+    borderWidth: 1,
+    borderColor: '#475467',
     flex: 1,
     justifyContent: "center",
     height: 35,
