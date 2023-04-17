@@ -19,7 +19,7 @@ export default function (props) {
 
         <Pressable
         style={styles.orangeButton}
-        onPress={() => Text("Confirm")}>
+        onPress={() => props.navigation.navigate("cybersecurity101")}>
           <Text style={styles.whitetext}>Sign Up</Text>
         </Pressable>
 
