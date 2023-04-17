@@ -44,7 +44,7 @@ export default function (props) {
             </Pressable>
           </View>
 
-            <View style={styles.course}>
+       <View style={styles.course}>
         <View>
         <Image style={styles.pic} source={cybers}></Image>
         </View>
