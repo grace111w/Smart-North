@@ -2,7 +2,7 @@ import React from "react";
 import { SafeAreaView, ScrollView } from "react-native";
 import { StyleSheet, Pressable, Text, Input, View } from "react-native";
 
-export default function (props) {
+export default function () {
     return (
       <SafeAreaView style={styles.container}>
         <ScrollView>
