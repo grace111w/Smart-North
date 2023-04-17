@@ -68,7 +68,7 @@ export default function (props) {
         <View >   
         <Pressable
           style={styles.orangeButton}
-          onPress={() => props.navigation.navigate("signupcyber")}>
+          onPress={() => props.navigation.navigate("cybersign")}>
             <Text style={styles.whitetext}>Sign Up</Text>
           </Pressable>
         </View>
