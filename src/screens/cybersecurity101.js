@@ -36,6 +36,14 @@ export default function (props) {
         <View style={styles.con}>
           <Text style={styles.subheading}>Information</Text>
         </View>
+        <View style={leftscreen}>
+          <Text style={styles.bluetext}> - 6 weeks</Text>
+          <Text style={styles.bluetext}> - 2 hours</Text>
+          <Text style={styles.bluetext}> - Ages 14+</Text>
+          <Text style={styles.bluetext}> - 310 E 38th St, Rm 311, Minneapolis, MN 55409</Text>
+          <Text style={styles.bluetext}> - Every Tuesday @ 5 PM</Text>
+          <Text style={styles.bluetext}> - April 18th-May 23rd</Text>
+        </View>
         <View style={styles.con}>
         <Pressable
           style={styles.blueButton}
