@@ -1,6 +1,6 @@
 import React from "react";
 import { SafeAreaView, ScrollView } from "react-native";
-import { StyleSheet, Pressable, Text, Image, View, Button } from "react-native";
+import { StyleSheet, Pressable, Text, Image, View, Pressable } from "react-native";
 import cyber from "../img/metaverse-1024x614.jpg";
 
 export default function (props) {
@@ -24,7 +24,10 @@ export default function (props) {
            <Text style={styles.bluetextbold}>*15 spots available, 5 waitlist spots*</Text>
            <Text style={styles.subheading}>Information</Text>
         </View>
-        
+        <Pressable style={styles.blueButton}
+         onPress={() => props.navigation.navigate("coursepage")} >
+          <Text style={styles.whitetext}>Back</Text>
+        </Pressable>
         </ScrollView>
     </SafeAreaView>
   );
@@ -35,8 +38,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C3DBFA",
-  
-    
   },  
   pic: {
     flex: 1,
@@ -48,18 +49,12 @@ const styles = StyleSheet.create({
     marginBottom: -100,
    },
   blueButton: {
-    margin: 10,
-    borderWidth: 2,
-    padding: 10,
-    textDecorationColor: "#FFFFFF",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    borderRadius: "50",
-    alignItems: 'center',
-    paddingVertical: 15,
-    paddingHorizontal: 2,
-    elevation: 3,
-    backgroundColor: '#475467'
+      borderWidth: 2,
+      justifyContent: "center",
+      marginTop: -40,
+      marginBottom: -50,
+      alignItems: 'center',
+      backgroundColor: '#475467',
   },
   orangeButton: {
     borderWidth: 2,
@@ -150,11 +145,12 @@ const styles = StyleSheet.create({
   bluetextbold: {
     fontSize: 15,
     fontWeight: 'bold',
-    color: '#68A4FF'
+    color: '#68A4FF',
+    marginVertical: 10
   },
   leftscreen: {
     alignItems: 'flex-start',
     justifyContent: 'center',
-    marginLeft: 15
+    marginHorizontal: 15,
   }
 });
