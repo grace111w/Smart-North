@@ -42,7 +42,8 @@ export default function (props) {
             onPress={() => props.navigation.navigate("cybersecurity101")}>
             <Text style={styles.whitetext2}>Learn More </Text>
             </Pressable>
-          </View>
+        </View>
+        </View>
 
        <View style={styles.course}>
         <View>
@@ -57,7 +58,6 @@ export default function (props) {
            
             </Pressable>
         </View>
-       </View>
        </View>
         </ScrollView>
     </SafeAreaView>
