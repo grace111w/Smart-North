@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     marginHorizontal: 30,
     marginTop: -200,
-  
+    marginBottom: -50,
    },
   blueButton: {
     margin: 10,
@@ -82,15 +82,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   subheading: {
-    fontWeight: "bold",
-    fontSize: 20,
-    color: '#475467',
-    justifyContent: 'center',
-    flex: 1,
-    marginTop: 10,
-    marginBottom: 10,
-  },
-  subheading1: {
     fontWeight: "bold",
     fontSize: 20,
     color: '#475467',
@@ -154,7 +145,7 @@ const styles = StyleSheet.create({
   bluetext: {
     fontSize: 15,
     color: '#68A4FF',
-    marginTop: -100,
+    marginTop: -150,
   },
   bluetextbold: {
     fontSize: 15,
