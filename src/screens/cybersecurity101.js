@@ -71,12 +71,6 @@ export default function (props) {
           onPress={() => props.navigation.navigate("signupcyber")}>
             <Text style={styles.whitetext}>Sign Up</Text>
           </Pressable>
-
-        <Pressable
-          style={styles.blueButton}
-          onPress={() => props.navigation.navigate("coursepage")}>
-          <Text style={styles.whitetext}>Back</Text>
-        </Pressable>
         </View>
         <View>
           <Text> </Text>
