@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import homepage from "./src/screens/homepage";
 import coursepage from "./src/screens/coursepage";
 import coursepagedeerriver from "./src/screens/coursepagedeerriver";
-import signupcyber from "./scr/screens/signupcyber";
+import signupcyber from "./src/screens/signupcyber";
 import cybersecurity101 from "./src/screens/cybersecurity101";
 import Registration from "./src/screens/Registration";
 import Loginpage from "./src/screens/Loginpage";
