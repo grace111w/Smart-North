@@ -11,6 +11,9 @@ export default function (props) {
             <Text style={styles.coursestext}>Foundations of Metaverse Building</Text>
             <Image style={styles.pic} source={cyber}></Image>
         </View>
+        <View style={styles.con}>
+          <Text style={styles.subheading}>Description</Text>
+        </View>
         <View style={styles.leftscreen}>
            <Text style={styles.bluetext}>Engage within the world of virtual reality and gain access to this growing multi-billion dollar industry.
            With the rapid growth of platforms like Roblox, Minecraft, and Pokemon GO, the metaverse is well on its way to changing the way we socialize, 
@@ -19,8 +22,9 @@ export default function (props) {
         </View>
         <View style={styles.con}>
            <Text style={styles.bluetextbold}>*15 spots available, 5 waitlist spots*</Text>
+           <Text style={styles.subheading}>Information</Text>
         </View>
-
+        <
         </ScrollView>
     </SafeAreaView>
   );
@@ -39,7 +43,7 @@ const styles = StyleSheet.create({
     width: 250,
     Height: 100, 
     resizeMode: 'contain',
-    marginLeft: 100,
+    marginHorizontal: 30,
     marginTop: -200,
   
    },
@@ -71,6 +75,15 @@ const styles = StyleSheet.create({
   coursestext: {
     fontWeight: "bold",
     fontSize: 30,
+    color: '#475467',
+    justifyContent: 'center',
+    flex: 1,
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  subheading: {
+    fontWeight: "bold",
+    fontSize: 20,
     color: '#475467',
     justifyContent: 'center',
     flex: 1,
@@ -131,7 +144,8 @@ const styles = StyleSheet.create({
   },
   bluetext: {
     fontSize: 15,
-    color: '#68A4FF'
+    color: '#68A4FF',
+    marginTop: -100,
   },
   bluetextbold: {
     fontSize: 15,
