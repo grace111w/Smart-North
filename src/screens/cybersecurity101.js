@@ -43,7 +43,28 @@ export default function (props) {
           <Text style={styles.bluetext}> - 310 E 38th St, Rm 311, Minneapolis, MN 55409</Text>
           <Text style={styles.bluetext}> - Every Tuesday @ 5 PM</Text>
           <Text style={styles.bluetext}> - April 18th-May 23rd</Text>
+          <Text style={styles.bluetext}> - Food and beverages always provided</Text>
         </View>
+
+        <View style={styles.con}>
+          <Text style={styles.subheading}>Learning Objectives</Text>
+        </View>
+        <View style={styles.leftscreen}>
+          <Text style={styles.bluetext}> - Gain a better understanding of the industry</Text>
+          <Text style={styles.bluetext}> - Gain familiarity with ar/vr hardware</Text>
+          <Text style={styles.bluetext}> - Explore career paths</Text>
+          <Text style={styles.bluetext}> - Build own metaverse experience</Text>
+        </View>
+
+        <View style={styles.con}>
+          <Text style={styles.subheading}>Once Completed</Text>
+        </View>
+        <View style={styles.leftscreen}>
+        <Text style={styles.bluetext}> - Advance to Tier II: World Building</Text>
+        <Text style={styles.bluetext}> - GET PAID! Guaranteed $75</Text>
+        <Text style={styles.bluetext}> - Earn up to $150 as you advance through the tiers</Text>
+        </View>
+        
         <View style={styles.con}>
         <Pressable
           style={styles.blueButton}
