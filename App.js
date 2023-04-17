@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import homepage from "./src/screens/homepage";
 import coursepage from "./src/screens/coursepage";
 import coursepagedeerriver from "./src/screens/coursepagedeerriver";
+import signupcyber from "./scr/screens/signupcyber";
 import cybersecurity101 from "./src/screens/cybersecurity101";
 import Registration from "./src/screens/Registration";
 import Loginpage from "./src/screens/Loginpage";
@@ -32,6 +33,13 @@ const MyStack = () => {
        <Stack.Screen
         name="cybersecurity101"
         component={cybersecurity101}
+        options={{
+          headerLeft: () => <></>,
+        }}
+      />
+      <Stack.Screen
+        name="signupcyber"
+        component={signupcyber}
         options={{
           headerLeft: () => <></>,
         }}
