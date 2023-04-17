@@ -64,8 +64,14 @@ export default function (props) {
         <Text style={styles.bluetext}> - GET PAID! Guaranteed $75</Text>
         <Text style={styles.bluetext}> - Earn up to $150 as you advance through the tiers</Text>
         </View>
-        
+
         <View style={styles.con}>
+        <Pressable
+          style={styles.orangeButton}
+          onPress={() => props.navigation.navigate("signupcyber")}>
+            <Text style={styles.whitetext}>Sign Up</Text>
+          </Pressable>
+
         <Pressable
           style={styles.blueButton}
           onPress={() => props.navigation.navigate("coursepage")}>
@@ -98,18 +104,22 @@ const styles = StyleSheet.create({
   blueButton: {
     borderWidth: 2,
     justifyContent: "center",
-    marginTop: -40,
+    marginTop: -10,
     marginBottom: -50,
     alignItems: "center",
     backgroundColor: "#475467",
+    borderColor: "#475467",
+    borderRadius: 10
   },
   orangeButton: {
     borderWidth: 2,
     justifyContent: "center",
-    marginTop: -40,
+    marginTop: -10,
     marginBottom: -50,
     alignItems: "center",
     backgroundColor: "#F5A449",
+    borderColor: "#F5A449",
+    borderRadius: 10
   },
   space: {
     padding: 50,
@@ -182,6 +192,7 @@ const styles = StyleSheet.create({
   whitetext: {
     fontSize: 25,
     color: "white",
+    marginHorizontal: 5
   },
   bluetext: {
     fontSize: 15,
