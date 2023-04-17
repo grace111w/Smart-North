@@ -4,7 +4,7 @@ import { StyleSheet, Pressable, Text, Image, View, Button } from "react-native";
 import cyber from "../img/metaverse-1024x614.jpg";
 import cybers from "../img/cybersecurity.png";
 import cyberss from "../img/OIP.jpg";
-import cybersss from "../img/OIP (1).jpg";
+import cybersss from "../img/poo.jpg";
 
 export default function (props) {
   return (
@@ -111,7 +111,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#475467'
   },
   orangeButton: {
-    borderWidth: 2,
+    borderWidth: 1,
+    borderColor: '#475467',
     justifyContent: "center",
     marginTop: -40,
     marginBottom: -50,
@@ -158,7 +159,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   learnmore: {
-    borderWidth: 2,
+    borderWidth: 1,
+    borderColor: '#475467',
     flex: 1,
     justifyContent: "center",
     height: 35,
