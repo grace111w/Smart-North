@@ -28,6 +28,11 @@ export default function (props) {
          onPress={() => props.navigation.navigate("coursepage")} >
           <Text style={styles.whitetext}>Back</Text>
         </Pressable>
+        <View>
+        <Text>   </Text>
+        <Text>   </Text>
+        <Text>   </Text>
+        </View>
         </ScrollView>
     </SafeAreaView>
   );
