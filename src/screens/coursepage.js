@@ -2,6 +2,7 @@ import React from "react";
 import { SafeAreaView, ScrollView } from "react-native";
 import { StyleSheet, Pressable, Text, Image, View, Button } from "react-native";
 import cyber from "../img/metaverse-1024x614.jpg";
+import cybers from "../img/cybersecurity.png";
 
 export default function (props) {
   return (
@@ -32,11 +33,11 @@ export default function (props) {
 
         <View style={styles.course}>
         <View>
-        <Image style={styles.pic} source={cyber}></Image>
+        <Image style={styles.pic} source={cybers}></Image>
         </View>
 
          <View>
-          <Text style={styles.coursetext}>Foundations of Metaverse Building</Text>
+          <Text style={styles.coursetext}>Cybersecurity 101</Text>
           <Pressable  style={styles.learnmore}
             onPress={() => props.navigation.navigate("cybersecurity101")}>
             <Text style={styles.whitetext2}>Learn More </Text>
