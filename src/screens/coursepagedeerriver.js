@@ -10,11 +10,11 @@ export default function (props) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-            <Text style={styles.coursestext}>Minneapolis Courses</Text>
+            <Text style={styles.coursestext}>Deer River Courses</Text>
         <View style={styles.space}>
        <Pressable style={styles.orangeButton}
-         onPress={() => props.navigation.navigate("coursepagedeerriver")} >
-          <Text style={styles.whitetext}>Deer River</Text>
+         onPress={() => props.navigation.navigate("coursepage")} >
+          <Text style={styles.whitetext}>Minneapolis</Text>
         </Pressable>
         </View>
 
