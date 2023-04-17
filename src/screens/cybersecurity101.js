@@ -26,21 +26,23 @@ export default function (props) {
             the metaverse is home to an entirely new generation of career
             opportunities. 4 in-person sessions and 3 self-study assignments,
             culminating in a capstone project - perfect to build a portfolio and
-            resume.
-          </Text>
+            resume.</Text>
         </View>
+
         <View style={styles.con}>
-          <Text style={styles.bluetextbold}>
-            *15 spots available, 5 waitlist spots*
-          </Text>
+          <Text style={styles.bluetextbold}>*15 spots available, 5 waitlist spots*</Text>
+        </View>
+
+        <View style={styles.con}>
           <Text style={styles.subheading}>Information</Text>
         </View>
+        <View style={styles.con}>
         <Pressable
           style={styles.blueButton}
-          onPress={() => props.navigation.navigate("coursepage")}
-        >
+          onPress={() => props.navigation.navigate("coursepage")}>
           <Text style={styles.whitetext}>Back</Text>
         </Pressable>
+        </View>
         <View>
           <Text> </Text>
           <Text> </Text>
