@@ -65,7 +65,7 @@ export default function (props) {
         <Text style={styles.bluetext}> - Earn up to $150 as you advance through the tiers</Text>
         </View>
 
-        <View style={styles.con}>   
+        <View >   
         <Pressable
           style={styles.orangeButton}
           onPress={() => props.navigation.navigate("signupcyber")}>
