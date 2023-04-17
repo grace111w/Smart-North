@@ -4,7 +4,7 @@ import { StyleSheet, Pressable, Text, Image, View, Button } from "react-native";
 import cyber from "../img/metaverse-1024x614.jpg";
 import cybers from "../img/cybersecurity.png";
 import cyberss from "../img/OIP.jpg";
-import cybersss from "../img/OIP (1).jpg";
+import cybersss from "../img/OIP(1).jpg";
 
 export default function (props) {
   return (
