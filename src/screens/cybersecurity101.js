@@ -9,15 +9,18 @@ export default function (props) {
       <ScrollView>
         <View style={styles.con}>
             <Text style={styles.coursestext}>Foundations of Metaverse Building</Text>
-            </View>
-            <View>
             <Image style={styles.pic} source={cyber}></Image>
+        </View>
+        <View style={styles.leftscreen}>
            <Text style={styles.bluetext}>Engage within the world of virtual reality and gain access to this growing multi-billion dollar industry.
            With the rapid growth of platforms like Roblox, Minecraft, and Pokemon GO, the metaverse is well on its way to changing the way we socialize, 
            as well as work, learn, and play. Rapidly growing into a trillion-dollar ecosystem, the metaverse is home to an entirely new generation of career opportunities. 
            4 in-person sessions and 3 self-study assignments, culminating in a capstone project - perfect to build a portfolio and resume.</Text>
-           
         </View>
+        <View style={styles.con}>
+           <Text style={styles.bluetextbold}>*15 spots available, 5 waitlist spots*</Text>
+        </View>
+
         </ScrollView>
     </SafeAreaView>
   );
@@ -129,5 +132,15 @@ const styles = StyleSheet.create({
   bluetext: {
     fontSize: 15,
     color: '#68A4FF'
+  },
+  bluetextbold: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: '#68A4FF'
+  },
+  leftscreen: {
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    marginLeft: 15
   }
 });
