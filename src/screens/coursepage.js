@@ -111,7 +111,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#475467'
   },
   orangeButton: {
-    borderWidth: 2,
+    borderWidth: 1,
+    borderColor: '#475467',
     justifyContent: "center",
     marginTop: -40,
     marginBottom: -50,
