@@ -1,6 +1,6 @@
 import React from "react";
 import { SafeAreaView, ScrollView } from "react-native";
-import { StyleSheet, Pressable, Text, Image, View } from "react-native";
+import { StyleSheet, Pressable, Text, Image, View, Modal} from "react-native";
 import cyber from "../img/metaverse-1024x614.jpg";
 
 export default function (props) {
@@ -65,7 +65,7 @@ export default function (props) {
         <Text style={styles.bluetext}> - Earn up to $150 as you advance through the tiers</Text>
         </View>
 
-        <View style={styles.con}>
+        <View style={styles.con}>   
         <Pressable
           style={styles.orangeButton}
           onPress={() => props.navigation.navigate("signupcyber")}>
@@ -210,4 +210,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginHorizontal: 15,
   },
+  modal: {
+    backgroundColor: "#68A4FF",
+  }
 });
