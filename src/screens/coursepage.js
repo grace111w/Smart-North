@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     width: 100,
     Height: null, 
     resizeMode: 'contain',
-    marginTop: -350,
+    marginTop: -390,
    marginBottom: -500,
    },
   blueButton: {
