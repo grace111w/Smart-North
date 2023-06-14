@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     textDecorationColor: "#FFFFFF",
     flexDirection: "row",
     justifyContent: "space-between",
-    borderRadius: "50",
+    borderRadius: 50,
     alignItems: 'center',
     paddingVertical: 15,
     paddingHorizontal: 2,
@@ -137,8 +137,8 @@ const styles = StyleSheet.create({
   },
   course: {
     borderColor: '#f38120',
-    borderWidth: "10",
-    borderRadius: "10",
+    borderWidth: 10,
+    borderRadius: 10,
     backgroundColor: '#f38120',
     flex: 1,
     marginTop: 10,
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
   },
   coursetext: {
     fontSize: 15,
-    fountweight: "bold",
+    fontweight: "bold",
     Color: '#475467',
     marginBottom: 20,
   },
@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
     width: 100,
     marginLeft: 150,
     marginBottom: 10,
-    borderRadius: "50",
+    borderRadius: 50,
     backgroundColor: '#f38120',
     alignItems: 'center',
    

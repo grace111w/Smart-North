@@ -64,7 +64,7 @@ export default function Registration(props) {
           placeholder="FirstName LastName"
           onChangeText={(text) => handleOnChange(text, "userName")}
         />
-         <Input
+        <Input
           label="Pronouns"
           placeholder="Pronouns"
           onChangeText={(text) => handleOnChange(text, "Pronouns")}
@@ -87,45 +87,48 @@ export default function Registration(props) {
           placeholder="Phone Number"
           onChangeText={(text) => handleOnChange(text, "phone")}
         />
-         <Input
+        <Input
           label="Date of Birth"
           iconName=""
           placeholder="01/01/23"
           onChangeText={(text) => handleOnChange(text, "birthday")}
         />
-         <Input
+        <Input
           label="Grade Level"
           iconName=""
           placeholder="Grade Level"
           onChangeText={(text) => handleOnChange(text, "grade")}
         />
-         <Input
+        <Input
           label="School"
           iconName=""
           placeholder="School"
           onChangeText={(text) => handleOnChange(text, "school")}
         />
-         <Input
+        <Input
           label="Primary Tech Hub"
           iconName=""
           placeholder="Minneapolis / Deer River"
           onChangeText={(text) => handleOnChange(text, "hub")}
-          />
-          <Input
+        />
+        <Input
           label="Anything Else you would like us to know??"
           iconName=""
           placeholder="Type Here"
           onChangeText={(text) => handleOnChange(text, "other")}
         />
-          <Pressable style={styles.button} onPress={() => props.navigation.navigate("coursepage")} >
-            <Text style={styles.textButton}>Register </Text>
-          </Pressable>
-          <View>
-          <Text>   </Text>
-          <Text>   </Text>
-          <Text>   </Text>
-          </View>
-          <View/>
+        <Pressable
+          style={styles.button}
+          onPress={() => props.navigation.navigate("coursepage")}
+        >
+          <Text style={styles.textButton}>Register </Text>
+        </Pressable>
+        <View>
+          <Text> </Text>
+          <Text> </Text>
+          <Text> </Text>
+        </View>
+        <View />
       </ScrollView>
     </SafeAreaView>
   );
@@ -133,7 +136,7 @@ export default function Registration(props) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#c3dbfa',
+    backgroundColor: "#c3dbfa",
     flex: 1,
   },
   scrollContainer: {
@@ -143,7 +146,7 @@ const styles = StyleSheet.create({
   textFitle: {
     fontSize: 45,
     fontWeight: "bold",
-    color: '#475467',
+    color: "#475467",
   },
 
   button: {
@@ -155,7 +158,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
     borderRadius: 100,
     elevation: 3,
-    backgroundColor: '#f38120',
+    backgroundColor: "#f38120",
   },
   textButton: {
     textAlign: "center",
