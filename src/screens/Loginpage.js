@@ -90,7 +90,7 @@ const Loginpage = (props) => {
       </ScrollView>
     </SafeAreaView>
   );
-};
+});
 
 const styles = StyleSheet.create({
   container: {
