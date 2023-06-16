@@ -10,73 +10,84 @@ export default function (props) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-            <Text style={styles.coursestext}>Minneapolis Courses</Text>
+        <Text style={styles.coursestext}>Minneapolis Courses</Text>
         <View style={styles.space}>
-       <Pressable style={styles.orangeButton}
-         onPress={() => props.navigation.navigate("coursepagedeerriver")} >
-          <Text style={styles.whitetext}>Deer River</Text>
-        </Pressable>
-        </View>
-
-       <View style={styles.course}>
-        <View>
-        <Image style={styles.pic} source={cyber}></Image>
-        </View>
-
-         <View>
-          <Text style={styles.coursetext}>Foundations of Metaverse Building</Text>
-          <Pressable  style={styles.learnmore}
-            onPress={() => props.navigation.navigate("cybersecurity101")}>
-            <Text style={styles.whitetext2}>Learn More </Text>
-           
-            </Pressable>
-        </View>
+          <Pressable
+            style={styles.orangeButton}
+            onPress={() => props.navigation.navigate("coursepagedeerriver")}
+          >
+            <Text style={styles.whitetext}>Deer River</Text>
+          </Pressable>
         </View>
 
         <View style={styles.course}>
-        <View>
-        <Image style={styles.pic} source={cybers}></Image>
-        </View>
+          <View>
+            <Image style={styles.pic} source={cyber}></Image>
+          </View>
 
-         <View>
-          <Text style={styles.coursetext}>Cybersecurity 101</Text>
-          <Pressable  style={styles.learnmore}
-            onPress={() => props.navigation.navigate("cybersecurity101")}>
-            <Text style={styles.whitetext2}>Learn More </Text>
+          <View>
+            <Text style={styles.coursetext}>
+              Foundations of Metaverse Building
+            </Text>
+            <Pressable
+              style={styles.learnmore}
+              onPress={() => props.navigation.navigate("cybersecurity101")}
+            >
+              <Text style={styles.whitetext2}>Learn More </Text>
             </Pressable>
-        </View>
-        </View>
-
-       <View style={styles.course}>
-        <View>
-        <Image style={styles.pic} source={cyberss}></Image>
+          </View>
         </View>
 
-         <View>
-          <Text style={styles.coursetext}>VR/AR Into to the Metaverse / World Making</Text>
-          <Pressable  style={styles.learnmore}
-            onPress={() => props.navigation.navigate("cybersecurity101")}>
-            <Text style={styles.whitetext2}>Learn More </Text>
-           
+        <View style={styles.course}>
+          <View>
+            <Image style={styles.pic} source={cybers}></Image>
+          </View>
+
+          <View>
+            <Text style={styles.coursetext}>Cybersecurity 101</Text>
+            <Pressable
+              style={styles.learnmore}
+              onPress={() => props.navigation.navigate("cybersecurity101")}
+            >
+              <Text style={styles.whitetext2}>Learn More </Text>
             </Pressable>
-        </View>
-       </View>
-
-       <View style={styles.course}>
-        <View>
-        <Image style={styles.pic} source={cybersss}></Image>
+          </View>
         </View>
 
-         <View>
-          <Text style={styles.coursetext}>Introduction to Sports Tech</Text>
-          <Pressable  style={styles.learnmore}
-            onPress={() => props.navigation.navigate("cybersecurity101")}>
-            <Text style={styles.whitetext2}>Learn More </Text>
-           
+        <View style={styles.course}>
+          <View>
+            <Image style={styles.pic} source={cyberss}></Image>
+          </View>
+
+          <View>
+            <Text style={styles.coursetext}>
+              VR/AR Into to the Metaverse / World Making
+            </Text>
+            <Pressable
+              style={styles.learnmore}
+              onPress={() => props.navigation.navigate("cybersecurity101")}
+            >
+              <Text style={styles.whitetext2}>Learn More </Text>
             </Pressable>
+          </View>
         </View>
-       </View>
-        </ScrollView>
+
+        <View style={styles.course}>
+          <View>
+            <Image style={styles.pic} source={cybersss}></Image>
+          </View>
+
+          <View>
+            <Text style={styles.coursetext}>Introduction to Sports Tech</Text>
+            <Pressable
+              style={styles.learnmore}
+              onPress={() => props.navigation.navigate("cybersecurity101")}
+            >
+              <Text style={styles.whitetext2}>Learn More </Text>
+            </Pressable>
+          </View>
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }
@@ -85,17 +96,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C3DBFA",
-    alignItems: 'center',
-    justifyContent: 'center'
-  },  
+    alignItems: "center",
+    justifyContent: "center",
+  },
   pic: {
     flex: 1,
     width: 100,
-    height: null, 
-    resizeMode: 'contain',
+    height: null,
+    resizeMode: "contain",
     marginTop: -390,
-   marginBottom: -500,
-   },
+    marginBottom: -500,
+  },
   blueButton: {
     margin: 10,
     borderWidth: 2,
@@ -103,21 +114,21 @@ const styles = StyleSheet.create({
     textDecorationColor: "#FFFFFF",
     flexDirection: "row",
     justifyContent: "space-between",
-    borderRadius: "50",
-    alignItems: 'center',
+    borderRadius: 50,
+    alignItems: "center",
     paddingVertical: 15,
     paddingHorizontal: 2,
     elevation: 3,
-    backgroundColor: '#475467'
+    backgroundColor: "#475467",
   },
   orangeButton: {
     borderWidth: 1,
-    borderColor: '#475467',
+    borderColor: "#475467",
     justifyContent: "center",
     marginTop: -40,
     marginBottom: -50,
-    alignItems: 'center',
-    backgroundColor: '#F5A449'
+    alignItems: "center",
+    backgroundColor: "#F5A449",
   },
   space: {
     padding: 50,
@@ -125,52 +136,51 @@ const styles = StyleSheet.create({
   coursestext: {
     fontWeight: "bold",
     fontSize: 30,
-    color: '#475467',
-    justifyContent: 'center',
+    color: "#475467",
+    justifyContent: "center",
     flex: 1,
     marginTop: 10,
-    marginBottom: 10
+    marginBottom: 10,
   },
   row: {
     width: 50,
-    flex: 1
+    flex: 1,
   },
   course: {
     borderColor: "#A4C8FF",
-    borderWidth: "10",
-    borderRadius: "10",
+    borderWidth: 10,
+    borderRadius: 10,
     backgroundColor: "#A4C8FF",
     flex: 1,
     marginTop: 10,
-    marginBottom: 10
+    marginBottom: 10,
   },
   row: {
     width: "50%",
-    flex: 1
+    flex: 1,
   },
   courselabel: {
     fontSize: 25,
-    Color: "#475467",
+    color: "#475467",
   },
   coursetext: {
     fontSize: 15,
-    fountweight: "bold",
-    Color: '#475467',
+    fontWeight: "bold",
+    color: "#475467",
     marginBottom: 20,
   },
   learnmore: {
     borderWidth: 1,
-    borderColor: '#475467',
+    borderColor: "#475467",
     flex: 1,
     justifyContent: "center",
     height: 35,
     width: 100,
     marginLeft: 150,
     marginBottom: 10,
-    borderRadius: "50",
-    backgroundColor: '#68a4ff',
-    alignItems: 'center',
-   
+    borderRadius: 50,
+    backgroundColor: "#68a4ff",
+    alignItems: "center",
   },
   whitetext2: {
     fontSize: 15,
@@ -179,5 +189,5 @@ const styles = StyleSheet.create({
   whitetext: {
     fontSize: 25,
     color: "white",
-  }
+  },
 });

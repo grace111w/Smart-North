@@ -1,12 +1,18 @@
-import { View, Text, SafeAreaView, StyleSheet, Pressable, ScrollView, Image } from "react-native";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  StyleSheet,
+  Pressable,
+  ScrollView,
+  Image,
+} from "react-native";
 import React from "react";
 import Input from "../component/Input";
 import { auth } from "../../FireBaseconfig";
 import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import smart from "../img/IMG_1272.jpg";
-import { useFonts } from 'expo-font';
-
-
+import { useFonts } from "expo-font";
 
 const Loginpage = (props) => {
   const [email, setEmail] = React.useState("");
@@ -44,9 +50,8 @@ const Loginpage = (props) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView >
-        <Image style={styles.pic} source={smart}>
-        </Image>
+      <ScrollView>
+        <Image style={styles.pic} source={smart}></Image>
         <Input
           label="Email address"
           iconName="envelope-square"
@@ -62,17 +67,23 @@ const Loginpage = (props) => {
           onChangeText={(text) => setPassword(text)}
         />
         <View style={styles.scrollContainer}>
-          <Pressable style={styles.button} onPress={handleLogin} >
+          <Pressable style={styles.button} onPress={handleLogin}>
             <Text style={styles.textButton}>Login</Text>
           </Pressable>
         </View>
         <View style={styles.scrollContainer}>
-          <Pressable style={styles.button} onPress={() => props.navigation.navigate("Registration")} >
+          <Pressable
+            style={styles.button}
+            onPress={() => props.navigation.navigate("Registration")}
+          >
             <Text style={styles.textButton}>Sign Up</Text>
           </Pressable>
         </View>
         <View>
-          <Pressable style={styles.button} onPress={() => props.navigation.navigate("coursepage")} >
+          <Pressable
+            style={styles.button}
+            onPress={() => props.navigation.navigate("coursepage")}
+          >
             <Text style={styles.textButton}>coursepage</Text>
           </Pressable>
         </View>
@@ -84,17 +95,16 @@ const Loginpage = (props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#C3DBFA',
+    backgroundColor: "#C3DBFA",
     alignItems: "center",
     justifyContent: "center",
   },
   pic: {
-   flex: 1,
-   width: 375,
-   Height: null, 
-   resizeMode: 'contain',
-   marginTop: -500,
-   marginBottom: -500,
+    flex: 1,
+    width: 375,
+    resizeMode: "contain",
+    marginTop: -500,
+    marginBottom: -500,
   },
   scrollContainer: {
     padding: 20,
@@ -104,30 +114,30 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontFamily: "Barlow",
     fontWeight: "bold",
-    color: '#475467',
+    color: "#475467",
   },
   button: {
     borderWidth: 0.5,
     borderRadius: 100,
-    alignItems: 'center',
+    alignItems: "center",
     paddingVertical: 22,
-    paddingHorizontal: 5, 
-    justifyContent: 'center',
+    paddingHorizontal: 5,
+    justifyContent: "center",
     borderRadius: 100,
-    backgroundColor: '#68a4ff'
+    backgroundColor: "#68a4ff",
   },
   textButton: {
     textAlign: "center",
     fontSize: 16,
-    color: '#475467',
+    color: "#475467",
     fontWeight: "bold",
   },
   text: {
     textAlign: "center",
     fontSize: 16,
-    color: '#475467',
+    color: "#475467",
     fontWeight: "bold",
-  }
+  },
 });
 
-export default Loginpage;}
+export default Loginpage;

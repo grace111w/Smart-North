@@ -13,7 +13,6 @@ import {
   TextInput,
 } from "react-native";
 
-
 const Signuppage = () => {
   const [value, setValue] = React.useState({
     userName: "",

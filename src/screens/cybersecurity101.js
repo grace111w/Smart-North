@@ -1,6 +1,6 @@
 import React from "react";
 import { SafeAreaView, ScrollView } from "react-native";
-import { StyleSheet, Pressable, Text, Image, View, Modal} from "react-native";
+import { StyleSheet, Pressable, Text, Image, View, Modal } from "react-native";
 import cyber from "../img/metaverse-1024x614.jpg";
 
 export default function (props) {
@@ -26,11 +26,14 @@ export default function (props) {
             the metaverse is home to an entirely new generation of career
             opportunities. 4 in-person sessions and 3 self-study assignments,
             culminating in a capstone project - perfect to build a portfolio and
-            resume.</Text>
+            resume.
+          </Text>
         </View>
 
         <View style={styles.con}>
-          <Text style={styles.bluetextbold}>*15 spots available, 5 waitlist spots*</Text>
+          <Text style={styles.bluetextbold}>
+            *15 spots available, 5 waitlist spots*
+          </Text>
         </View>
 
         <View style={styles.con}>
@@ -40,18 +43,30 @@ export default function (props) {
           <Text style={styles.bluetext}> - 6 weeks</Text>
           <Text style={styles.bluetext}> - 2 hours</Text>
           <Text style={styles.bluetext}> - Ages 14+</Text>
-          <Text style={styles.bluetext}> - 310 E 38th St, Rm 311, Minneapolis, MN 55409</Text>
+          <Text style={styles.bluetext}>
+            {" "}
+            - 310 E 38th St, Rm 311, Minneapolis, MN 55409
+          </Text>
           <Text style={styles.bluetext}> - Every Tuesday @ 5 PM</Text>
           <Text style={styles.bluetext}> - April 18th-May 23rd</Text>
-          <Text style={styles.bluetext}> - Food and beverages always provided</Text>
+          <Text style={styles.bluetext}>
+            {" "}
+            - Food and beverages always provided
+          </Text>
         </View>
 
         <View style={styles.con}>
           <Text style={styles.subheading}>Learning Objectives</Text>
         </View>
         <View style={styles.leftscreen}>
-          <Text style={styles.bluetext}> - Gain a better understanding of the industry</Text>
-          <Text style={styles.bluetext}> - Gain familiarity with ar/vr hardware</Text>
+          <Text style={styles.bluetext}>
+            {" "}
+            - Gain a better understanding of the industry
+          </Text>
+          <Text style={styles.bluetext}>
+            {" "}
+            - Gain familiarity with ar/vr hardware
+          </Text>
           <Text style={styles.bluetext}> - Explore career paths</Text>
           <Text style={styles.bluetext}> - Build own metaverse experience</Text>
         </View>
@@ -60,15 +75,22 @@ export default function (props) {
           <Text style={styles.subheading}>Once Completed</Text>
         </View>
         <View style={styles.leftscreen}>
-        <Text style={styles.bluetext}> - Advance to Tier II: World Building</Text>
-        <Text style={styles.bluetext}> - GET PAID! Guaranteed $75</Text>
-        <Text style={styles.bluetext}> - Earn up to $150 as you advance through the tiers</Text>
+          <Text style={styles.bluetext}>
+            {" "}
+            - Advance to Tier II: World Building
+          </Text>
+          <Text style={styles.bluetext}> - GET PAID! Guaranteed $75</Text>
+          <Text style={styles.bluetext}>
+            {" "}
+            - Earn up to $150 as you advance through the tiers
+          </Text>
         </View>
 
-        <View >   
-        <Pressable
-          style={styles.orangeButton}
-          onPress={() => props.navigation.navigate("cybersign")}>
+        <View>
+          <Pressable
+            style={styles.orangeButton}
+            onPress={() => props.navigation.navigate("cybersign")}
+          >
             <Text style={styles.whitetext}>Sign Up</Text>
           </Pressable>
         </View>
@@ -103,7 +125,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#475467",
     borderColor: "#475467",
-    borderRadius: 10
+    borderRadius: 10,
   },
   orangeButton: {
     borderWidth: 2,
@@ -113,7 +135,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#F5A449",
     borderColor: "#F5A449",
-    borderRadius: 10
+    borderRadius: 10,
   },
   space: {
     padding: 50,
@@ -146,8 +168,8 @@ const styles = StyleSheet.create({
   },
   course: {
     borderColor: "#A4C8FF",
-    borderWidth: "10",
-    borderRadius: "10",
+    borderWidth: 10,
+    borderRadius: 10,
     backgroundColor: "#A4C8FF",
     flex: 1,
     marginTop: 10,
@@ -163,7 +185,7 @@ const styles = StyleSheet.create({
   },
   coursetext: {
     fontSize: 15,
-    fountweight: "bold",
+    fontWeight: "bold",
     Color: "#475467",
     marginVertical: 10,
   },
@@ -175,7 +197,7 @@ const styles = StyleSheet.create({
     width: 100,
     marginLeft: 150,
     marginBottom: 10,
-    borderRadius: "50",
+    borderRadius: 50,
     backgroundColor: "#68a4ff",
     alignItems: "center",
   },
@@ -186,7 +208,7 @@ const styles = StyleSheet.create({
   whitetext: {
     fontSize: 25,
     color: "white",
-    marginHorizontal: 5
+    marginHorizontal: 5,
   },
   bluetext: {
     fontSize: 15,
@@ -206,5 +228,5 @@ const styles = StyleSheet.create({
   },
   modal: {
     backgroundColor: "#68A4FF",
-  }
+  },
 });

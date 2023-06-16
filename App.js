@@ -8,6 +8,9 @@ import cybersign from "./src/screens/cybersign";
 import cybersecurity101 from "./src/screens/cybersecurity101";
 import Registration from "./src/screens/Registration";
 import Loginpage from "./src/screens/Loginpage";
+import generalinfo from "./src/screens/generalinfo";
+import admin from "./src/screens/admin";
+import userinfo from "./src/screens/userinfo";
 const Stack = createNativeStackNavigator();
 
 const MyStack = () => {
@@ -30,7 +33,7 @@ const MyStack = () => {
           headerLeft: () => <></>,
         }}
       />
-       <Stack.Screen
+      <Stack.Screen
         name="cybersecurity101"
         component={cybersecurity101}
         options={{
@@ -40,6 +43,27 @@ const MyStack = () => {
       <Stack.Screen
         name="cybersign"
         component={cybersign}
+        options={{
+          headerLeft: () => <></>,
+        }}
+      />
+      <Stack.Screen
+        name="generalinfo"
+        component={generalinfo}
+        options={{
+          headerLeft: () => <></>,
+        }}
+      />
+      <Stack.Screen
+        name="userinfo"
+        component={userinfo}
+        options={{
+          headerLeft: () => <></>,
+        }}
+      />
+      <Stack.Screen
+        name="admin"
+        component={admin}
         options={{
           headerLeft: () => <></>,
         }}
