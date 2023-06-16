@@ -37,6 +37,12 @@ const homepage = (props) => {
             title="Next Page"
           />
         </View>
+        <View>
+          <Button
+            onPress={() => props.navigation.navigate("admin")}
+            title="Admin"
+          />
+        </View>
       </View>
     </SafeAreaView>
   );
