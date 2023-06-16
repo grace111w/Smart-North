@@ -33,10 +33,14 @@ const Loginpage = (props) => {
       if (user) {
         setUser(user);
         props.navigation.navigate("coursepage");
-      } else setUser(undefined);
-    });
-    return unscribie;
-  }, []);
+      } else if (user) {
+        setUser(undefined);
+        return unscribie;
+      } else if (user) {
+        setUser(admin)
+        props.navigation.navigate("admin");
+      }
+   [];
 
   return (
     <SafeAreaView style={styles.container}>
@@ -126,4 +130,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Loginpage;
+export default Loginpage;}
