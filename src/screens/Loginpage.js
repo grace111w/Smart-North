@@ -39,15 +39,11 @@ const Loginpage = (props) => {
       if (user) {
         setUser(user);
         props.navigation.navigate("coursepage");
-      } else if (user) {
-        setUser(undefined);
-        return unscribie;
-      } else if (user) {
-        setUser(admin)
-        props.navigation.navigate("admin");
-      }
-   [];
-
+     } else setUser(undefined);
+    });
+    return unscribie;
+  }, []);
+  
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -90,7 +86,7 @@ const Loginpage = (props) => {
       </ScrollView>
     </SafeAreaView>
   );
-});
+};
 
 const styles = StyleSheet.create({
   container: {
