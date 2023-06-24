@@ -21,6 +21,13 @@ export default function Registration(props) {
     password: "",
     phone: "",
     error: "",
+    age: "",
+    pronouns: "",
+    phone: "",
+    dob: "",
+    grade: "",
+    school: "",
+    tech_hub: "",
   });
 
   const handleSignUp = () => {
@@ -30,20 +37,25 @@ export default function Registration(props) {
         console.log("Account created");
         const user = userCredential.user;
         console.log(user);
-        saveUserProfile();
+        saveUserProfile(user);
         props.navigation.navigate("Login");
       })
       .catch((error) => {
         alert(error);
       });
   };
-  const saveUserProfile = async () => {
+  const saveUserProfile = async (prop) => {
     try {
       const docRef = await addDoc(collection(db, "Users"), {
-        age: 17,
-        school: "wayzata",
-        grade: 10,
-        phone: 5072061790,
+        //userid: prop.uid,
+        age: value.age,
+        userName: value.userName,
+        school: value.school,
+        grade: value.grade,
+        phone: value.phone,
+        pronouns: value.pronouns,
+        dob: value.dob,
+        tech_hub: value.tech_hub,
       });
 
       console.log("Document written with ID: ", docRef.id);
@@ -65,9 +77,14 @@ export default function Registration(props) {
           onChangeText={(text) => handleOnChange(text, "userName")}
         />
         <Input
-          label="Pronouns"
-          placeholder="Pronouns"
-          onChangeText={(text) => handleOnChange(text, "Pronouns")}
+          label="pronouns"
+          placeholder="pronouns"
+          onChangeText={(text) => handleOnChange(text, "pronouns")}
+        />
+        <Input
+          label="age"
+          placeholder="age"
+          onChangeText={(text) => handleOnChange(text, "age")}
         />
         <Input
           label="Email address"
@@ -78,7 +95,8 @@ export default function Registration(props) {
         <Input
           label="Password"
           iconName="key"
-          placeholder="Password"
+          password
+          placeholder="password"
           onChangeText={(text) => handleOnChange(text, "password")}
         />
         <Input
@@ -89,9 +107,9 @@ export default function Registration(props) {
         />
         <Input
           label="Date of Birth"
-          iconName=""
+          iconName="calender"
           placeholder="01/01/23"
-          onChangeText={(text) => handleOnChange(text, "birthday")}
+          onChangeText={(text) => handleOnChange(text, "dob")}
         />
         <Input
           label="Grade Level"
@@ -109,25 +127,17 @@ export default function Registration(props) {
           label="Primary Tech Hub"
           iconName=""
           placeholder="Minneapolis / Deer River"
-          onChangeText={(text) => handleOnChange(text, "hub")}
+          onChangeText={(text) => handleOnChange(text, "tech_hub")}
         />
-        <Input
-          label="Anything Else you would like us to know??"
-          iconName=""
-          placeholder="Type Here"
-          onChangeText={(text) => handleOnChange(text, "other")}
-        />
-        <Pressable
-          style={styles.button}
-          onPress={() => props.navigation.navigate("coursepage")}
-        >
-          <Text style={styles.textButton}>Register </Text>
+        <Pressable style={styles.button} onPress={handleSignUp}>
+          <Text style={styles.textButton}>Register</Text>
         </Pressable>
         <View>
           <Text> </Text>
           <Text> </Text>
           <Text> </Text>
         </View>
+
         <View />
       </ScrollView>
     </SafeAreaView>
