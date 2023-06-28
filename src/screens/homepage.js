@@ -33,7 +33,7 @@ const homepage = (props) => {
         </View>
         <View>
           <Button
-            onPress={() => props.navigation.navigate("coursepage")}
+            onPress={() => props.navigation.navigate("admin")}
             title="Next Page"
           />
         </View>
