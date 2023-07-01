@@ -18,6 +18,12 @@ export default function (props) {
           >
             <Text style={styles.whitetext}>Deer River</Text>
           </Pressable>
+          <Pressable
+            style={styles.orangeButton}
+            onPress={() => props.navigation.navigate("Login")}
+          >
+            <Text style={styles.whitetext}>Login</Text>
+          </Pressable>
         </View>
 
         <View style={styles.course}>
