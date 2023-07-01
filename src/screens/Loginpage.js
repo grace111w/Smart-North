@@ -8,6 +8,7 @@ import {
   Pressable,
   ScrollView,
   Image,
+  Var,
 } from "react-native";
 import React from "react";
 import Input from "../component/Input";
@@ -25,6 +26,7 @@ const Loginpage = (props) => {
         const user = userCredentials.user;
         setUser(user);
         console.log(user);
+       
       })
       .catch((error) => alert(error.message));
   };
@@ -32,25 +34,29 @@ const Loginpage = (props) => {
  
 
   React.useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+         if (user == "admin@gmail.com") {
+           setUser(user);
+            props.navigation.navigate("admin");
+       }
+       else if (user) {
         setUser(user);
-        props.navigation.navigate("coursepage");
-      }
-    });
-    return unsubscribe;
-  }, []);
+            props.navigation.navigate("coursepage");
+       }
+        });
+        return unsubscribe;
+       }, []);
 
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <Image style={styles.pic} source={smart}></Image>
-        <Input
+        usren = <Input
           label="Email address"
           iconName="envelope-square"
           placeholder="Email"
           onChangeText={(text) => setEmail(text)}
-        />
+        /> ,
         <View />
         <Input
           label="Password"
