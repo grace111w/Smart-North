@@ -5,6 +5,7 @@ import {
   TextInput,
   style,
   Button,
+  ScrollView,
   SafeAreaView,
   Pressable,
   Text,
