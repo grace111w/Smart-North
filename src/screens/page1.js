@@ -7,6 +7,7 @@ import {
   Button,
   SafeAreaView,
   Pressable,
+  Text,
 } from "react-native";
 
 export default function (props) {
