@@ -7,21 +7,22 @@ import {
   Button,
   SafeAreaView,
   Pressable,
+  Text,
 } from "react-native";
+
 
 export default function (props) {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.space}>
-        <Pressable
-          style={styles.orangeButton}
-          onPress={() => props.navigation.navigate("generalinfo")}
-        ></Pressable>
-        <Pressable
-          style={styles.orangeButton}
-          onPress={() => props.navigation.navigate("userinfo")}
-        ></Pressable>
-      </View>
+      <ScrollView>
+            <Text style={styles.coursestext}>Admin</Text>
+        <View style={styles.space}>
+       <Pressable style={styles.orangeButton}
+         onPress={() => props.navigation.navigate("userinfo")} >
+          <Text style={styles.whitetext}>User Info</Text>
+        </Pressable>
+        </View>
+        </ScrollView>
     </SafeAreaView>
   );
 }
