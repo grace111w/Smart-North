@@ -11,12 +11,14 @@ import Loginpage from "./src/screens/Loginpage";
 import generalinfo from "./src/screens/generalinfo";
 import admin from "./src/screens/admin";
 import userinfo from "./src/screens/userinfo";
+import page1 from "./src/screens/page1";
+import adminlogin from "./src/screens/adminlogin";
 const Stack = createNativeStackNavigator();
 
 const MyStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="page1" component={page1} />
+      <Stack.Screen name="Page1" component={page1} />
       <Stack.Screen name="Registration" component={Registration} />
       {/* <Stack.Screen name="Homepage" component={homepage} /> */}
       <Stack.Screen
