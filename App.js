@@ -16,7 +16,7 @@ const Stack = createNativeStackNavigator();
 const MyStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Login" component={Loginpage} />
+      <Stack.Screen name="page1" component={page1} />
       <Stack.Screen name="Registration" component={Registration} />
       {/* <Stack.Screen name="Homepage" component={homepage} /> */}
       <Stack.Screen
@@ -64,6 +64,20 @@ const MyStack = () => {
       <Stack.Screen
         name="admin"
         component={admin}
+        options={{
+          headerLeft: () => <></>,
+        }}
+      />
+      <Stack.Screen
+        name="adminlogin"
+        component={adminlogin}
+        options={{
+          headerLeft: () => <></>,
+        }}
+      />
+      <Stack.Screen
+        name="Login"
+        component={Loginpage}
         options={{
           headerLeft: () => <></>,
         }}

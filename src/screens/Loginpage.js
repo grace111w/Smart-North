@@ -19,9 +19,7 @@ const Loginpage = (props) => {
   const [password, setPassword] = React.useState("");
   const [user, setUser] = React.useState(null);
   const handleLogin = () => {
-    if (setEmail === "admin@gmail.com" ){
-      props.navigation.navigate("admin")
-     } else if (setEmail!= "admin@gmail.com") {
+
      signInWithEmailAndPassword(auth, email, password)
         .then((userCredentials) => {
           const user = userCredentials.user;
@@ -32,18 +30,17 @@ const Loginpage = (props) => {
     }
   };
 
- 
 
-  
+
   React.useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        setUser(user);
-        props.navigation.navigate("coursepage");
-      }
-    });
-    return unsubscribe;
-  }, []);
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+          if (user) {
+            setUser(user);
+            props.navigation.navigate("coursepage");
+          }
+        });
+        return unsubscribe;
+      }, []);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -76,7 +73,7 @@ const Loginpage = (props) => {
             style={styles.button}
             onPress={() => props.navigation.navigate("Registration")}
           >
-            <Text style={styles.textButton}>Sign Up</Text>
+            <Text style={styles.textButton}>sign Up</Text>
           </Pressable>
         </View>
         <View>
@@ -96,7 +93,7 @@ const Loginpage = (props) => {
       </ScrollView>
     </SafeAreaView>
   );
-};
+;
 
 const styles = StyleSheet.create({
   container: {

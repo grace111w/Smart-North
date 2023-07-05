@@ -22,7 +22,7 @@ export default function (props) {
             style={styles.orangeButton}
             onPress={() => props.navigation.navigate("Login")}
           >
-            <Text style={styles.whitetext}>Login</Text>
+            <Text style={styles.whitetext}>login</Text>
           </Pressable>
         </View>
 
