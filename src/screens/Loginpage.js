@@ -19,28 +19,26 @@ const Loginpage = (props) => {
   const [password, setPassword] = React.useState("");
   const [user, setUser] = React.useState(null);
   const handleLogin = () => {
-
-     signInWithEmailAndPassword(auth, email, password)
-        .then((userCredentials) => {
-          const user = userCredentials.user;
-         setUser(user);
-          console.log(user);
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredentials) => {
+        const user = userCredentials.user;
+        setUser(user);
+        console.log(user);
       })
       .catch((error) => alert(error.message));
-    }
   };
 
-
+ 
 
   React.useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
-          if (user) {
-            setUser(user);
-            props.navigation.navigate("coursepage");
-          }
-        });
-        return unsubscribe;
-      }, []);
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+        props.navigation.navigate("coursepage");
+      }
+    });
+    return unsubscribe;
+  }, []);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -61,10 +59,7 @@ const Loginpage = (props) => {
           onChangeText={(text) => setPassword(text)}
         />
         <View style={styles.scrollContainer}>
-          <Pressable style={styles.button} 
-          onPress=
-           {handleLogin}
-          >
+          <Pressable style={styles.button} onPress={handleLogin}>
             <Text style={styles.textButton}>Login</Text>
           </Pressable>
         </View>
@@ -73,7 +68,7 @@ const Loginpage = (props) => {
             style={styles.button}
             onPress={() => props.navigation.navigate("Registration")}
           >
-            <Text style={styles.textButton}>sign Up</Text>
+            <Text style={styles.textButton}>Sign Up</Text>
           </Pressable>
         </View>
         <View>
@@ -93,7 +88,7 @@ const Loginpage = (props) => {
       </ScrollView>
     </SafeAreaView>
   );
-;
+};
 
 const styles = StyleSheet.create({
   container: {
