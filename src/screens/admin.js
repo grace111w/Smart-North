@@ -15,7 +15,7 @@ export default function (props) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-            <Text style={styles.coursestext}>Admin</Text>
+            <Text style={styles.coursestext}>admin</Text>
         <View style={styles.space}>
        <Pressable style={styles.orangeButton}
          onPress={() => props.navigation.navigate("userinfo")} >
