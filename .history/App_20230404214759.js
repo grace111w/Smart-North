@@ -14,6 +14,7 @@ const MyStack = () => {
       <Stack.Screen name="Registration" component={Registration} />
       <Stack.Screen name="Homepage" component={homepage} />
       <Stack.Screen name="coursepage" component={coursepage} />
+      <Stack.Screen name="userinfo" component={userinfo} />
     </Stack.Navigator>
   );
 };

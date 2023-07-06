@@ -3,27 +3,31 @@ import {
   StyleSheet,
   View,
   TextInput,
+  Text,
   style,
   Button,
-  ScrollView,
   SafeAreaView,
   Pressable,
-  Text,
+  
 } from "react-native";
-
 
 export default function (props) {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
-            <Text style={styles.coursestext}>admin</Text>
-        <View style={styles.space}>
-       <Pressable style={styles.orangeButton}
-         onPress={() => props.navigation.navigate("userinfo")} >
-          <Text style={styles.whitetext}>User Info</Text>
+      <View style={styles.space}>
+        <Pressable
+          style={styles.orangeButton}
+          onPress={() => props.navigation.navigate("Login")}
+          >
+          <Text style={styles.textButton}>User Login</Text>
         </Pressable>
-        </View>
-        </ScrollView>
+        <Pressable
+          style={styles.orangeButton}
+          onPress={() => props.navigation.navigate("adminlogin")}
+        >
+            <Text  style={styles.textButton}>Admin Login</Text>
+        </Pressable>
+      </View>
     </SafeAreaView>
   );
 }
@@ -31,7 +35,7 @@ export default function (props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f5a449",
+    backgroundColor: "#C3DBFA",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -44,18 +48,14 @@ const styles = StyleSheet.create({
     marginBottom: -500,
   },
   blueButton: {
-    margin: 10,
-    borderWidth: 2,
-    padding: 10,
-    textDecorationColor: "#FFFFFF",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    borderRadius: 50,
-    alignItems: "center",
-    paddingVertical: 15,
-    paddingHorizontal: 2,
-    elevation: 3,
-    backgroundColor: "#475467",
+     borderWidth: 0.5,
+     borderRadius: 100,
+     alignItems: "center",
+     paddingVertical: 22,
+     paddingHorizontal: 5,
+     justifyContent: "center",
+     borderRadius: 100,
+     backgroundColor: "#68a4ff",
   },
   orangeButton: {
     borderWidth: 1,

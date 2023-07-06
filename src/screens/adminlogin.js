@@ -5,25 +5,23 @@ import {
   TextInput,
   style,
   Button,
-  ScrollView,
   SafeAreaView,
   Pressable,
-  Text,
 } from "react-native";
-
 
 export default function (props) {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
-            <Text style={styles.coursestext}>admin</Text>
-        <View style={styles.space}>
-       <Pressable style={styles.orangeButton}
-         onPress={() => props.navigation.navigate("userinfo")} >
-          <Text style={styles.whitetext}>User Info</Text>
-        </Pressable>
-        </View>
-        </ScrollView>
+      <View style={styles.space}>
+        <Pressable
+          style={styles.orangeButton}
+          onPress={() => props.navigation.navigate("generalinfo")}
+        ></Pressable>
+        <Pressable
+          style={styles.orangeButton}
+          onPress={() => props.navigation.navigate("userinfo")}
+        ></Pressable>
+      </View>
     </SafeAreaView>
   );
 }
