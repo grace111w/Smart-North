@@ -11,6 +11,7 @@ import Loginpage from "./src/screens/Loginpage";
 import generalinfo from "./src/screens/generalinfo";
 import admin from "./src/screens/admin";
 import userinfo from "./src/screens/userinfo";
+import MyComponent from "./src/screens/MyComponent";
 const Stack = createNativeStackNavigator();
 
 const MyStack = () => {
@@ -22,6 +23,7 @@ const MyStack = () => {
       <Stack.Screen
         name="coursepage"
         component={coursepage}
+        //component={MyComponent}
         options={{
           headerLeft: () => <></>,
         }}

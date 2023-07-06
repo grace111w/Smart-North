@@ -3,6 +3,7 @@ import { SafeAreaView, ScrollView } from "react-native";
 import { StyleSheet, Pressable, Text, Image, View, Modal } from "react-native";
 import cyber from "../img/metaverse-1024x614.jpg";
 
+
 export default function (props) {
   return (
     <SafeAreaView style={styles.container}>

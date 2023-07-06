@@ -5,8 +5,27 @@ import cyber from "../img/metaverse-1024x614.jpg";
 import cybers from "../img/cybersecurity.png";
 import cyberss from "../img/OIP.jpg";
 import cybersss from "../img/poo.jpg";
+import { db } from "../../FireBaseconfig";
+import { collection, query, where, getDocs } from "firebase/firestore";
 
 export default function (props) {
+  //const [courseData, setcourseData] = React.useState(null);
+
+  const q = query(collection(db, "Courses"), where("courseid", "==", true));
+
+  React.useEffect(() => {
+    // Fetch data from Firebase
+    const fetchData = async () => {
+      const querySnapshot = await getDocs(collection(db, "Courses"));
+
+      querySnapshot.forEach((doc) => {
+        // doc.data() is never undefined for query doc snapshots
+        //console.log(doc);
+        console.log(doc.id, " => ", doc.data());
+      });
+    };
+    fetchData();
+  }, []);
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
