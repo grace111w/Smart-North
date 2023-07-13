@@ -51,8 +51,7 @@ export default function (props) {
             justifyContent: "center",
           }}
         >
-          <Text>User ID: {item.course_name}</Text>
-          <Text>User Name: {item.courseid}</Text>
+          <Text>Courses: {item.course_name}</Text>
         </View>
       )}
     />
