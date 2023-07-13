@@ -1,6 +1,14 @@
 import React from "react";
 import { SafeAreaView, ScrollView } from "react-native";
-import { StyleSheet, Pressable, Text, Image, View, Button } from "react-native";
+import {
+  StyleSheet,
+  Pressable,
+  Text,
+  Image,
+  View,
+  Button,
+  FlatList,
+} from "react-native";
 import cyber from "../img/metaverse-1024x614.jpg";
 import cybers from "../img/cybersecurity.png";
 import cyberss from "../img/OIP.jpg";
@@ -9,7 +17,9 @@ import { db } from "../../FireBaseconfig";
 import { collection, query, where, getDocs } from "firebase/firestore";
 
 export default function (props) {
-  //const [courseData, setcourseData] = React.useState(null);
+  const responseArr: any[] = [];
+
+  const [courseData, setcourseData] = React.useState([]);
 
   const q = query(collection(db, "Courses"), where("courseid", "==", true));
 
@@ -21,101 +31,118 @@ export default function (props) {
       querySnapshot.forEach((doc) => {
         // doc.data() is never undefined for query doc snapshots
         //console.log(doc);
-        console.log(doc.id, " => ", doc.data());
+
+        responseArr.push(doc.data());
+        setcourseData(responseArr);
+        console.log(courseData);
       });
     };
     fetchData();
   }, []);
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView>
-        <Text style={styles.coursestext}>Minneapolis Courses</Text>
-        <View style={styles.space}>
-          <Pressable
-            style={styles.orangeButton}
-            onPress={() => props.navigation.navigate("coursepagedeerriver")}
-          >
-            <Text style={styles.whitetext}>Deer River</Text>
-          </Pressable>
-          <Pressable
-            style={styles.orangeButton}
-            onPress={() => props.navigation.navigate("Login")}
-          >
-            <Text style={styles.whitetext}>login</Text>
-          </Pressable>
+    <FlatList
+      data={courseData}
+      renderItem={({ item }) => (
+        <View
+          style={{
+            height: 50,
+            flex: 1,
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Text>User ID: {item.course_name}</Text>
+          <Text>User Name: {item.courseid}</Text>
         </View>
-
-        <View style={styles.course}>
-          <View>
-            <Image style={styles.pic} source={cyber}></Image>
-          </View>
-
-          <View>
-            <Text style={styles.coursetext}>
-              Foundations of Metaverse Building
-            </Text>
-            <Pressable
-              style={styles.learnmore}
-              onPress={() => props.navigation.navigate("cybersecurity101")}
-            >
-              <Text style={styles.whitetext2}>Learn More </Text>
-            </Pressable>
-          </View>
-        </View>
-
-        <View style={styles.course}>
-          <View>
-            <Image style={styles.pic} source={cybers}></Image>
-          </View>
-
-          <View>
-            <Text style={styles.coursetext}>Cybersecurity 101</Text>
-            <Pressable
-              style={styles.learnmore}
-              onPress={() => props.navigation.navigate("cybersecurity101")}
-            >
-              <Text style={styles.whitetext2}>Learn More </Text>
-            </Pressable>
-          </View>
-        </View>
-
-        <View style={styles.course}>
-          <View>
-            <Image style={styles.pic} source={cyberss}></Image>
-          </View>
-
-          <View>
-            <Text style={styles.coursetext}>
-              VR/AR Into to the Metaverse / World Making
-            </Text>
-            <Pressable
-              style={styles.learnmore}
-              onPress={() => props.navigation.navigate("cybersecurity101")}
-            >
-              <Text style={styles.whitetext2}>Learn More </Text>
-            </Pressable>
-          </View>
-        </View>
-
-        <View style={styles.course}>
-          <View>
-            <Image style={styles.pic} source={cybersss}></Image>
-          </View>
-
-          <View>
-            <Text style={styles.coursetext}>Introduction to Sports Tech</Text>
-            <Pressable
-              style={styles.learnmore}
-              onPress={() => props.navigation.navigate("cybersecurity101")}
-            >
-              <Text style={styles.whitetext2}>Learn More </Text>
-            </Pressable>
-          </View>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+      )}
+    />
   );
 }
+{/* <SafeAreaView style={styles.container}>
+  <ScrollView>
+    <Text style={styles.coursestext}>Minneapolis Courses</Text>
+    <View style={styles.space}>
+      <Pressable
+        style={styles.orangeButton}
+        onPress={() => props.navigation.navigate("coursepagedeerriver")}
+      >
+        <Text style={styles.whitetext}>Deer River</Text>
+      </Pressable>
+      <Pressable
+        style={styles.orangeButton}
+        onPress={() => props.navigation.navigate("Login")}
+      >
+        <Text style={styles.whitetext}>login</Text>
+      </Pressable>
+    </View>
+
+    <View style={styles.course}>
+      <View>
+        <Image style={styles.pic} source={cyber}></Image>
+      </View>
+
+      <View>
+        <Text style={styles.coursetext}>Foundations of Metaverse Building</Text>
+        <Pressable
+          style={styles.learnmore}
+          onPress={() => props.navigation.navigate("cybersecurity101")}
+        >
+          <Text style={styles.whitetext2}>Learn More </Text>
+        </Pressable>
+      </View>
+    </View>
+
+    <View style={styles.course}>
+      <View>
+        <Image style={styles.pic} source={cybers}></Image>
+      </View>
+
+      <View>
+        <Text style={styles.coursetext}>Cybersecurity 101</Text>
+        <Pressable
+          style={styles.learnmore}
+          onPress={() => props.navigation.navigate("cybersecurity101")}
+        >
+          <Text style={styles.whitetext2}>Learn More </Text>
+        </Pressable>
+      </View>
+    </View>
+
+    <View style={styles.course}>
+      <View>
+        <Image style={styles.pic} source={cyberss}></Image>
+      </View>
+
+      <View>
+        <Text style={styles.coursetext}>
+          VR/AR Into to the Metaverse / World Making
+        </Text>
+        <Pressable
+          style={styles.learnmore}
+          onPress={() => props.navigation.navigate("cybersecurity101")}
+        >
+          <Text style={styles.whitetext2}>Learn More </Text>
+        </Pressable>
+      </View>
+    </View>
+
+    <View style={styles.course}>
+      <View>
+        <Image style={styles.pic} source={cybersss}></Image>
+      </View>
+
+      <View>
+        <Text style={styles.coursetext}>Introduction to Sports Tech</Text>
+        <Pressable
+          style={styles.learnmore}
+          onPress={() => props.navigation.navigate("cybersecurity101")}
+        >
+          <Text style={styles.whitetext2}>Learn More </Text>
+        </Pressable>
+      </View>
+    </View>
+  </ScrollView>
+</SafeAreaView>; */}
 
 const styles = StyleSheet.create({
   container: {
