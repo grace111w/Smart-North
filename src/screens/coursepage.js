@@ -41,20 +41,28 @@ export default function (props) {
   }, []);
   return (
     <SafeAreaView style={styles.container}>
-      
-        <Text style={styles.coursestext}>Minneapolis Courses</Text>
-        <FlatList
-          data={courseData}
-          renderItem={({ item }) => (
-            <View>
-              <Text style={styles.coursetext}>{item.course_name}</Text>
-              <Pressable
-                style={styles.blueButton}
-                onPress={() => props.navigation.navigate("cybersecurity101")}
-              ></Pressable>
-            </View>
-          )}
-        />
+      <Text style={styles.coursestext}>Minneapolis Courses</Text>
+      <View style={styles.space}>
+        <Pressable
+          style={styles.orangeButton}
+          onPress={() => props.navigation.navigate("coursepagedeerriver")}
+        >
+          <Text style={styles.whitetext}>Deer River</Text>
+        </Pressable>
+        </View>
+      <FlatList
+        data={courseData}
+        renderItem={({ item }) => (
+          <View style={styles.course}>
+            <Text style={styles.coursetext}>{item.course_name}</Text>
+            <Pressable
+              style={styles.blueButton}
+              onPress={() => props.navigation.navigate("cybersecurity101")}
+            ></Pressable>
+          </View>
+          
+        )}
+      />
     </SafeAreaView>
   );
 }
