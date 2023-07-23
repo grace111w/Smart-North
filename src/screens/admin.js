@@ -15,15 +15,21 @@ import {
 export default function (props) {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
-            <Text style={styles.coursestext}>admin</Text>
+        <Text style={styles.coursestext}>Administrative View</Text>
         <View style={styles.space}>
-       <Pressable style={styles.orangeButton}
-         onPress={() => props.navigation.navigate("userinfo")} >
-          <Text style={styles.whitetext}>User Info</Text>
-        </Pressable>
+          <Pressable
+            style={styles.orangeButton}
+            onPress={() => props.navigation.navigate("userinfo")}
+          >
+            <Text style={styles.whitetext}>User Information</Text>
+          </Pressable>
+          <Pressable
+            style={styles.orangeButton2}
+            onPress={() => props.navigation.navigate("generalinfo")}
+          >
+            <Text style={styles.whitetext}>General Information</Text>
+          </Pressable>
         </View>
-        </ScrollView>
     </SafeAreaView>
   );
 }
@@ -66,8 +72,17 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#68a4ff",
   },
+  orangeButton2: {
+    borderWidth: 1,
+    borderColor: "#475467",
+    justifyContent: "center",
+    marginTop: -40,
+    marginBottom: -50,
+    alignItems: "center",
+    backgroundColor: "#68a4ff",
+  },
   space: {
-    padding: 50,
+    padding: 30,
   },
   coursestext: {
     fontWeight: "bold",
