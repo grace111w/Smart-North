@@ -40,21 +40,22 @@ export default function (props) {
     fetchData();
   }, []);
   return (
-    <FlatList
-      data={courseData}
-      renderItem={({ item }) => (
-        <View
-          style={{
-            height: 50,
-            flex: 1,
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Text>Courses: {item.course_name}</Text>
-        </View>
-      )}
-    />
+    <SafeAreaView style={styles.container}>
+      
+        <Text style={styles.coursestext}>Minneapolis Courses</Text>
+        <FlatList
+          data={courseData}
+          renderItem={({ item }) => (
+            <View>
+              <Text style={styles.coursetext}>{item.course_name}</Text>
+              <Pressable
+                style={styles.blueButton}
+                onPress={() => props.navigation.navigate("cybersecurity101")}
+              ></Pressable>
+            </View>
+          )}
+        />
+    </SafeAreaView>
   );
 }
 {/* <SafeAreaView style={styles.container}>
