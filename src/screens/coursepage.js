@@ -8,7 +8,7 @@ import {
   View,
   Button,
   FlatList,
-  coursename
+  coursename,
 } from "react-native";
 import cyber from "../img/metaverse-1024x614.jpg";
 import cybers from "../img/cybersecurity.png";
@@ -50,25 +50,24 @@ export default function (props) {
         >
           <Text style={styles.whitetext}>Deer River</Text>
         </Pressable>
-        </View>
+      </View>
       <FlatList
         data={courseData}
         renderItem={({ item }) => (
           <View style={styles.course}>
             <Text style={styles.coursetext}>{item.course_name}</Text>
-            var coursename= {item.course_name}
             <Pressable
               style={styles.blueButton}
               onPress={() => props.navigation.navigate(coursename)}
             ></Pressable>
           </View>
-          
         )}
       />
     </SafeAreaView>
   );
 }
-{/* <SafeAreaView style={styles.container}>
+{
+  /* <SafeAreaView style={styles.container}>
   <ScrollView>
     <Text style={styles.coursestext}>Minneapolis Courses</Text>
     <View style={styles.space}>
@@ -152,7 +151,8 @@ export default function (props) {
       </View>
     </View>
   </ScrollView>
-</SafeAreaView>; */}
+</SafeAreaView>; */
+}
 
 const styles = StyleSheet.create({
   container: {
