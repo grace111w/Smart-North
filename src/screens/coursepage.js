@@ -18,7 +18,6 @@ import { db } from "../../FireBaseconfig";
 import { collection, query, where, getDocs } from "firebase/firestore";
 
 export default function (props) {
-  const responseArr: an[] = [];
 
   const [courseData, setcourseData] = React.useState([]);
 
@@ -77,12 +76,6 @@ export default function (props) {
         onPress={() => props.navigation.navigate("coursepagedeerriver")}
       >
         <Text style={styles.whitetext}>Deer River</Text>
-      </Pressable>
-      <Pressable
-        style={styles.orangeButton}
-        onPress={() => props.navigation.navigate("Login")}
-      >
-        <Text style={styles.whitetext}>login</Text>
       </Pressable>
     </View>
 

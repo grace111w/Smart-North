@@ -43,7 +43,13 @@ const Loginpage = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-        <Image style={styles.pic} source={smart}></Image>
+      <Pressable
+            style={styles.button}
+            onPress={() => props.navigation.navigate("coursepage")}
+          >
+            <Text style={styles.textButton}>coursepage</Text>
+          </Pressable>
+          <Image style={styles.pic} source={smart}></Image>
         <Input
           label="Email address"
           iconName="envelope-square"
@@ -72,12 +78,6 @@ const Loginpage = (props) => {
           </Pressable>
         </View>
         <View>
-          <Pressable
-            style={styles.button}
-            onPress={() => props.navigation.navigate("coursepage")}
-          >
-            <Text style={styles.textButton}>coursepage</Text>
-          </Pressable>
           <Pressable
             style={styles.button}
             onPress={() => props.navigation.navigate("admin")}
