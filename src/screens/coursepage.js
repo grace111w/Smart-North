@@ -8,6 +8,7 @@ import {
   View,
   Button,
   FlatList,
+  coursename
 } from "react-native";
 import cyber from "../img/metaverse-1024x614.jpg";
 import cybers from "../img/cybersecurity.png";
@@ -17,7 +18,7 @@ import { db } from "../../FireBaseconfig";
 import { collection, query, where, getDocs } from "firebase/firestore";
 
 export default function (props) {
-  const responseArr: any[] = [];
+  const responseArr: an[] = [];
 
   const [courseData, setcourseData] = React.useState([]);
 
@@ -55,9 +56,10 @@ export default function (props) {
         renderItem={({ item }) => (
           <View style={styles.course}>
             <Text style={styles.coursetext}>{item.course_name}</Text>
+            var coursename= {item.course_name}
             <Pressable
               style={styles.blueButton}
-              onPress={() => props.navigation.navigate("cybersecurity101")}
+              onPress={() => props.navigation.navigate(coursename)}
             ></Pressable>
           </View>
           
