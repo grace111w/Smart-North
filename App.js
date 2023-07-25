@@ -5,7 +5,7 @@ import homepage from "./src/screens/homepage";
 import coursepage from "./src/screens/coursepage";
 import coursepagedeerriver from "./src/screens/coursepagedeerriver";
 import cybersign from "./src/screens/cybersign";
-import cybersecurity101 from "./src/screens/cybersecurity101";
+import cybersecurity101 from "./src/screens/Foundations of Metaverse Building";
 import Registration from "./src/screens/Registration";
 import Loginpage from "./src/screens/Loginpage";
 import generalinfo from "./src/screens/generalinfo";

@@ -21,6 +21,7 @@ export default function (props) {
           >
           <Text style={styles.textButton}>User Login</Text>
         </Pressable>
+       
         <Pressable
           style={styles.orangeButton}
           onPress={() => props.navigation.navigate("adminlogin")}
