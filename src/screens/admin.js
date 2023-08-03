@@ -16,7 +16,7 @@ export default function (props) {
   return (
     <SafeAreaView style={styles.container}>
         <Text style={styles.coursestext}>Administrative View</Text>
-        <View style={styles.space}>
+        <View>
           <Pressable
             style={styles.orangeButton}
             onPress={() => props.navigation.navigate("userinfo")}
@@ -24,7 +24,7 @@ export default function (props) {
             <Text style={styles.whitetext}>User Information</Text>
           </Pressable>
           <Pressable
-            style={styles.orangeButton2}
+            style={styles.orangeButton}
             onPress={() => props.navigation.navigate("generalinfo")}
           >
             <Text style={styles.whitetext}>General Information</Text>
@@ -71,15 +71,7 @@ const styles = StyleSheet.create({
     marginBottom: -50,
     alignItems: "center",
     backgroundColor: "#68a4ff",
-  },
-  orangeButton2: {
-    borderWidth: 1,
-    borderColor: "#475467",
-    justifyContent: "center",
-    marginTop: -40,
-    marginBottom: -50,
-    alignItems: "center",
-    backgroundColor: "#68a4ff",
+    borderRadius: 10
   },
   space: {
     padding: 30,
@@ -90,7 +82,7 @@ const styles = StyleSheet.create({
     color: "#475467",
     justifyContent: "center",
     flex: 1,
-    marginTop: 10,
+    marginTop: 20,
     marginBottom: 10,
   },
   row: {
