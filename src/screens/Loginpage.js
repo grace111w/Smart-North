@@ -1,4 +1,3 @@
-
 import {
   View,
   Text,
@@ -23,18 +22,19 @@ const Loginpage = (props) => {
       .then((userCredentials) => {
         const user = userCredentials.user;
         setUser(user);
-        console.log(user);
+        // console.log(user);
       })
       .catch((error) => alert(error.message));
   };
-
- 
 
   React.useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
-        props.navigation.navigate("coursepage");
+        console.log(user.email);
+        if ("test@lawson.com" === user.email) {
+          props.navigation.navigate("admin");
+        } else props.navigation.navigate("coursepage");
       }
     });
     return unsubscribe;
@@ -43,13 +43,13 @@ const Loginpage = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-      <Pressable
-            style={styles.button}
-            onPress={() => props.navigation.navigate("coursepage")}
-          >
-            <Text style={styles.textButton}>coursepage</Text>
-          </Pressable>
-          <Image style={styles.pic} source={smart}></Image>
+        <Pressable
+          style={styles.button}
+          onPress={() => props.navigation.navigate("coursepage")}
+        >
+          <Text style={styles.textButton}>coursepage</Text>
+        </Pressable>
+        <Image style={styles.pic} source={smart}></Image>
         <Input
           label="Email address"
           iconName="envelope-square"
@@ -168,8 +168,6 @@ export default Loginpage;
 //       })
 //       .catch((error) => alert(error.message));
 //   };
-
- 
 
 //   React.useEffect(() => {
 //     const unsubscribe = onAuthStateChanged(auth, (user) => {

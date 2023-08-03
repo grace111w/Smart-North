@@ -25,7 +25,7 @@ export default function (props) {
           </Pressable>
           <Pressable
             style={styles.orangeButton}
-            onPress={() => props.navigation.navigate("generalinfo")}
+            onPress={() => props.navigation.navigate("Generalinfo")}
           >
             <Text style={styles.whitetext}>General Information</Text>
           </Pressable>

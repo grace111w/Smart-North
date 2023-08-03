@@ -8,7 +8,7 @@ import cybersign from "./src/screens/cybersign";
 import cybersecurity101 from "./src/screens/Foundations of Metaverse Building";
 import Registration from "./src/screens/Registration";
 import Loginpage from "./src/screens/Loginpage";
-import generalinfo from "./src/screens/generalinfo";
+import Generalinfo from "./src/screens/Generalinfo";
 import admin from "./src/screens/admin";
 import userinfo from "./src/screens/userinfo";
 import page1 from "./src/screens/page1";
@@ -51,8 +51,8 @@ const MyStack = () => {
         }}
       />
       <Stack.Screen
-        name="generalinfo"
-        component={generalinfo}
+        name="Generalinfo"
+        component={Generalinfo}
         options={{
           headerLeft: () => <></>,
         }}
