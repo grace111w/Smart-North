@@ -41,7 +41,9 @@ export default function (props) {
   }, []);
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.coursestext}>Users</Text>
+      <View>
+        <Text style={styles.coursestext}>Users</Text>
+      </View>
       <FlatList
         data={courseData}
         renderItem={({ item }) => (
@@ -62,8 +64,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C3DBFA",
-    alignItems: "center",
     justifyContent: "center",
+    padding: 10,
   },
   blueButton: {
     margin: 10,
